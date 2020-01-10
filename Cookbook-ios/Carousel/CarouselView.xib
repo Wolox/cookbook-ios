@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BCS-Kr-8A2">
-                    <rect key="frame" x="0.0" y="100" width="375" height="487"/>
+                    <rect key="frame" x="0.0" y="186.5" width="375" height="333.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2hK-Ef-MOg">
                         <size key="itemSize" width="50" height="50"/>
@@ -31,13 +31,21 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CookBook iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozo-7F-sub">
+                    <rect key="frame" x="115" y="80" width="145" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="IPC-t8-GYY" firstAttribute="trailing" secondItem="BCS-Kr-8A2" secondAttribute="trailing" id="10R-pf-OnS"/>
-                <constraint firstItem="IPC-t8-GYY" firstAttribute="bottom" secondItem="BCS-Kr-8A2" secondAttribute="bottom" constant="80" id="3TM-wS-6fZ"/>
                 <constraint firstItem="BCS-Kr-8A2" firstAttribute="leading" secondItem="IPC-t8-GYY" secondAttribute="leading" id="I3J-EU-aji"/>
-                <constraint firstItem="BCS-Kr-8A2" firstAttribute="top" secondItem="IPC-t8-GYY" secondAttribute="top" constant="80" id="kY2-7I-pNs"/>
+                <constraint firstItem="BCS-Kr-8A2" firstAttribute="height" secondItem="zYg-e2-vOE" secondAttribute="height" multiplier="0.5" id="Kss-Ye-Z9P"/>
+                <constraint firstItem="BCS-Kr-8A2" firstAttribute="top" secondItem="ozo-7F-sub" secondAttribute="bottom" constant="80" id="dZB-4A-2OC"/>
+                <constraint firstItem="ozo-7F-sub" firstAttribute="top" secondItem="IPC-t8-GYY" secondAttribute="top" constant="60" id="h4Q-0d-rqs"/>
+                <constraint firstItem="ozo-7F-sub" firstAttribute="centerX" secondItem="IPC-t8-GYY" secondAttribute="centerX" id="hqW-DT-CNq"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="IPC-t8-GYY"/>
             <point key="canvasLocation" x="752" y="-616"/>

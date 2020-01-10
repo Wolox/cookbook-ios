@@ -9,8 +9,18 @@
 import UIKit
 
 class CarouselCollectionViewCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    
+    @IBOutlet weak var containerView: UIView! {
+        didSet {
+            containerView.backgroundColor = .cardsBackground
+            containerView.layer.cornerRadius = 25
+        }
+    }
+    @IBOutlet weak var featureTitle: UILabel!
+    @IBOutlet weak var featureImage: UIImageView!
+    
+    func configureCellWith(title: String, image: UIImage) {
+        featureTitle.text = title
+        featureImage.image = image
     }
 }

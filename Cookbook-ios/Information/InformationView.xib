@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationViewController" customModule="Cookbook_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="contentLabel" destination="E3X-QN-MvB" id="FfD-LD-VGg"/>
+                <outlet property="titleLabel" destination="Y69-Ys-WHT" id="aqn-X4-DJ3"/>
+                <outlet property="view" destination="iN0-l3-epB" id="1rq-4I-LzI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y69-Ys-WHT">
+                    <rect key="frame" x="41.5" y="67" width="331" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3X-QN-MvB">
+                    <rect key="frame" x="41.5" y="117.5" width="331" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Y69-Ys-WHT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="IdM-t4-Rwe"/>
+                <constraint firstItem="Y69-Ys-WHT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="PCB-A8-C2B"/>
+                <constraint firstItem="Y69-Ys-WHT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="QaF-5j-ghx"/>
+                <constraint firstItem="E3X-QN-MvB" firstAttribute="top" secondItem="Y69-Ys-WHT" secondAttribute="bottom" constant="30" id="Xrl-7L-vZ6"/>
+                <constraint firstItem="E3X-QN-MvB" firstAttribute="centerX" secondItem="Y69-Ys-WHT" secondAttribute="centerX" id="f61-gT-HXs"/>
+                <constraint firstItem="E3X-QN-MvB" firstAttribute="width" secondItem="Y69-Ys-WHT" secondAttribute="width" id="we5-d9-EUQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
