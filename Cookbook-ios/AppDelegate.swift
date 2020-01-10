@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootViewController = CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
+        UINavigationBar.appearance().tintColor = UIColor.tintColor
+        let viewController = CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
+        let rootViewController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
         return true

@@ -8,24 +8,38 @@
 
 import UIKit
 
-class CarouselViewController: UIViewController {
+class CarouselViewController: GeneralViewController {
     
     @IBOutlet weak var carouselCollectionView: UICollectionView!
     
-    private var cellWidth: CGFloat {
+    private var _cellWidth: CGFloat {
         let screenSize = UIScreen.main.bounds.size
-        return floor(screenSize.width * 0.6)
+        return floor(screenSize.width * 0.7)
+    }
+    private var _cellHeight: CGFloat {
+        let screenSize = UIScreen.main.bounds.size
+        return floor(screenSize.height * 0.5)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        feature = Features.carousel
+        configureNavigationBar()
         configureCardsCollectionView()
     }
     
+    // MARK: - Configuration methods
+    func configureNavigationBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        configureInformationButton()
+    }
     func configureCardsCollectionView()  {
         carouselCollectionView.dataSource = self
         carouselCollectionView.delegate = self
-        carouselCollectionView.register(UINib.init(nibName: ViewNames.carouselCollectionViewCell, bundle: nil), forCellWithReuseIdentifier: ViewNames.carouselCollectionViewCell)
+        carouselCollectionView.register(UINib.init(nibName: ViewNames.carouselCollectionViewCell, bundle: nil),
+                                        forCellWithReuseIdentifier: ViewNames.carouselCollectionViewCell)
         carouselCollectionView.showsHorizontalScrollIndicator = false
         carouselCollectionView.showsVerticalScrollIndicator = false
         carouselCollectionView.collectionViewLayout = configureCollectionViewFlowLayout(collectionView: carouselCollectionView)
@@ -42,14 +56,23 @@ class CarouselViewController: UIViewController {
 // MARK: - Collection delegate and data source
 extension CarouselViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return Features.allCases.count - 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ViewNames.carouselCollectionViewCell, for: indexPath) as? CarouselCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ViewNames.carouselCollectionViewCell,
+                                                            for: indexPath) as? CarouselCollectionViewCell else {
             return UICollectionViewCell()
         }
+        let feature = Features.allCases[indexPath.row + 1]
+        cell.configureCellWith(title: feature.featureName, image: feature.featureImage)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let feature = Features.allCases[indexPath.row + 1]
+        let viewController = feature.viewController
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
@@ -59,14 +82,14 @@ extension CarouselViewController: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        let size = CGSize(width: cellWidth, height: 400)
+        let size = CGSize(width: _cellWidth, height: _cellHeight)
         layout.itemSize = size
         return size
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         // Center all elements setting left and right insets
-        let insetX = (view.bounds.width - cellWidth) / 2
+        let insetX = (view.bounds.width - _cellWidth) / 2
         return UIEdgeInsets(top: 0, left: insetX, bottom: 0, right: insetX)
     }
 }

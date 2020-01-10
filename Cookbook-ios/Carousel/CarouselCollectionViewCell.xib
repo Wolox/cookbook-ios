@@ -22,17 +22,36 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUb-Y0-XRA">
                         <rect key="frame" x="0.0" y="0.0" width="188" height="260"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYR-0U-rbj">
-                                <rect key="frame" x="73" y="119.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyz-dQ-c90">
+                                <rect key="frame" x="0.0" y="0.0" width="188" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYR-0U-rbj">
+                                        <rect key="frame" x="18.5" y="50" width="151" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhE-Yh-ZhY">
+                                        <rect key="frame" x="18.5" y="102" width="151" height="130"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zhE-Yh-ZhY" firstAttribute="height" secondItem="wyz-dQ-c90" secondAttribute="height" multiplier="0.5" id="3JJ-Oe-7lb"/>
+                                    <constraint firstItem="zhE-Yh-ZhY" firstAttribute="width" secondItem="XYR-0U-rbj" secondAttribute="width" id="4Qa-4U-U6a"/>
+                                    <constraint firstItem="XYR-0U-rbj" firstAttribute="centerX" secondItem="wyz-dQ-c90" secondAttribute="centerX" id="CsM-Yy-0r2"/>
+                                    <constraint firstItem="zhE-Yh-ZhY" firstAttribute="top" secondItem="XYR-0U-rbj" secondAttribute="bottom" constant="28" id="OVB-PH-tmU"/>
+                                    <constraint firstItem="zhE-Yh-ZhY" firstAttribute="centerX" secondItem="XYR-0U-rbj" secondAttribute="centerX" id="d0B-VF-pnl"/>
+                                    <constraint firstItem="XYR-0U-rbj" firstAttribute="top" secondItem="wyz-dQ-c90" secondAttribute="top" constant="50" id="wCC-hw-BwB"/>
+                                    <constraint firstItem="XYR-0U-rbj" firstAttribute="width" secondItem="wyz-dQ-c90" secondAttribute="width" multiplier="0.8" constant="1" id="y28-ep-Idd"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.1027728873" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="XYR-0U-rbj" firstAttribute="centerX" secondItem="DUb-Y0-XRA" secondAttribute="centerX" id="CBM-04-M02"/>
-                            <constraint firstItem="XYR-0U-rbj" firstAttribute="centerY" secondItem="DUb-Y0-XRA" secondAttribute="centerY" id="hNe-Sc-GTO"/>
+                            <constraint firstAttribute="bottom" secondItem="wyz-dQ-c90" secondAttribute="bottom" id="RhY-x3-bIv"/>
+                            <constraint firstAttribute="trailing" secondItem="wyz-dQ-c90" secondAttribute="trailing" id="bRl-VQ-d5c"/>
+                            <constraint firstItem="wyz-dQ-c90" firstAttribute="top" secondItem="DUb-Y0-XRA" secondAttribute="top" id="hd4-x4-lb2"/>
+                            <constraint firstItem="wyz-dQ-c90" firstAttribute="leading" secondItem="DUb-Y0-XRA" secondAttribute="leading" id="pPJ-hk-o82"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -45,6 +64,11 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="188" height="260"/>
+            <connections>
+                <outlet property="containerView" destination="wyz-dQ-c90" id="0aQ-au-sxz"/>
+                <outlet property="featureImage" destination="zhE-Yh-ZhY" id="vtg-xE-MTA"/>
+                <outlet property="featureTitle" destination="XYR-0U-rbj" id="IR9-Iq-JEQ"/>
+            </connections>
             <point key="canvasLocation" x="237.68115942028987" y="82.366071428571431"/>
         </collectionViewCell>
     </objects>

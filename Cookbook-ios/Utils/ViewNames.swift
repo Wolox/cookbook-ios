@@ -12,4 +12,12 @@ struct ViewNames {
     // MARK:  - Carousel
     static let carouselView = "CarouselView"
     static let carouselCollectionViewCell = "CarouselCollectionViewCell"
+    
+    //MARK: - Information
+    static let informationView = "InformationView"
+}
+
+struct Information {
+    let title: String
+    let content: String
 }
