@@ -12,8 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationViewController" customModule="Cookbook_ios" customModuleProvider="target">
             <connections>
-                <outlet property="contentLabel" destination="E3X-QN-MvB" id="FfD-LD-VGg"/>
-                <outlet property="titleLabel" destination="Y69-Ys-WHT" id="aqn-X4-DJ3"/>
+                <outlet property="contentLabel" destination="wEK-KR-7jz" id="cei-9j-Ly9"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1rq-4I-LzI"/>
             </connections>
         </placeholder>
@@ -22,27 +21,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y69-Ys-WHT">
-                    <rect key="frame" x="41.5" y="67" width="331" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3X-QN-MvB">
-                    <rect key="frame" x="41.5" y="117.5" width="331" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wEK-KR-7jz">
+                    <rect key="frame" x="20.5" y="64" width="373" height="778"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Y69-Ys-WHT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="IdM-t4-Rwe"/>
-                <constraint firstItem="Y69-Ys-WHT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="PCB-A8-C2B"/>
-                <constraint firstItem="Y69-Ys-WHT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="QaF-5j-ghx"/>
-                <constraint firstItem="E3X-QN-MvB" firstAttribute="top" secondItem="Y69-Ys-WHT" secondAttribute="bottom" constant="30" id="Xrl-7L-vZ6"/>
-                <constraint firstItem="E3X-QN-MvB" firstAttribute="centerX" secondItem="Y69-Ys-WHT" secondAttribute="centerX" id="f61-gT-HXs"/>
-                <constraint firstItem="E3X-QN-MvB" firstAttribute="width" secondItem="Y69-Ys-WHT" secondAttribute="width" id="we5-d9-EUQ"/>
+                <constraint firstItem="wEK-KR-7jz" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="3aH-zF-BJc"/>
+                <constraint firstItem="wEK-KR-7jz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="KO4-ia-cgz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wEK-KR-7jz" secondAttribute="bottom" constant="20" id="Sdc-py-XAj"/>
+                <constraint firstItem="wEK-KR-7jz" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="Z0Y-1P-SNJ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>

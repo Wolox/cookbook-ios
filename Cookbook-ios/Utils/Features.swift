@@ -43,7 +43,11 @@ enum Features: CaseIterable {
     var featureConsiderations: String {
         switch self {
         case .carousel:
-            return "Some considerations here"
+            return """
+            - In this example the focused item is centered, but this behaviour can be removed and the carousel will stop in the position the user sets.
+            
+            - Cell's content and it's size can be modified based on design.
+            """
         case .codeScanner:
             return ""
         case .test:
