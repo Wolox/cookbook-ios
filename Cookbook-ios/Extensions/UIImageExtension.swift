@@ -10,5 +10,5 @@ import UIKit
 
 extension UIImage {
     static let informationImage = UIImage(imageLiteralResourceName: "information")
-    static let scannerImage = UIImage(imageLiteralResourceName: "scannerImage")
+    static let scannerImage = UIImage(imageLiteralResourceName: "scan")
 }

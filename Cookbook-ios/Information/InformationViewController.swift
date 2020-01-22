@@ -9,15 +9,13 @@
 import UIKit
 
 class InformationViewController: UIViewController {
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var contentLabel: UITextView!
     
     var information: Information!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        titleLabel.text = information.title
+        title = information.title
         contentLabel.text = information.content
     }
 }
