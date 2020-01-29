@@ -19,24 +19,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jv-MC-NmK">
-                        <rect key="frame" x="139" y="11" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="235" placeholderIntrinsicHeight="27.5" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-ve-Nun" userLabel="Container View">
+                        <rect key="frame" x="20" y="8" width="235" height="27.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zv-QO-GpV">
+                        <rect key="frame" x="263" y="8" width="49" height="27.5"/>
+                        <state key="normal" title="Accept"/>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="8Jv-MC-NmK" secondAttribute="trailing" constant="139" id="1zz-4i-dQ9"/>
-                    <constraint firstItem="8Jv-MC-NmK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="8P8-zl-Yjn"/>
-                    <constraint firstAttribute="bottom" secondItem="8Jv-MC-NmK" secondAttribute="bottom" constant="11.5" id="fi7-FL-SWP"/>
-                    <constraint firstItem="8Jv-MC-NmK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="139" id="qjK-JD-I6Y"/>
+                    <constraint firstItem="cCj-ve-Nun" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4On-1y-UgP"/>
+                    <constraint firstAttribute="bottom" secondItem="cCj-ve-Nun" secondAttribute="bottom" constant="8" id="les-sL-zNf"/>
+                    <constraint firstItem="cCj-ve-Nun" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="msM-Wj-5Ms"/>
+                    <constraint firstAttribute="trailing" secondItem="7Zv-QO-GpV" secondAttribute="trailing" constant="8" id="nye-Dd-Is5"/>
+                    <constraint firstAttribute="bottom" secondItem="7Zv-QO-GpV" secondAttribute="bottom" constant="8" id="ome-cX-beM"/>
+                    <constraint firstItem="7Zv-QO-GpV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yPo-Io-JzX"/>
+                    <constraint firstItem="7Zv-QO-GpV" firstAttribute="leading" secondItem="cCj-ve-Nun" secondAttribute="trailing" constant="8" id="ykN-wE-ILz"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="testLabel" destination="8Jv-MC-NmK" id="hOu-AS-Tni"/>
+                <outlet property="acceptButton" destination="7Zv-QO-GpV" id="l4w-lk-PhO"/>
+                <outlet property="containerView" destination="cCj-ve-Nun" id="bIw-AF-PgJ"/>
             </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
         </tableViewCell>
     </objects>
 </document>

@@ -9,18 +9,30 @@
 import UIKit
 
 class TextFieldsTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var testLabel: UILabel!
+    
+    @IBOutlet weak var containerView: UIView! {
+        didSet {
+            containerView.backgroundColor = .cardsBackground
+        }
+    }
+    @IBOutlet weak var acceptButton: UIButton! {
+        didSet {
+            acceptButton.backgroundColor = .woloxGreen
+            acceptButton.tintColor = .white
+            acceptButton.layer.cornerRadius = acceptButton.frame.height / 4
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        loadTextField()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func loadTextField() {
+        let textField = UITextField(frame: containerView.bounds)
+        textField.backgroundColor = .woloxBlue
+        textField.alpha = 0.5
+        containerView.addSubview(textField)
     }
     
 }
