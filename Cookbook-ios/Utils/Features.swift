@@ -11,6 +11,7 @@ import UIKit
 enum Features: CaseIterable {
     case carousel
     case codeScanner
+    case textFields
     case test
     
     var featureName: String {
@@ -18,6 +19,7 @@ enum Features: CaseIterable {
         case .carousel: return "Carousel"
         case .codeScanner: return "Code Scanner"
         case .test: return "Test"
+        case .textFields: return "Text Fields"
         }
     }
     
@@ -26,6 +28,7 @@ enum Features: CaseIterable {
         case .carousel: return  UIImage()
         case .codeScanner: return UIImage.scannerImage
         case .test: return UIImage()
+        case .textFields: return UIImage.textImage
         }
     }
     
@@ -37,6 +40,8 @@ enum Features: CaseIterable {
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
         case .test:
             return GeneralViewController()
+        case .textFields:
+            return TextFieldsViewController(nibName: ViewNames.textFields, bundle: nil)
         }
     }
     
@@ -51,6 +56,8 @@ enum Features: CaseIterable {
         case .codeScanner:
             return ""
         case .test:
+            return ""
+        case .textFields:
             return ""
         }
     }

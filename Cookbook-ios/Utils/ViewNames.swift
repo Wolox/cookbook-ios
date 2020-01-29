@@ -15,6 +15,9 @@ struct ViewNames {
     
     //MARK: - Information
     static let informationView = "InformationView"
+    
+    //MARK: - Text fields
+    static let textFields = "TextFields"
 }
 
 struct Information {
