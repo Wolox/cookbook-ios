@@ -36,6 +36,18 @@ extension TextFieldsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = textFieldsTableView.dequeueReusableCell(withIdentifier: "TextFieldsTableViewCell") as? TextFieldsTableViewCell
+        cell?.acceptButtonPressed = { [weak self] text in
+            let alertController = UIAlertController(title: "El texto ingresado es:", message: text, preferredStyle: .alert)
+            let ignoreAction = UIAlertAction(title: "Ignorar", style: .cancel, handler: nil)
+            
+            let clearAction = UIAlertAction(title: "Borrar", style: .destructive) { [weak self] (_) in
+                cell?.clearTextField?()
+            }
+            alertController.addAction(ignoreAction)
+            alertController.addAction(clearAction)
+            
+            self?.present(alertController, animated: true, completion: nil)
+        }
         return cell ?? UITableViewCell()
     }
     
