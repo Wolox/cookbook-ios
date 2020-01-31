@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TextFieldEffects
 
 class TextFieldsTableViewCell: UITableViewCell {
     
@@ -50,10 +51,11 @@ class TextFieldsTableViewCell: UITableViewCell {
     }
     
     private func loadTextField() {
-        let textField = UITextField(frame: containerView.layer.bounds)
+//        let textField = UITextField(frame: containerView.layer.bounds)
+        let textField = MadokaTextField()
         self.textField = textField
-        textField.backgroundColor = .woloxBlue
-        textField.alpha = 0.5
+//        textField.backgroundColor = .woloxBlue
+//        textField.alpha = 0.5
         textField.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
         clearTextField = { [weak self] in
             textField.text = ""
