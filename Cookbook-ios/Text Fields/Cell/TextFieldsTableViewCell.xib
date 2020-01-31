@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,15 +14,28 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="235" placeholderIntrinsicHeight="27.5" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-ve-Nun" userLabel="Container View">
-                        <rect key="frame" x="20" y="8" width="235" height="27.5"/>
+                        <rect key="frame" x="20" y="8" width="235" height="28"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82y-v8-tAf" customClass="AkiraTextField" customModule="Cookbook_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="235" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="82y-v8-tAf" secondAttribute="bottom" id="I2b-2g-fAF"/>
+                            <constraint firstItem="82y-v8-tAf" firstAttribute="leading" secondItem="cCj-ve-Nun" secondAttribute="leading" id="Rvm-V3-KVv"/>
+                            <constraint firstAttribute="trailing" secondItem="82y-v8-tAf" secondAttribute="trailing" id="iFl-NP-bhv"/>
+                            <constraint firstItem="82y-v8-tAf" firstAttribute="top" secondItem="cCj-ve-Nun" secondAttribute="top" id="ieI-MF-jmz"/>
+                        </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zv-QO-GpV">
-                        <rect key="frame" x="263" y="8" width="49" height="27.5"/>
+                        <rect key="frame" x="263" y="8" width="49" height="28"/>
                         <state key="normal" title="Accept"/>
                     </button>
                 </subviews>

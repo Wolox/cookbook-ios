@@ -30,6 +30,7 @@ class TextFieldsViewController: GeneralViewController {
 }
 
 extension TextFieldsViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
@@ -52,6 +53,7 @@ extension TextFieldsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 300
         return UITableView.automaticDimension
     }
 }

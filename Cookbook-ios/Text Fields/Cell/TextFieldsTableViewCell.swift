@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import TextFieldEffects
+//import TextFieldEffects
 
 class TextFieldsTableViewCell: UITableViewCell {
     
@@ -18,7 +18,7 @@ class TextFieldsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var containerView: UIView! {
         didSet {
-            containerView.backgroundColor = .cardsBackground
+//            containerView.backgroundColor = .cardsBackground
         }
     }
     @IBOutlet weak var acceptButton: UIButton! {
@@ -36,7 +36,7 @@ class TextFieldsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        loadTextField()
+//        loadTextField()
         setupButtonAction()
         acceptButton.isEnabled = false
     }
@@ -52,16 +52,17 @@ class TextFieldsTableViewCell: UITableViewCell {
     
     private func loadTextField() {
 //        let textField = UITextField(frame: containerView.layer.bounds)
-        let textField = MadokaTextField()
-        self.textField = textField
-//        textField.backgroundColor = .woloxBlue
-//        textField.alpha = 0.5
+        let textField = MadokaTextField(frame: CGRect(x: 10, y: 10, width: 200, height: 200))
+        textField.placeholderColor = .darkGray
+        textField.backgroundColor = .lightGray
         textField.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
+        
         clearTextField = { [weak self] in
             textField.text = ""
             self?.acceptButton.isEnabled = false
         }
         
+        self.textField = textField
         containerView.addSubview(textField)
     }
     
