@@ -29,12 +29,6 @@ class CarouselViewController: GeneralViewController {
     }
     
     // MARK: - Configuration methods
-    func configureNavigationBar() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.isTranslucent = true
-        configureInformationButton()
-    }
     func configureCardsCollectionView()  {
         carouselCollectionView.dataSource = self
         carouselCollectionView.delegate = self

@@ -11,6 +11,13 @@ import UIKit
 class GeneralViewController: UIViewController {
     var feature: Features!
     
+    func configureNavigationBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        configureInformationButton()
+    }
+    
     func configureInformationButton() {
         let informationButton = UIBarButtonItem.informationButton(target: self, action: #selector(showInformationView))
         navigationItem.rightBarButtonItem = informationButton
