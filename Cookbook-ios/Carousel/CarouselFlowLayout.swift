@@ -23,6 +23,14 @@ class CarouselFlowLayout: UICollectionViewFlowLayout {
     private let sideSpacing: CGFloat
     private var state = LayoutState(size: .zero, direction: .horizontal)
     
+    /**
+     Creates a Collectiion view flow layout that handles cells presentation
+     
+     - Parameter sideItemScale: Scale percentage for the size of the side cells
+     - Parameter sideItemAlpha: Alpha for the side cells
+     - Parameter sideSpacing: Distance between cells
+     
+     */
     init(sideItemScale: CGFloat, sideItemAlpha: CGFloat, sideSpacing: CGFloat) {
         self.sideItemScale = sideItemScale
         self.sideItemAlpha = sideItemAlpha
@@ -95,7 +103,6 @@ private extension CarouselFlowLayout {
         let collectionSize = collectionView.bounds.size
         let isHorizontal = (scrollDirection == .horizontal)
         
-        // Center the item in the collectionView
         let yInset = (collectionSize.height - itemSize.height) / 2
         let xInset = (collectionSize.width - itemSize.width) / 2
         sectionInset = UIEdgeInsets(top: yInset, left: xInset, bottom: yInset, right: xInset)

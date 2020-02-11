@@ -10,7 +10,6 @@ import UIKit
 
 // Show elements in a carousel. Cell size, sideItemScale, sideItemAlpha, sideSpacing and scrollDirection must be set as required.
 class CarouselViewController: GeneralViewController {
-    
     @IBOutlet weak var carouselCollectionView: UICollectionView!
     
     private var _cellWidth: CGFloat {
