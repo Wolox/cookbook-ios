@@ -15,6 +15,9 @@ struct ViewNames {
     
     // MARK: - Information
     static let informationView = "InformationView"
+    
+    //MARK: - Code Scanner
+    static let codeScannerView = "CodeScannerView"
 }
 
 struct Information {

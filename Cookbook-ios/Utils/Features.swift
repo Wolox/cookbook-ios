@@ -36,7 +36,7 @@ enum Features: CaseIterable {
         case .carousel:
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
         case .codeScanner:
-            return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
+            return CodeScannerController(nibName: ViewNames.codeScannerView, bundle: nil)
         default:
             return GeneralViewController()
         }
