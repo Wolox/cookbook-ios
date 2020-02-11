@@ -15,6 +15,7 @@
 		AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */; };
 		AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE49AB6C23C6DFEF002FF78C /* InformationView.xib */; };
 		AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79BE9123BDBBB2004270F1 /* ViewNames.swift */; };
+		AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */; };
 		AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866C223B27899003879D0 /* AppDelegate.swift */; };
 		AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF866C923B2789B003879D0 /* Assets.xcassets */; };
 		AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */; };
@@ -33,6 +34,7 @@
 		AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		AE49AB6C23C6DFEF002FF78C /* InformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationView.xib; sourceTree = "<group>"; };
 		AE79BE9123BDBBB2004270F1 /* ViewNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNames.swift; sourceTree = "<group>"; };
+		AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
 		AEF866BF23B27899003879D0 /* Cookbook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookbook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF866C223B27899003879D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF866C923B2789B003879D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				AEF866D623B2796B003879D0 /* CarouselViewController.swift */,
+				AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */,
 				AEF866D723B2796B003879D0 /* CarouselView.xib */,
 				AEF866DA23B2842D003879D0 /* CarouselCollectionViewCell.swift */,
 				AEF866DB23B2842D003879D0 /* CarouselCollectionViewCell.xib */,
@@ -201,6 +204,7 @@
 			files = (
 				AE49AB5F23C68EA6002FF78C /* Features.swift in Sources */,
 				AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */,
+				AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */,
 				AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */,
 				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,

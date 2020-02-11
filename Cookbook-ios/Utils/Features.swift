@@ -12,12 +12,14 @@ enum Features: CaseIterable {
     case carousel
     case codeScanner
     case test
+    case test2
     
     var featureName: String {
         switch self {
         case .carousel: return "Carousel"
         case .codeScanner: return "Code Scanner"
         case .test: return "Test"
+        case .test2: return "Test 2"
         }
     }
     
@@ -25,7 +27,7 @@ enum Features: CaseIterable {
         switch self {
         case .carousel: return  UIImage()
         case .codeScanner: return UIImage.scannerImage
-        case .test: return UIImage()
+        default: return UIImage()
         }
     }
     
@@ -35,7 +37,7 @@ enum Features: CaseIterable {
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
         case .codeScanner:
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
-        case .test:
+        default:
             return GeneralViewController()
         }
     }
@@ -44,13 +46,16 @@ enum Features: CaseIterable {
         switch self {
         case .carousel:
             return """
-            - In this example the focused item is centered, but this behaviour can be removed and the carousel will stop in the position the user sets.
+            - Selected item will be always centered
             
-            - Cell's content and it's size can be modified based on design.
+            - Attributes that can be modified:
+                - Cell size (width and/or height)
+                - Distance between cells
+                - Side cell alpha
+                - Side cell scale
+                - Scroll direction
             """
-        case .codeScanner:
-            return ""
-        case .test:
+        default:
             return ""
         }
     }

@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Show elements in a carousel. Cell size, sideItemScale, sideItemAlpha, sideSpacing and scrollDirection must be set as required.
 class CarouselViewController: GeneralViewController {
     
     @IBOutlet weak var carouselCollectionView: UICollectionView!
@@ -46,9 +47,12 @@ class CarouselViewController: GeneralViewController {
     }
     
     func configureCollectionViewFlowLayout(collectionView: UICollectionView) -> UICollectionViewFlowLayout {
-        let collectionViewLayout = UICollectionViewFlowLayout()
+        let collectionViewLayout = CarouselFlowLayout(sideItemScale: 0.9,
+                                                      sideItemAlpha: 0.6,
+                                                      sideSpacing: 20)
         collectionViewLayout.scrollDirection = .horizontal
-        collectionViewLayout.minimumLineSpacing = UIScreen.main.bounds.size.width * 0.07
+        collectionViewLayout.itemSize = CGSize(width: _cellWidth,
+                                               height: _cellHeight)
         return collectionViewLayout
     }
 }
@@ -73,40 +77,5 @@ extension CarouselViewController: UICollectionViewDataSource, UICollectionViewDe
         let feature = Features.allCases[indexPath.row + 1]
         let viewController = feature.viewController
         navigationController?.pushViewController(viewController, animated: true)
-    }
-}
-
-// MARK: - Flow layout delegate
-extension CarouselViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        let size = CGSize(width: _cellWidth, height: _cellHeight)
-        layout.itemSize = size
-        return size
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        // Center all elements setting left and right insets
-        let insetX = (view.bounds.width - _cellWidth) / 2
-        return UIEdgeInsets(top: 0, left: insetX, bottom: 0, right: insetX)
-    }
-}
-
-// MARK: - Scroll delegate
-extension CarouselViewController: UIScrollViewDelegate {
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        // Complete the scroll to one of the cells and center it
-        let layout = carouselCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        let cellWidhtIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
-        
-        var offset = targetContentOffset.pointee
-        let index = (offset.x + scrollView.contentInset.left) / cellWidhtIncludingSpacing
-        let roundedIndex = round(index)
-        
-        offset = CGPoint(x: roundedIndex * cellWidhtIncludingSpacing - scrollView.contentInset.left,
-                         y: scrollView.contentInset.top)
-        targetContentOffset.pointee = offset
     }
 }
