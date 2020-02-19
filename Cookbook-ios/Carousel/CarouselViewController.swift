@@ -32,7 +32,7 @@ class CarouselViewController: GeneralViewController {
     func configureCardsCollectionView()  {
         carouselCollectionView.dataSource = self
         carouselCollectionView.delegate = self
-        carouselCollectionView.register(UINib.init(nibName: ViewNames.carouselCollectionViewCell, bundle: nil),
+        carouselCollectionView.register(UINib(nibName: ViewNames.carouselCollectionViewCell, bundle: nil),
                                         forCellWithReuseIdentifier: ViewNames.carouselCollectionViewCell)
         carouselCollectionView.showsHorizontalScrollIndicator = false
         carouselCollectionView.showsVerticalScrollIndicator = false

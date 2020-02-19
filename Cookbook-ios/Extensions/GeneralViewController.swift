@@ -1,5 +1,5 @@
 //
-//  GeneralViewControllerExtension.swift
+//  GeneralViewController.swift
 //  Cookbook-ios
 //
 //  Created by Carolina Arcos on 1/8/20.

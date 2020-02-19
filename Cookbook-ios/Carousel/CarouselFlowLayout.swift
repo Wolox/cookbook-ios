@@ -45,7 +45,8 @@ class CarouselFlowLayout: UICollectionViewFlowLayout {
     override public func prepare() {
         super.prepare()
         
-        let currentState = LayoutState(size: collectionView!.bounds.size, direction: scrollDirection)
+        guard let collectionView = collectionView else { return }
+        let currentState = LayoutState(size: collectionView.bounds.size, direction: scrollDirection)
         if !state.isEqual(otherState: currentState) {
             setupCollectionViewDecelerationRate()
             updateLayout()
@@ -108,7 +109,7 @@ private extension CarouselFlowLayout {
         sectionInset = UIEdgeInsets(top: yInset, left: xInset, bottom: yInset, right: xInset)
         
         let side = isHorizontal ? itemSize.width : itemSize.height
-        let scaledItemOffset =  (side - side * sideItemScale) / 2
+        let scaledItemOffset = (side - side * sideItemScale) / 2
         minimumLineSpacing = sideSpacing - scaledItemOffset
     }
     
@@ -116,7 +117,7 @@ private extension CarouselFlowLayout {
         guard let collectionView = self.collectionView else { return attributes }
         let isHorizontal = self.scrollDirection == .horizontal
         
-        let collectionCenter = isHorizontal ? collectionView.frame.size.width/2 : collectionView.frame.size.height/2
+        let collectionCenter = isHorizontal ? (collectionView.frame.size.width / 2) : (collectionView.frame.size.height / 2)
         let offset = isHorizontal ? collectionView.contentOffset.x : collectionView.contentOffset.y
         let normalizedCenter = (isHorizontal ? attributes.center.x : attributes.center.y) - offset
         
