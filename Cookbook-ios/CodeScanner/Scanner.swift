@@ -85,6 +85,7 @@ class Scanner: NSObject {
         return previewLayer
     }
     
+    // Select all the AVMetadataMachineReadableCodeObject objects you need  to scan
     private func metaObjectTypes() -> [AVMetadataObject.ObjectType] {
         return [.aztec,
                 .code128,
@@ -94,7 +95,6 @@ class Scanner: NSObject {
                 .dataMatrix,
                 .ean13,
                 .ean8,
-                .face,
                 .interleaved2of5,
                 .itf14,
                 .pdf417,

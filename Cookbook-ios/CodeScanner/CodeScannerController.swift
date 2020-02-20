@@ -39,18 +39,30 @@ class CodeScannerController: GeneralViewController, AVCaptureMetadataOutputObjec
     
     // MARK: - Camera access
     func validateCameraAccess() {
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            showErrorAlert(message: "You don't have a camera")
+            return
+        }
+        
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { [unowned self] hasAccess in
-            if UIImagePickerController.isSourceTypeAvailable(.camera) && hasAccess {
+            guard hasAccess else {
+                self.showErrorAlert(message: "Your camera access was rejected. Plase change this configuration in Settings")
+                return
+            }
+            
+            DispatchQueue.main.async {
                 self.startScanner()
-            } else {
-                let alert = UIAlertController(title: "No camera access",
-                                              message: "You don't have a camera or the access was rejected",
-                                              preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
             }
         }
+    }
+    
+    private func showErrorAlert(message: String) {
+        let alert = UIAlertController(title: "No camera access",
+                                      message: message,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: - Camera Session handler
@@ -77,7 +89,12 @@ class CodeScannerController: GeneralViewController, AVCaptureMetadataOutputObjec
 // MARK: - Capture Metadata Output Objects Delegate
 extension CodeScannerController {
     private func handleCode(code: String) {
-        print("SCANNED CODE: \(code)")
+        let alert = UIAlertController(title: "Scanned code",
+                                      message: code,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Scan again", style: .cancel, handler: { _ in self.validateCameraAccess() })
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: - AVCaptureMetadataOutputObjects Delegate
