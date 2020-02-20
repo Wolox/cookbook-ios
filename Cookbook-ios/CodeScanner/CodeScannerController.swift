@@ -36,8 +36,10 @@ class CodeScannerController: GeneralViewController, AVCaptureMetadataOutputObjec
         super.viewWillTransition(to: size, with: coordinator)
         updateCameraLayer()
     }
-    
-    // MARK: - Camera access
+}
+
+// MARK: - Camera access
+private extension CodeScannerController {
     func validateCameraAccess() {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             showErrorAlert(message: "You don't have a camera")
@@ -50,13 +52,11 @@ class CodeScannerController: GeneralViewController, AVCaptureMetadataOutputObjec
                 return
             }
             
-            DispatchQueue.main.async {
-                self.startScanner()
-            }
+            self.startScanner()
         }
     }
     
-    private func showErrorAlert(message: String) {
+    func showErrorAlert(message: String) {
         let alert = UIAlertController(title: "No camera access",
                                       message: message,
                                       preferredStyle: .alert)
@@ -64,12 +64,17 @@ class CodeScannerController: GeneralViewController, AVCaptureMetadataOutputObjec
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
-    
-    // MARK: - Camera Session handler
+}
+
+// MARK: - Camera Session handler
+private extension CodeScannerController {
     // Call this method when you need to start the camera
     func startScanner() {
         updateCameraLayer()
-        _scanner?.startCaptureSession()
+        
+        DispatchQueue.main.async {
+            self._scanner?.startCaptureSession()
+        }
     }
     
     // Call this method when you need to stop the camera
