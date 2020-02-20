@@ -55,6 +55,27 @@ enum Features: CaseIterable {
                 - Side cell scale
                 - Scroll direction
             """
+        case .codeScanner:
+            return """
+            - Type of codes to scan can be one or more of this options:
+                - aztec
+                - code128
+                - code39
+                - code39Mod43
+                - code93
+                - dataMatrix
+                - ean13
+                - ean8
+                - interleaved2of5
+                - itf14
+                - pdf417
+                - qr
+                - upce
+            
+            - We validate if the user has camera and if he/she has accepted the access permision.
+            
+            - Alert messages and actions can be modified
+            """
         default:
             return ""
         }
