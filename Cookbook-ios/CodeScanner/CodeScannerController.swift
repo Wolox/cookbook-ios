@@ -23,7 +23,7 @@ class CodeScannerController: GeneralViewController, AVCaptureMetadataOutputObjec
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         validateCameraAccess()
     }
     
@@ -48,7 +48,7 @@ private extension CodeScannerController {
         
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { [unowned self] hasAccess in
             guard hasAccess else {
-                self.showErrorAlert(message: "Your camera access was rejected. Plase change this configuration in Settings")
+                self.showErrorAlert(message: "Your camera access was rejected. Please change this configuration in Settings")
                 return
             }
             

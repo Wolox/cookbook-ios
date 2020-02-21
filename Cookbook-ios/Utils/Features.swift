@@ -57,7 +57,7 @@ enum Features: CaseIterable {
             """
         case .codeScanner:
             return """
-            - Type of codes to scan can be one or more of this options:
+            - Type of codes to scan can be one or more of these options:
                 - aztec
                 - code128
                 - code39
@@ -72,7 +72,7 @@ enum Features: CaseIterable {
                 - qr
                 - upce
             
-            - We validate if the user has camera and if he/she has accepted the access permision.
+            - We validate if the user has camera and if he/she has accepted the access permission.
             
             - Alert messages and actions can be modified
             """
