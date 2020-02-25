@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A77A3F240430920054BA9A /* ChipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A77A3A240430920054BA9A /* ChipsViewController.swift */; };
+		00A77A40240430920054BA9A /* ChipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A77A3C240430920054BA9A /* ChipViewCell.swift */; };
+		00A77A41240430920054BA9A /* ChipViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A77A3D240430920054BA9A /* ChipViewCell.xib */; };
+		00A77A42240430920054BA9A /* ChipsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A77A3E240430920054BA9A /* ChipsView.xib */; };
+		00A77A44240478940054BA9A /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A77A43240478940054BA9A /* Chip.swift */; };
+		00A77A4724047BB50054BA9A /* TitleSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A77A4524047BB50054BA9A /* TitleSectionHeader.swift */; };
+		00A77A4824047BB50054BA9A /* TitleSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A77A4624047BB50054BA9A /* TitleSectionHeader.xib */; };
+		00A77A4A2404B0E10054BA9A /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A77A492404B0E10054BA9A /* UICollectionViewExtension.swift */; };
+		00A77A4C2404B4D30054BA9A /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A77A4B2404B4D30054BA9A /* LeftAlignedCollectionViewFlowLayout.swift */; };
 		AE49AB5F23C68EA6002FF78C /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB5E23C68EA6002FF78C /* Features.swift */; };
 		AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6123C6C477002FF78C /* UIImageExtension.swift */; };
 		AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6323C6C5B5002FF78C /* UIColorExtension.swift */; };
@@ -26,6 +35,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A77A3A240430920054BA9A /* ChipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipsViewController.swift; sourceTree = "<group>"; };
+		00A77A3C240430920054BA9A /* ChipViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipViewCell.swift; sourceTree = "<group>"; };
+		00A77A3D240430920054BA9A /* ChipViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChipViewCell.xib; sourceTree = "<group>"; };
+		00A77A3E240430920054BA9A /* ChipsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChipsView.xib; sourceTree = "<group>"; };
+		00A77A43240478940054BA9A /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		00A77A4524047BB50054BA9A /* TitleSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSectionHeader.swift; sourceTree = "<group>"; };
+		00A77A4624047BB50054BA9A /* TitleSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleSectionHeader.xib; sourceTree = "<group>"; };
+		00A77A492404B0E10054BA9A /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		00A77A4B2404B4D30054BA9A /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		AE49AB5E23C68EA6002FF78C /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
 		AE49AB6123C6C477002FF78C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		AE49AB6323C6C5B5002FF78C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -57,6 +75,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A77A39240430920054BA9A /* Chips */ = {
+			isa = PBXGroup;
+			children = (
+				00A77A43240478940054BA9A /* Chip.swift */,
+				00A77A3A240430920054BA9A /* ChipsViewController.swift */,
+				00A77A3B240430920054BA9A /* Cell */,
+				00A77A3E240430920054BA9A /* ChipsView.xib */,
+				00A77A4B2404B4D30054BA9A /* LeftAlignedCollectionViewFlowLayout.swift */,
+			);
+			path = Chips;
+			sourceTree = "<group>";
+		};
+		00A77A3B240430920054BA9A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				00A77A4524047BB50054BA9A /* TitleSectionHeader.swift */,
+				00A77A4624047BB50054BA9A /* TitleSectionHeader.xib */,
+				00A77A3C240430920054BA9A /* ChipViewCell.swift */,
+				00A77A3D240430920054BA9A /* ChipViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		AE49AB6023C6C469002FF78C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +105,7 @@
 				AE49AB6323C6C5B5002FF78C /* UIColorExtension.swift */,
 				AE49AB6523C6CAF3002FF78C /* UIBarButtonItem.swift */,
 				AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */,
+				00A77A492404B0E10054BA9A /* UICollectionViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -109,6 +151,7 @@
 				AE79BE9023BDBB93004270F1 /* Utils */,
 				AE49AB6923C6DFCE002FF78C /* Information */,
 				AEF866D423B2790E003879D0 /* Carousel */,
+				00A77A39240430920054BA9A /* Chips */,
 				AEF866C223B27899003879D0 /* AppDelegate.swift */,
 				AEF866C923B2789B003879D0 /* Assets.xcassets */,
 				AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */,
@@ -188,10 +231,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */,
+				00A77A4824047BB50054BA9A /* TitleSectionHeader.xib in Resources */,
 				AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */,
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
+				00A77A41240430920054BA9A /* ChipViewCell.xib in Resources */,
 				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
+				00A77A42240430920054BA9A /* ChipsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,14 +251,20 @@
 				AE49AB5F23C68EA6002FF78C /* Features.swift in Sources */,
 				AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */,
 				AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */,
+				00A77A4C2404B4D30054BA9A /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */,
 				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
+				00A77A40240430920054BA9A /* ChipViewCell.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
 				AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */,
+				00A77A4724047BB50054BA9A /* TitleSectionHeader.swift in Sources */,
+				00A77A4A2404B0E10054BA9A /* UICollectionViewExtension.swift in Sources */,
+				00A77A3F240430920054BA9A /* ChipsViewController.swift in Sources */,
 				AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */,
+				00A77A44240478940054BA9A /* Chip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

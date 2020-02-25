@@ -11,4 +11,5 @@ import UIKit
 extension UIImage {
     static let informationImage = UIImage(imageLiteralResourceName: "information")
     static let scannerImage = UIImage(imageLiteralResourceName: "scan")
+    static let closeMini = UIImage(imageLiteralResourceName: "ic_close_mini")
 }

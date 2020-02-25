@@ -15,6 +15,11 @@ struct ViewNames {
     
     // MARK: - Information
     static let informationView = "InformationView"
+
+    // MARK: - Chips
+    static let chipsView = "ChipsView"
+    static let chipsViewCell = "ChipViewCell"
+    static let titleSectionHeader = "TitleSectionHeader"
 }
 
 struct Information {

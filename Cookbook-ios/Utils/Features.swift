@@ -11,6 +11,7 @@ import UIKit
 enum Features: CaseIterable {
     case carousel
     case codeScanner
+    case chips
     case test
     case test2
     
@@ -20,6 +21,7 @@ enum Features: CaseIterable {
         case .codeScanner: return "Code Scanner"
         case .test: return "Test"
         case .test2: return "Test 2"
+        case .chips: return "Chips"
         }
     }
     
@@ -37,6 +39,8 @@ enum Features: CaseIterable {
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
         case .codeScanner:
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
+        case .chips:
+            return ChipsViewController(nibName: ViewNames.chipsView, bundle: nil)
         default:
             return GeneralViewController()
         }
@@ -55,6 +59,8 @@ enum Features: CaseIterable {
                 - Side cell scale
                 - Scroll direction
             """
+        case .chips:
+            return "CHIPS DEL AMOR"
         default:
             return ""
         }
