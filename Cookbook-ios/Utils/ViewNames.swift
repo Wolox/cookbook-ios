@@ -13,13 +13,24 @@ struct ViewNames {
     static let carouselView = "CarouselView"
     static let carouselCollectionViewCell = "CarouselCollectionViewCell"
     
+    
     // MARK: - Information
     static let informationView = "InformationView"
     
+<<<<<<< HEAD
     //MARK: - Code Scanner
     static let codeScannerView = "CodeScannerView"
     
     //MARK: - Focused table
     static let focusedCollectionView = "FocusedCollectionView"
     static let focusedCollectionViewCell = "FocusedCollectionViewCell"
+=======
+    //    MARK: - ShadowView
+    static let shadowView = "ShadowView"
+}
+
+struct Information {
+    let title: String
+    let content: String
+>>>>>>> Add shadow case and configuration
 }
