@@ -9,7 +9,11 @@
 import UIKit
 
 class InformationViewController: UIViewController {
-    @IBOutlet weak var contentLabel: UITextView!
+    @IBOutlet weak var contentLabel: UITextView! {
+        didSet {
+            contentLabel.backgroundColor = .clear
+        }
+    }
     
     var information: Information!
     

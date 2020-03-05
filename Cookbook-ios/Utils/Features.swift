@@ -36,7 +36,7 @@ enum Features: CaseIterable {
         case .carousel:
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
         case .codeScanner:
-            return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
+            return CodeScannerController(nibName: ViewNames.codeScannerView, bundle: nil)
         default:
             return GeneralViewController()
         }
@@ -54,6 +54,27 @@ enum Features: CaseIterable {
                 - Side cell alpha
                 - Side cell scale
                 - Scroll direction
+            """
+        case .codeScanner:
+            return """
+            - Type of codes to scan can be one or more of these options:
+                - aztec
+                - code128
+                - code39
+                - code39Mod43
+                - code93
+                - dataMatrix
+                - ean13
+                - ean8
+                - interleaved2of5
+                - itf14
+                - pdf417
+                - qr
+                - upce
+            
+            - We validate if the user has camera and if he/she has accepted the access permission.
+            
+            - Alert messages and actions can be modified
             """
         default:
             return ""
