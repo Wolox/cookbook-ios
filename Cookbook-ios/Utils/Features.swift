@@ -11,14 +11,14 @@ import UIKit
 enum Features: CaseIterable {
     case carousel
     case codeScanner
-    case test
+    case focusedTable
     case test2
     
     var featureName: String {
         switch self {
         case .carousel: return "Carousel"
         case .codeScanner: return "Code Scanner"
-        case .test: return "Test"
+        case .focusedTable: return "Focused table"
         case .test2: return "Test 2"
         }
     }
@@ -37,6 +37,8 @@ enum Features: CaseIterable {
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
         case .codeScanner:
             return CodeScannerController(nibName: ViewNames.codeScannerView, bundle: nil)
+        case .focusedTable:
+            return FocusedTableController(nibName: ViewNames.focusedTableView, bundle: nil)
         default:
             return GeneralViewController()
         }
