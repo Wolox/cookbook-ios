@@ -162,12 +162,12 @@
 		AEF866C123B27899003879D0 /* Cookbook-ios */ = {
 			isa = PBXGroup;
 			children = (
-				AEA24FAA241315B800850AC0 /* FocusedTable */,
 				AE49AB6023C6C469002FF78C /* Extensions */,
 				AE79BE9023BDBB93004270F1 /* Utils */,
 				AE49AB6923C6DFCE002FF78C /* Information */,
 				AEF866D423B2790E003879D0 /* Carousel */,
 				AE48FDFB23F327C20065F778 /* CodeScanner */,
+				AEA24FAA241315B800850AC0 /* FocusedTable */,
 				AEF866C223B27899003879D0 /* AppDelegate.swift */,
 				AEF866C923B2789B003879D0 /* Assets.xcassets */,
 				AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */,

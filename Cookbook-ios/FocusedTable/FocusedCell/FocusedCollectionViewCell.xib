@@ -28,11 +28,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYL-1y-zfY">
+                                <rect key="frame" x="85" y="78" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="0.75151298415492962" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GYL-1y-zfY" firstAttribute="centerX" secondItem="I5P-y4-Aaz" secondAttribute="centerX" id="2aI-7W-eh6"/>
                             <constraint firstItem="I5P-y4-Aaz" firstAttribute="centerY" secondItem="Nc4-4b-fYm" secondAttribute="centerY" id="P5y-n7-XeD"/>
                             <constraint firstItem="I5P-y4-Aaz" firstAttribute="centerX" secondItem="Nc4-4b-fYm" secondAttribute="centerX" id="Q4l-Lv-ZfH"/>
+                            <constraint firstItem="GYL-1y-zfY" firstAttribute="top" secondItem="I5P-y4-Aaz" secondAttribute="bottom" constant="8" id="VjI-xq-U3R"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -47,7 +55,8 @@
             <size key="customSize" width="207" height="116"/>
             <connections>
                 <outlet property="coverView" destination="Nc4-4b-fYm" id="FbL-hJ-Yqh"/>
-                <outlet property="name" destination="I5P-y4-Aaz" id="iQv-EX-fX5"/>
+                <outlet property="descriptionLabel" destination="I5P-y4-Aaz" id="NA6-Z6-QWw"/>
+                <outlet property="nameLabel" destination="GYL-1y-zfY" id="Bb4-nh-Qd3"/>
             </connections>
             <point key="canvasLocation" x="125" y="42"/>
         </collectionViewCell>

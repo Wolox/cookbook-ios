@@ -9,13 +9,15 @@
 import UIKit
 
 class FocusedCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var coverView: UIView!
     
     var color: Color? {
         didSet {
             if let color = color {
-                name.text = color.name
+                nameLabel.text = color.name
+                descriptionLabel.text = color.description
                 coverView.backgroundColor = color.color
             }
         }
@@ -31,7 +33,7 @@ class FocusedCollectionViewCell: UICollectionViewCell {
         // Delta indicates the percentage of the height change from the standard height to the featured height
         let delta = 1 - (featuredHeight - frame.height) / (featuredHeight - standardHeight)
         let scale = max(delta, 0.5)
-        name.alpha = delta
-        name.transform = CGAffineTransform(scaleX: scale, y: scale)
+        nameLabel.alpha = delta
+        nameLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
     }
 }
