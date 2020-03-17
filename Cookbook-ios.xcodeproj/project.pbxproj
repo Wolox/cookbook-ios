@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE09E6312421762400B35EF6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6302421762400B35EF6 /* Information.swift */; };
+		AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */; };
 		AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFC23F327D10065F778 /* CodeScannerController.swift */; };
 		AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFE23F328A10065F778 /* Scanner.swift */; };
 		AE48FE0123F32B150065F778 /* CodeScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE48FE0023F32B150065F778 /* CodeScannerView.xib */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
 		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
 		AE48FDFE23F328A10065F778 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		AE48FE0023F32B150065F778 /* CodeScannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeScannerView.xib; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			children = (
 				AE79BE9123BDBBB2004270F1 /* ViewNames.swift */,
 				AE49AB5E23C68EA6002FF78C /* Features.swift */,
+				AE09E6302421762400B35EF6 /* Information.swift */,
+				AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -228,6 +234,8 @@
 				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
+				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
+				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,

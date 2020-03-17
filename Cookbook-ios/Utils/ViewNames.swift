@@ -19,8 +19,3 @@ struct ViewNames {
     //MARK: - Code Scanner
     static let codeScannerView = "CodeScannerView"
 }
-
-struct Information {
-    let title: String
-    let content: String
-}
