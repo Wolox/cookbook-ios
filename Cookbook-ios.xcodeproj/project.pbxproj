@@ -7,21 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE09E6312421762400B35EF6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6302421762400B35EF6 /* Information.swift */; };
+		AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */; };
+		AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFC23F327D10065F778 /* CodeScannerController.swift */; };
+		AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFE23F328A10065F778 /* Scanner.swift */; };
+		AE48FE0123F32B150065F778 /* CodeScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE48FE0023F32B150065F778 /* CodeScannerView.xib */; };
+		AE49AB5F23C68EA6002FF78C /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB5E23C68EA6002FF78C /* Features.swift */; };
+		AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6123C6C477002FF78C /* UIImageExtension.swift */; };
+		AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6323C6C5B5002FF78C /* UIColorExtension.swift */; };
+		AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6523C6CAF3002FF78C /* UIBarButtonItem.swift */; };
+		AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */; };
+		AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */; };
+		AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE49AB6C23C6DFEF002FF78C /* InformationView.xib */; };
+		AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79BE9123BDBBB2004270F1 /* ViewNames.swift */; };
+		AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */; };
 		AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866C223B27899003879D0 /* AppDelegate.swift */; };
-		AEF866C523B27899003879D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866C423B27899003879D0 /* ViewController.swift */; };
-		AEF866C823B27899003879D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF866C623B27899003879D0 /* Main.storyboard */; };
 		AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF866C923B2789B003879D0 /* Assets.xcassets */; };
 		AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */; };
+		AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866D623B2796B003879D0 /* CarouselViewController.swift */; };
+		AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEF866D723B2796B003879D0 /* CarouselView.xib */; };
+		AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866DA23B2842D003879D0 /* CarouselCollectionViewCell.swift */; };
+		AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEF866DB23B2842D003879D0 /* CarouselCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
+		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
+		AE48FDFE23F328A10065F778 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		AE48FE0023F32B150065F778 /* CodeScannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeScannerView.xib; sourceTree = "<group>"; };
+		AE49AB5E23C68EA6002FF78C /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
+		AE49AB6123C6C477002FF78C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		AE49AB6323C6C5B5002FF78C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		AE49AB6523C6CAF3002FF78C /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
+		AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		AE49AB6C23C6DFEF002FF78C /* InformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationView.xib; sourceTree = "<group>"; };
+		AE79BE9123BDBBB2004270F1 /* ViewNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNames.swift; sourceTree = "<group>"; };
+		AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
 		AEF866BF23B27899003879D0 /* Cookbook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookbook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF866C223B27899003879D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEF866C423B27899003879D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AEF866C723B27899003879D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEF866C923B2789B003879D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF866CC23B2789B003879D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEF866CE23B2789B003879D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEF866D623B2796B003879D0 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		AEF866D723B2796B003879D0 /* CarouselView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
+		AEF866DA23B2842D003879D0 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		AEF866DB23B2842D003879D0 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +67,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE48FDFB23F327C20065F778 /* CodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				AE48FDFC23F327D10065F778 /* CodeScannerController.swift */,
+				AE48FDFE23F328A10065F778 /* Scanner.swift */,
+				AE48FE0023F32B150065F778 /* CodeScannerView.xib */,
+			);
+			path = CodeScanner;
+			sourceTree = "<group>";
+		};
+		AE49AB6023C6C469002FF78C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE49AB6123C6C477002FF78C /* UIImageExtension.swift */,
+				AE49AB6323C6C5B5002FF78C /* UIColorExtension.swift */,
+				AE49AB6523C6CAF3002FF78C /* UIBarButtonItem.swift */,
+				AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE49AB6923C6DFCE002FF78C /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */,
+				AE49AB6C23C6DFEF002FF78C /* InformationView.xib */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		AE79BE9023BDBB93004270F1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE79BE9123BDBBB2004270F1 /* ViewNames.swift */,
+				AE49AB5E23C68EA6002FF78C /* Features.swift */,
+				AE09E6302421762400B35EF6 /* Information.swift */,
+				AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		AEF866B623B27899003879D0 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +127,29 @@
 		AEF866C123B27899003879D0 /* Cookbook-ios */ = {
 			isa = PBXGroup;
 			children = (
+				AE49AB6023C6C469002FF78C /* Extensions */,
+				AE79BE9023BDBB93004270F1 /* Utils */,
+				AE49AB6923C6DFCE002FF78C /* Information */,
+				AEF866D423B2790E003879D0 /* Carousel */,
+				AE48FDFB23F327C20065F778 /* CodeScanner */,
 				AEF866C223B27899003879D0 /* AppDelegate.swift */,
-				AEF866C423B27899003879D0 /* ViewController.swift */,
-				AEF866C623B27899003879D0 /* Main.storyboard */,
 				AEF866C923B2789B003879D0 /* Assets.xcassets */,
 				AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */,
 				AEF866CE23B2789B003879D0 /* Info.plist */,
 			);
 			path = "Cookbook-ios";
+			sourceTree = "<group>";
+		};
+		AEF866D423B2790E003879D0 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				AEF866D623B2796B003879D0 /* CarouselViewController.swift */,
+				AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */,
+				AEF866D723B2796B003879D0 /* CarouselView.xib */,
+				AEF866DA23B2842D003879D0 /* CarouselCollectionViewCell.swift */,
+				AEF866DB23B2842D003879D0 /* CarouselCollectionViewCell.xib */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +210,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE48FE0123F32B150065F778 /* CodeScannerView.xib in Resources */,
+				AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */,
 				AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */,
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
-				AEF866C823B27899003879D0 /* Main.storyboard in Resources */,
+				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
+				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +226,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF866C523B27899003879D0 /* ViewController.swift in Sources */,
+				AE49AB5F23C68EA6002FF78C /* Features.swift in Sources */,
+				AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */,
+				AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */,
+				AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */,
+				AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */,
+				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
+				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
+				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
+				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
+				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
+				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
+				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
+				AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */,
+				AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AEF866C623B27899003879D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEF866C723B27899003879D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7XS5GQGS29;
+				DEVELOPMENT_TEAM = DS75S43G4U;
 				INFOPLIST_FILE = "Cookbook-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7XS5GQGS29;
+				DEVELOPMENT_TEAM = DS75S43G4U;
 				INFOPLIST_FILE = "Cookbook-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
