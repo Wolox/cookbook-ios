@@ -20,7 +20,7 @@ struct ViewNames {
     static let codeScannerView = "CodeScannerView"
     
     //MARK: - Focused table
-    static let focusedCollectionView = "FocusedTableView"
+    static let focusedCollectionView = "FocusedCollectionView"
     static let focusedCollectionViewCell = "FocusedCollectionViewCell"
 }
 
