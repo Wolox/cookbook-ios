@@ -38,7 +38,7 @@ enum Features: CaseIterable {
         case .codeScanner:
             return CodeScannerController(nibName: ViewNames.codeScannerView, bundle: nil)
         case .focusedTable:
-            return FocusedTableController(nibName: ViewNames.focusedTableView, bundle: nil)
+            return FocusedCollectionController(nibName: ViewNames.focusedCollectionView, bundle: nil)
         default:
             return GeneralViewController()
         }

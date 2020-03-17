@@ -18,8 +18,12 @@
 		AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */; };
 		AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE49AB6C23C6DFEF002FF78C /* InformationView.xib */; };
 		AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79BE9123BDBBB2004270F1 /* ViewNames.swift */; };
-		AEA24FAC241315CD00850AC0 /* FocusedTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAB241315CD00850AC0 /* FocusedTableController.swift */; };
+		AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */; };
 		AEA24FAE241315E000850AC0 /* FocusedTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA24FAD241315E000850AC0 /* FocusedTableView.xib */; };
+		AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAF24131C5A00850AC0 /* FocusedCollectionViewCell.swift */; };
+		AEA24FB224131C6900850AC0 /* FocusedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA24FB124131C6900850AC0 /* FocusedCollectionViewCell.xib */; };
+		AEA24FB4241320A900850AC0 /* FocusedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FB3241320A900850AC0 /* FocusedLayout.swift */; };
+		AEA24FB62413214C00850AC0 /* FocusedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FB52413214C00850AC0 /* FocusedData.swift */; };
 		AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */; };
 		AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866C223B27899003879D0 /* AppDelegate.swift */; };
 		AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF866C923B2789B003879D0 /* Assets.xcassets */; };
@@ -42,8 +46,12 @@
 		AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		AE49AB6C23C6DFEF002FF78C /* InformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationView.xib; sourceTree = "<group>"; };
 		AE79BE9123BDBBB2004270F1 /* ViewNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNames.swift; sourceTree = "<group>"; };
-		AEA24FAB241315CD00850AC0 /* FocusedTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedTableController.swift; sourceTree = "<group>"; };
+		AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedCollectionController.swift; sourceTree = "<group>"; };
 		AEA24FAD241315E000850AC0 /* FocusedTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusedTableView.xib; sourceTree = "<group>"; };
+		AEA24FAF24131C5A00850AC0 /* FocusedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedCollectionViewCell.swift; sourceTree = "<group>"; };
+		AEA24FB124131C6900850AC0 /* FocusedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusedCollectionViewCell.xib; sourceTree = "<group>"; };
+		AEA24FB3241320A900850AC0 /* FocusedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedLayout.swift; sourceTree = "<group>"; };
+		AEA24FB52413214C00850AC0 /* FocusedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedData.swift; sourceTree = "<group>"; };
 		AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
 		AEF866BF23B27899003879D0 /* Cookbook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookbook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF866C223B27899003879D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE09E62E2421701300B35EF6 /* FocusedCell */ = {
+			isa = PBXGroup;
+			children = (
+				AEA24FAF24131C5A00850AC0 /* FocusedCollectionViewCell.swift */,
+				AEA24FB124131C6900850AC0 /* FocusedCollectionViewCell.xib */,
+			);
+			path = FocusedCell;
+			sourceTree = "<group>";
+		};
+		AE09E62F2421704600B35EF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEA24FB52413214C00850AC0 /* FocusedData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AE48FDFB23F327C20065F778 /* CodeScanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +134,11 @@
 		AEA24FAA241315B800850AC0 /* FocusedTable */ = {
 			isa = PBXGroup;
 			children = (
-				AEA24FAB241315CD00850AC0 /* FocusedTableController.swift */,
+				AE09E62F2421704600B35EF6 /* Model */,
+				AE09E62E2421701300B35EF6 /* FocusedCell */,
+				AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */,
 				AEA24FAD241315E000850AC0 /* FocusedTableView.xib */,
+				AEA24FB3241320A900850AC0 /* FocusedLayout.swift */,
 			);
 			path = FocusedTable;
 			sourceTree = "<group>";
@@ -224,6 +252,7 @@
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
 				AEA24FAE241315E000850AC0 /* FocusedTableView.xib in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
+				AEA24FB224131C6900850AC0 /* FocusedCollectionViewCell.xib in Resources */,
 				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE49AB5F23C68EA6002FF78C /* Features.swift in Sources */,
+				AEA24FB4241320A900850AC0 /* FocusedLayout.swift in Sources */,
 				AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */,
 				AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */,
 				AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */,
@@ -243,11 +273,13 @@
 				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
-				AEA24FAC241315CD00850AC0 /* FocusedTableController.swift in Sources */,
+				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
+				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
 				AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */,
+				AEA24FB62413214C00850AC0 /* FocusedData.swift in Sources */,
 				AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
