@@ -79,6 +79,19 @@ enum Features: CaseIterable {
             
             - Alert messages and actions can be modified
             """
+        case .focusedTable:
+            return """
+            - Focused item will be always at the top
+            
+            - Attributes that can be modified:
+                - Cell content
+                - Cell height and growth rate
+                - Growth and color rate of cell content
+                - Action when tapping a cell
+            
+            Note: it looks like a table but it's not
+            """
+
         default:
             return ""
         }
