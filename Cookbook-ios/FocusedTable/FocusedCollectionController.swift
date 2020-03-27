@@ -25,11 +25,7 @@ class FocusedCollectionController: GeneralViewController {
         focusedCollectionView.dataSource = self
         focusedCollectionView.register(UINib(nibName: ViewNames.focusedCollectionViewCell, bundle: nil),
                                        forCellWithReuseIdentifier: ViewNames.focusedCollectionViewCell)
-        focusedCollectionView.collectionViewLayout = configureCollectionViewFlowLayout(collectionView: focusedCollectionView)
-    }
-    
-    func configureCollectionViewFlowLayout(collectionView: UICollectionView) -> UICollectionViewLayout {
-        return FocusedLayout()
+        focusedCollectionView.collectionViewLayout = FocusedLayout()
     }
 }
 

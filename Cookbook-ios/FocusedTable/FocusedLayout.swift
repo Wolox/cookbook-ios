@@ -39,29 +39,29 @@ class FocusedLayout: UICollectionViewLayout {
     // The amount the user needs to scroll before the featured cell changes
     let dragOffset: CGFloat = 180.0
     
-    var cache: [UICollectionViewLayoutAttributes] = []
+    var attributesCache: [UICollectionViewLayoutAttributes] = []
     
     // Returns the item index of the currently featured cell
     var featuredItemIndex: Int {
         // Use max to make sure the featureItemIndex is never < 0
-        return max(0, Int(collectionView!.contentOffset.y / dragOffset))
+        return max(0, Int((collectionView?.contentOffset.y ?? 0) / dragOffset))
     }
     
     // Returns a value between 0 and 1 that represents how close the next cell is to becoming the featured cell
     var nextItemPercentageOffset: CGFloat {
-        return (collectionView!.contentOffset.y / dragOffset) - CGFloat(featuredItemIndex)
+        return ((collectionView?.contentOffset.y ?? 0) / dragOffset) - CGFloat(featuredItemIndex)
     }
     
     var width: CGFloat {
-        return collectionView!.bounds.width
+        return collectionView?.bounds.width ?? 0
     }
     
     var height: CGFloat {
-        return collectionView!.bounds.height
+        return collectionView?.bounds.height ?? 0
     }
     
     var numberOfItems: Int {
-        return collectionView!.numberOfItems(inSection: 0)
+        return collectionView?.numberOfItems(inSection: 0) ?? 0
     }
 }
 
@@ -73,7 +73,7 @@ extension FocusedLayout {
     
     override func prepare() {
         guard let collectionView = collectionView else { return }
-        cache.removeAll()
+        attributesCache.removeAll()
         let standardHeight = FocusedLayoutConstants.standardHeight
         let featuredHeight = FocusedLayoutConstants.featuredHeight
         
@@ -89,8 +89,8 @@ extension FocusedLayout {
             
             if indexPath.item == featuredItemIndex {
                 let yOffset = standardHeight * nextItemPercentageOffset
-                y = collectionView.contentOffset.y - yOffset
                 height = featuredHeight
+                y = collectionView.contentOffset.y - yOffset
             } else if indexPath.item == featuredItemIndex + 1 && indexPath.item != numberOfItems  {
                 let maxY = y + standardHeight
                 height = standardHeight + max((featuredHeight - standardHeight) * nextItemPercentageOffset, 0)
@@ -99,7 +99,7 @@ extension FocusedLayout {
             
             frame = CGRect(x: 0, y: y, width: width, height: height)
             attributes.frame = frame
-            cache.append(attributes)
+            attributesCache.append(attributes)
             y = frame.maxY
         }
     }
@@ -107,7 +107,7 @@ extension FocusedLayout {
     // Return all attributes in the cache whose frame intersects with the rect passed to the method
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         var layoutAttributes: [UICollectionViewLayoutAttributes] = []
-        for attributes in cache {
+        for attributes in attributesCache {
             if attributes.frame.intersects(rect) {
                 layoutAttributes.append(attributes)
             }

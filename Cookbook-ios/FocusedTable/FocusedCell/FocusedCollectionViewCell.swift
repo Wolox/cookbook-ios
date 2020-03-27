@@ -16,8 +16,8 @@ class FocusedCollectionViewCell: UICollectionViewCell {
     var color: Color? {
         didSet {
             if let color = color {
-                nameLabel.text = color.name
-                descriptionLabel.text = color.description
+                nameLabel.text = color.hexaCode
+                descriptionLabel.text = color.name
                 coverView.backgroundColor = color.color
             }
         }
