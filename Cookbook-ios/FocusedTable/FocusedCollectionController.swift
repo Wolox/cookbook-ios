@@ -45,4 +45,9 @@ extension FocusedCollectionController:  UICollectionViewDelegate, UICollectionVi
         cell.color = _colors[indexPath.row]
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let offsetPoint = CGPoint(x:0,y: indexPath.row * 180)
+        collectionView.setContentOffset(offsetPoint, animated: true)
+    }
 }
