@@ -27,6 +27,7 @@ enum Features: CaseIterable {
         switch self {
         case .carousel: return  UIImage()
         case .codeScanner: return UIImage.scannerImage
+        case .focusedTable: return UIImage.focusedImage
         default: return UIImage()
         }
     }
