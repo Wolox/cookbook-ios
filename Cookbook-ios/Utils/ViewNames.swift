@@ -23,8 +23,3 @@ struct ViewNames {
     static let focusedCollectionView = "FocusedCollectionView"
     static let focusedCollectionViewCell = "FocusedCollectionViewCell"
 }
-
-struct Information {
-    let title: String
-    let content: String
-}

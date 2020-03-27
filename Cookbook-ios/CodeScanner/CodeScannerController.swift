@@ -42,13 +42,13 @@ class CodeScannerController: GeneralViewController, AVCaptureMetadataOutputObjec
 private extension CodeScannerController {
     func validateCameraAccess() {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
-            showErrorAlert(message: "You don't have a camera")
+            showErrorAlert(message: ScannerStringConstants.noCameraAccessMessage)
             return
         }
         
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { [unowned self] hasAccess in
             guard hasAccess else {
-                self.showErrorAlert(message: "Your camera access was rejected. Please change this configuration in Settings")
+                self.showErrorAlert(message: ScannerStringConstants.changeCameraConfiguration)
                 return
             }
             
@@ -57,10 +57,10 @@ private extension CodeScannerController {
     }
     
     func showErrorAlert(message: String) {
-        let alert = UIAlertController(title: "No camera access",
+        let alert = UIAlertController(title: ScannerStringConstants.noCameraAccess,
                                       message: message,
                                       preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        let okAction = UIAlertAction(title: ScannerStringConstants.ok, style: .cancel, handler: nil)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
@@ -94,10 +94,10 @@ private extension CodeScannerController {
 // MARK: - Capture Metadata Output Objects Delegate
 extension CodeScannerController {
     private func handleCode(code: String) {
-        let alert = UIAlertController(title: "Scanned code",
+        let alert = UIAlertController(title: ScannerStringConstants.scannedCode,
                                       message: code,
                                       preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Scan again", style: .cancel, handler: { _ in self.validateCameraAccess() })
+        let okAction = UIAlertAction(title: ScannerStringConstants.scanAgain, style: .cancel, handler: { _ in self.validateCameraAccess() })
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }

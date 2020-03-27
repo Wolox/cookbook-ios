@@ -24,7 +24,7 @@ class CarouselFlowLayout: UICollectionViewFlowLayout {
     private var state = LayoutState(size: .zero, direction: .horizontal)
     
     /**
-     Creates a Collectiion view flow layout that handles cells presentation
+     Creates a Collection view flow layout that handles cells presentation
      
      - Parameter sideItemScale: Scale percentage for the size of the side cells
      - Parameter sideItemAlpha: Alpha for the side cells
