@@ -30,26 +30,26 @@ import UIKit
 
 struct FocusedLayoutConstants {
     static let standardHeight: CGFloat = 100
-    static let featuredHeight: CGFloat = 280
+    static let extendedHeight: CGFloat = 280
 }
 
 // MARK: Properties and Variables
 
 class FocusedLayout: UICollectionViewLayout {
-    // The amount the user needs to scroll before the featured cell changes
+    // The amount the user needs to scroll before the extended cell changes
     let dragOffset: CGFloat = 180.0
     
     var attributesCache: [UICollectionViewLayoutAttributes] = []
     
-    // Returns the item index of the currently featured cell
-    var featuredItemIndex: Int {
-        // Use max to make sure the featureItemIndex is never < 0
+    // Returns the item index of the currently extended cell
+    var extendedItemIndex: Int {
+        // Use max to make sure the extendedItemIndex is never < 0
         return max(0, Int((collectionView?.contentOffset.y ?? 0) / dragOffset))
     }
     
-    // Returns a value between 0 and 1 that represents how close the next cell is to becoming the featured cell
+    // Returns a value between 0 and 1 that represents how close the next cell is to becoming the extended cell
     var nextItemPercentageOffset: CGFloat {
-        return ((collectionView?.contentOffset.y ?? 0) / dragOffset) - CGFloat(featuredItemIndex)
+        return ((collectionView?.contentOffset.y ?? 0) / dragOffset) - CGFloat(extendedItemIndex)
     }
     
     var width: CGFloat {
@@ -75,7 +75,7 @@ extension FocusedLayout {
         guard let collectionView = collectionView else { return }
         attributesCache.removeAll()
         let standardHeight = FocusedLayoutConstants.standardHeight
-        let featuredHeight = FocusedLayoutConstants.featuredHeight
+        let extendedHeight = FocusedLayoutConstants.extendedHeight
         
         var frame = CGRect.zero
         var y: CGFloat = 0
@@ -87,13 +87,13 @@ extension FocusedLayout {
             attributes.zIndex = index
             var height = standardHeight
             
-            if indexPath.item == featuredItemIndex {
+            if indexPath.item == extendedItemIndex {
                 let yOffset = standardHeight * nextItemPercentageOffset
-                height = featuredHeight
+                height = extendedHeight
                 y = collectionView.contentOffset.y - yOffset
-            } else if indexPath.item == featuredItemIndex + 1 && indexPath.item != numberOfItems  {
+            } else if indexPath.item == extendedItemIndex + 1 && indexPath.item != numberOfItems  {
                 let maxY = y + standardHeight
-                height = standardHeight + max((featuredHeight - standardHeight) * nextItemPercentageOffset, 0)
+                height = standardHeight + max((extendedHeight - standardHeight) * nextItemPercentageOffset, 0)
                 y = maxY - height
             }
             

@@ -28,10 +28,10 @@ class FocusedCollectionViewCell: UICollectionViewCell {
         super.apply(layoutAttributes)
         
         let standardHeight = FocusedLayoutConstants.standardHeight
-        let featuredHeight = FocusedLayoutConstants.featuredHeight
+        let extendedHeight = FocusedLayoutConstants.extendedHeight
         
-        // Delta indicates the percentage of the height change from the standard height to the featured height
-        let delta = 1 - (featuredHeight - frame.height) / (featuredHeight - standardHeight)
+        // Delta indicates the percentage of the height change from the standard height to the extended height
+        let delta = 1 - (extendedHeight - frame.height) / (extendedHeight - standardHeight)
         hexaLabel.alpha = delta
         hexaLabel.transform = CGAffineTransform(scaleX: delta, y: delta)
     }
