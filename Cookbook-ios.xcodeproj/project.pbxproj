@@ -27,6 +27,8 @@
 		AEA24FB4241320A900850AC0 /* FocusedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FB3241320A900850AC0 /* FocusedLayout.swift */; };
 		AEA24FB62413214C00850AC0 /* FocusedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FB52413214C00850AC0 /* FocusedData.swift */; };
 		AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */; };
+		AEEDB724243259B9005FF6FD /* SocialSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEDB723243259B9005FF6FD /* SocialSignInController.swift */; };
+		AEEDB726243259C4005FF6FD /* SocialSignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEDB725243259C4005FF6FD /* SocialSignInView.xib */; };
 		AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866C223B27899003879D0 /* AppDelegate.swift */; };
 		AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF866C923B2789B003879D0 /* Assets.xcassets */; };
 		AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */; };
@@ -57,6 +59,8 @@
 		AEA24FB3241320A900850AC0 /* FocusedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedLayout.swift; sourceTree = "<group>"; };
 		AEA24FB52413214C00850AC0 /* FocusedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedData.swift; sourceTree = "<group>"; };
 		AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
+		AEEDB723243259B9005FF6FD /* SocialSignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignInController.swift; sourceTree = "<group>"; };
+		AEEDB725243259C4005FF6FD /* SocialSignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialSignInView.xib; sourceTree = "<group>"; };
 		AEF866BF23B27899003879D0 /* Cookbook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookbook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF866C223B27899003879D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF866C923B2789B003879D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 			path = FocusedTable;
 			sourceTree = "<group>";
 		};
+		AEEDB72224325967005FF6FD /* SocialSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				AEEDB723243259B9005FF6FD /* SocialSignInController.swift */,
+				AEEDB725243259C4005FF6FD /* SocialSignInView.xib */,
+			);
+			path = SocialSignIn;
+			sourceTree = "<group>";
+		};
 		AEF866B623B27899003879D0 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +187,7 @@
 				AEF866D423B2790E003879D0 /* Carousel */,
 				AE48FDFB23F327C20065F778 /* CodeScanner */,
 				AEA24FAA241315B800850AC0 /* FocusedTable */,
+				AEEDB72224325967005FF6FD /* SocialSignIn */,
 				AEF866C223B27899003879D0 /* AppDelegate.swift */,
 				AEF866C923B2789B003879D0 /* Assets.xcassets */,
 				AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */,
@@ -258,6 +272,7 @@
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
 				AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
+				AEEDB726243259C4005FF6FD /* SocialSignInView.xib in Resources */,
 				AEA24FB224131C6900850AC0 /* FocusedCollectionViewCell.xib in Resources */,
 				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
 			);
@@ -276,6 +291,7 @@
 				AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */,
 				AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */,
 				AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */,
+				AEEDB724243259B9005FF6FD /* SocialSignInController.swift in Sources */,
 				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,

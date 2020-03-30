@@ -16,10 +16,13 @@ struct ViewNames {
     // MARK: - Information
     static let informationView = "InformationView"
     
-    //MARK: - Code Scanner
+    // MARK: - Code Scanner
     static let codeScannerView = "CodeScannerView"
     
-    //MARK: - Focused table
+    // MARK: - Focused table
     static let focusedCollectionView = "FocusedCollectionView"
     static let focusedCollectionViewCell = "FocusedCollectionViewCell"
+    
+    // MARK: - Social Sign in
+    static let socialSignInView = "SocialSignInView"
 }
