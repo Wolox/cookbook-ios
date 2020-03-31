@@ -80,16 +80,17 @@ private extension SocialSignInController {
 // MARK: - Button actions
 extension SocialSignInController {
     @IBAction func facebookLogin() {
+        // Check for an existing token, if it does not exists means there is no active sesion and call facebook signin
         if let _ = AccessToken.current {
             showMessage(SigninStringConstants.facebookSignedin)
         } else {
-            _facebookManager.login(in: self, completionHandler: { [weak self] name, email in
+            _facebookManager.signin(in: self, completionHandler: { [weak self] name, email in
             self?.updateUserData(name: name, email: email)})
         }
     }
     
     @IBAction func logout() {
-        _ = _facebookManager.logout()
+        _ = _facebookManager.signout()
         updateExistingSesion()
     }
 }
