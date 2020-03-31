@@ -11,14 +11,14 @@ import UIKit
 enum Features: CaseIterable {
     case carousel
     case codeScanner
-    case test
+    case focusedTable
     case test2
     
     var featureName: String {
         switch self {
         case .carousel: return "Carousel"
         case .codeScanner: return "Code Scanner"
-        case .test: return "Test"
+        case .focusedTable: return "Focused table"
         case .test2: return "Test 2"
         }
     }
@@ -27,6 +27,7 @@ enum Features: CaseIterable {
         switch self {
         case .carousel: return  UIImage()
         case .codeScanner: return UIImage.scannerImage
+        case .focusedTable: return UIImage.focusedImage
         default: return UIImage()
         }
     }
@@ -37,6 +38,8 @@ enum Features: CaseIterable {
             return CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
         case .codeScanner:
             return CodeScannerController(nibName: ViewNames.codeScannerView, bundle: nil)
+        case .focusedTable:
+            return FocusedCollectionController(nibName: ViewNames.focusedCollectionView, bundle: nil)
         default:
             return GeneralViewController()
         }
@@ -76,6 +79,19 @@ enum Features: CaseIterable {
             
             - Alert messages and actions can be modified
             """
+        case .focusedTable:
+            return """
+            - Focused item will be always at the top
+            
+            - Attributes that can be modified:
+                - Cell content
+                - Cell height and growth rate
+                - Growth and color rate of cell content
+                - Action when tapping a cell
+            
+            Note: it looks like a table but it's not
+            """
+
         default:
             return ""
         }
