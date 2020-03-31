@@ -11,9 +11,9 @@ import FacebookLogin
 import FacebookCore
 
 protocol SocialNetworkSigninProtocol {
-    typealias loginCompletionHandler = (String?, String?) -> Void
-    func login(in viewController: UIViewController, completionHandler: @escaping loginCompletionHandler)
-    func logout()
+    typealias signinCompletionHandler = (String?, String?) -> Void
+    func signin(in viewController: UIViewController, completionHandler: @escaping signinCompletionHandler)
+    func signout()
 }
 
 /* If your app asks for more than the profile default fields and email, Facebook must review it before you release it. Please see this documentation https://developers.facebook.com/docs/facebook-login/review for reviewing your app
@@ -22,18 +22,18 @@ protocol SocialNetworkSigninProtocol {
 class FacebookSigninManager: SocialNetworkSigninProtocol {
     let loginManager = LoginManager()
     
-    func login(in viewController: UIViewController, completionHandler: @escaping loginCompletionHandler) {
+    func signin(in viewController: UIViewController, completionHandler: @escaping signinCompletionHandler) {
         // Set the data permissions you require for your appliation
         loginManager.logIn(permissions: [ .publicProfile, .email ],
                            viewController: viewController,
-                           completion: { result in self.getFacebookData(result, completionHandler: completionHandler) })
+                           completion: { result in self.loginManagerDidComplete(result, completionHandler: completionHandler) })
     }
     
-    func logout() {
+    func signout() {
         loginManager.logOut()
     }
     
-    private func getFacebookData(_ result: LoginResult, completionHandler: @escaping loginCompletionHandler) {
+    private func loginManagerDidComplete(_ result: LoginResult, completionHandler: @escaping signinCompletionHandler) {
         switch result {
         case .success(granted: _, declined: _, token: _):
             getFacebookUserData(completionHandler: completionHandler)
@@ -44,7 +44,7 @@ class FacebookSigninManager: SocialNetworkSigninProtocol {
         }
     }
     
-    func getFacebookUserData(completionHandler: @escaping loginCompletionHandler) {
+    func getFacebookUserData(completionHandler: @escaping signinCompletionHandler) {
         // Set the data you need to get from user's public profile https://developers.facebook.com/docs/swift/reference/structs/userprofile.html
         let params = ["fields": "name, email, picture.type(large)"]
         let graphRequest = GraphRequest(graphPath: "me", parameters: params)
