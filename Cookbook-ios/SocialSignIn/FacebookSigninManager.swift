@@ -11,7 +11,7 @@ import FacebookLogin
 import FacebookCore
 
 protocol SocialNetworkSigninProtocol {
-    typealias signinCompletionHandler = (String?, String?) -> Void
+    typealias signinCompletionHandler = (UserData?) -> Void
     func signin(in viewController: UIViewController, completionHandler: @escaping signinCompletionHandler)
     func signout()
 }
@@ -50,14 +50,22 @@ class FacebookSigninManager: SocialNetworkSigninProtocol {
         let graphRequest = GraphRequest(graphPath: "me", parameters: params)
         graphRequest.start(completionHandler: { (connection, result, error) -> Void in
             guard error == nil else {
-                completionHandler(nil, nil)
+                completionHandler(nil)
                 return
             }
             
             let result = result as AnyObject
             let name  = result["name"] as? String
             let email = result["email"] as? String
-            completionHandler(name, email)
+            let imageURL = ((result["picture"] as? [String: Any])?["data"] as? [String: Any])?["url"] as? String
+            let userData = UserData(name: name, email: email, imageString: imageURL)
+            completionHandler(userData)
         })
     }
+}
+
+struct UserData {
+    let name: String?
+    let email: String?
+    let imageString: String?
 }

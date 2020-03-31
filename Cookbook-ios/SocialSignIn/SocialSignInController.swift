@@ -35,15 +35,17 @@ class SocialSignInController: GeneralViewController {
     }
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
     
-    private var userName: String? {
+    private var userData: UserData? {
         didSet {
-            nameLabel.text = userName ?? SigninStringConstants.noValidName
-        }
-    }
-    private var userEmail: String? {
-        didSet {
-            emailLabel.text = userEmail ?? SigninStringConstants.noValidEmail
+            nameLabel.text = userData?.name ?? SigninStringConstants.noValidName
+            emailLabel.text = userData?.email ?? SigninStringConstants.noValidEmail
+            if let imageString = userData?.imageString {
+                profileImage.download(from: imageString, contentMode: .scaleAspectFit)
+            } else {
+                profileImage.image = .emptyProfilePicture
+            }
         }
     }
     
@@ -60,14 +62,13 @@ class SocialSignInController: GeneralViewController {
 
 private extension SocialSignInController {
     func updateExistingSesion() {
-        _facebookManager.getFacebookUserData { (name, email) in
-            self.updateUserData(name: name, email: email)
+        _facebookManager.getFacebookUserData { userData in
+            self.updateUserData(userData)
         }
     }
     
-    func updateUserData(name: String?, email: String?) {
-        userName = name
-        userEmail = email
+    func updateUserData(_ newUserData: UserData?) {
+        userData = newUserData
     }
     
     func showMessage(_ text: String) {
@@ -84,8 +85,8 @@ extension SocialSignInController {
         if let _ = AccessToken.current {
             showMessage(SigninStringConstants.facebookSignedin)
         } else {
-            _facebookManager.signin(in: self, completionHandler: { [weak self] name, email in
-            self?.updateUserData(name: name, email: email)})
+            _facebookManager.signin(in: self, completionHandler: { [weak self] userData in
+                self?.updateUserData(userData)})
         }
     }
     
