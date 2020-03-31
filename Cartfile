@@ -1,0 +1,2 @@
+github "Wolox/wolmo-core-ios" ~> 6.0.0
+github "facebook/facebook-swift-sdk"

@@ -1,0 +1,154 @@
+BCSymbolMap Version: 2.0
+-[FBSDKTVLoginViewControllerElement deviceLoginViewControllerDidCancel:]
+-[FBSDKTVLoginViewControllerElement deviceLoginViewControllerDidFinish:]
+-[FBSDKTVLoginViewControllerElement deviceLoginViewController:didFailWithError:]
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_FBSDKDeviceLoginViewControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_FBSDKDeviceLoginViewControllerDelegate
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKTVLoginViewControllerElement.m
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit
+-[FBSDKTVInterfaceFactory initWithInterfaceCreator:]
+-[FBSDKTVInterfaceFactory viewForElement:existingView:]
+_FBSDKDynamicallyLoadShareKitClassFromString
+-[FBSDKTVInterfaceFactory viewControllerForElement:existingViewController:]
+-[FBSDKTVInterfaceFactory URLForResource:]
+-[FBSDKTVInterfaceFactory permissionsFromElement:]
+-[FBSDKTVInterfaceFactory .cxx_destruct]
+___FBSDKDynamicallyLoadShareKitClassFromString_block_invoke
+_OBJC_IVAR_$_FBSDKTVInterfaceFactory._interfaceCreator
+l_OBJC_PROTOCOL_$_TVInterfaceCreating
+l_OBJC_LABEL_PROTOCOL_$_TVInterfaceCreating
+_FBSDKDynamicallyLoadShareKitClassFromString.classes
+_FBSDKDynamicallyLoadShareKitClassFromString.onceToken
+___block_descriptor_tmp
+___block_literal_global
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKTVInterfaceFactory.m
+__FBSDKDynamicallyLoadShareKitClassFromString_block_invoke
+FBSDKDynamicallyLoadShareKitClassFromString
+/Applications/Xcode 10.1.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/usr/include/dispatch/once.h
+-[FBSDKDeviceLoginButton dealloc]
+-[FBSDKDeviceLoginButton layoutSubviews]
+-[FBSDKDeviceLoginButton sizeThatFits:]
+-[FBSDKDeviceLoginButton updateConstraints]
+-[FBSDKDeviceLoginButton configureButton]
+-[FBSDKDeviceLoginButton _accessTokenDidChangeNotification:]
+-[FBSDKDeviceLoginButton _buttonPressed:]
+___41-[FBSDKDeviceLoginButton _buttonPressed:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[FBSDKDeviceLoginButton _loginTitle]
+-[FBSDKDeviceLoginButton _logOutTitle]
+-[FBSDKDeviceLoginButton _longLogInTitle]
+-[FBSDKDeviceLoginButton _shortLogInTitle]
+-[FBSDKDeviceLoginButton _updateContent]
+___40-[FBSDKDeviceLoginButton _updateContent]_block_invoke
+___copy_helper_block_.140
+___destroy_helper_block_.141
+-[FBSDKDeviceLoginButton deviceLoginViewControllerDidCancel:]
+-[FBSDKDeviceLoginButton deviceLoginViewControllerDidFinish:]
+-[FBSDKDeviceLoginButton deviceLoginViewController:didFailWithError:]
+-[FBSDKDeviceLoginButton delegate]
+-[FBSDKDeviceLoginButton setDelegate:]
+-[FBSDKDeviceLoginButton permissions]
+-[FBSDKDeviceLoginButton setPermissions:]
+-[FBSDKDeviceLoginButton redirectURL]
+-[FBSDKDeviceLoginButton setRedirectURL:]
+-[FBSDKDeviceLoginButton .cxx_destruct]
+_OBJC_IVAR_$_FBSDKDeviceLoginButton._userName
+_OBJC_IVAR_$_FBSDKDeviceLoginButton._userID
+___block_descriptor_tmp.143
+_OBJC_IVAR_$_FBSDKDeviceLoginButton._delegate
+_OBJC_IVAR_$_FBSDKDeviceLoginButton._permissions
+_OBJC_IVAR_$_FBSDKDeviceLoginButton._redirectURL
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKDeviceLoginButton.m
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKDeviceLoginButton.h
+__destroy_helper_block_
+__copy_helper_block_
+__40-[FBSDKDeviceLoginButton _updateContent]_block_invoke
+__41-[FBSDKDeviceLoginButton _buttonPressed:]_block_invoke
+-[FBSDKDeviceLoginViewController viewDidDisappear:]
+-[FBSDKDeviceLoginViewController viewDidLoad]
+-[FBSDKDeviceLoginViewController dealloc]
+-[FBSDKDeviceLoginViewController deviceLoginManager:startedWithCodeInfo:]
+-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]
+___79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke
+___79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke_2
+___copy_helper_block_.48
+___destroy_helper_block_.49
+___79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke.75
+___79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke_2.76
+___copy_helper_block_.79
+___destroy_helper_block_.80
+___copy_helper_block_.84
+___destroy_helper_block_.85
+___79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke.94
+___copy_helper_block_.99
+___destroy_helper_block_.100
+-[FBSDKDeviceLoginViewController isNetworkError:]
+-[FBSDKDeviceLoginViewController _notifySuccessForDelegate:token:]
+-[FBSDKDeviceLoginViewController _presentConfirmationForDelegate:token:name:]
+___77-[FBSDKDeviceLoginViewController _presentConfirmationForDelegate:token:name:]_block_invoke
+___77-[FBSDKDeviceLoginViewController _presentConfirmationForDelegate:token:name:]_block_invoke_2
+___copy_helper_block_.126
+___destroy_helper_block_.127
+___copy_helper_block_.129
+___destroy_helper_block_.130
+___77-[FBSDKDeviceLoginViewController _presentConfirmationForDelegate:token:name:]_block_invoke.132
+___copy_helper_block_.142
+___destroy_helper_block_.143
+-[FBSDKDeviceLoginViewController _initializeLoginManager]
+-[FBSDKDeviceLoginViewController _cancel]
+-[FBSDKDeviceLoginViewController delegate]
+-[FBSDKDeviceLoginViewController setDelegate:]
+-[FBSDKDeviceLoginViewController permissions]
+-[FBSDKDeviceLoginViewController setPermissions:]
+-[FBSDKDeviceLoginViewController redirectURL]
+-[FBSDKDeviceLoginViewController setRedirectURL:]
+-[FBSDKDeviceLoginViewController .cxx_destruct]
+_OBJC_IVAR_$_FBSDKDeviceLoginViewController._loginManager
+_OBJC_IVAR_$_FBSDKDeviceLoginViewController._isRetry
+___block_descriptor_tmp.51
+___block_descriptor_tmp.81
+___block_descriptor_tmp.87
+___block_descriptor_tmp.101
+___block_descriptor_tmp.128
+___block_descriptor_tmp.131
+___block_descriptor_tmp.144
+_OBJC_IVAR_$_FBSDKDeviceLoginViewController._permissions
+_OBJC_IVAR_$_FBSDKDeviceLoginViewController._delegate
+_OBJC_IVAR_$_FBSDKDeviceLoginViewController._redirectURL
+l_OBJC_PROTOCOL_$_FBSDKDeviceLoginManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_FBSDKDeviceLoginManagerDelegate
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKDeviceLoginViewController.m
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKDeviceLoginViewController.h
+__77-[FBSDKDeviceLoginViewController _presentConfirmationForDelegate:token:name:]_block_invoke.132
+__77-[FBSDKDeviceLoginViewController _presentConfirmationForDelegate:token:name:]_block_invoke_2
+__77-[FBSDKDeviceLoginViewController _presentConfirmationForDelegate:token:name:]_block_invoke
+__79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke.94
+__79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke_2.76
+__79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke.75
+__79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke_2
+__79-[FBSDKDeviceLoginViewController deviceLoginManager:completedWithResult:error:]_block_invoke
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKTVOSConstants.m
+-[FBSDKTVLoginButtonElement deviceLoginButtonDidCancel:]
+-[FBSDKTVLoginButtonElement deviceLoginButton:didFailWithError:]
+-[FBSDKTVLoginButtonElement deviceLoginButtonDidLogIn:]
+-[FBSDKTVLoginButtonElement deviceLoginButtonDidLogOut:]
+l_OBJC_PROTOCOL_$_FBSDKDeviceLoginButtonDelegate
+l_OBJC_LABEL_PROTOCOL_$_FBSDKDeviceLoginButtonDelegate
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKTVLoginButtonElement.m
++[FBSDKJS accessTokenString]
++[FBSDKJS hasGranted:]
++[FBSDKJS isLoggedIn]
++[FBSDKJS logEvent:]
++[FBSDKJS logEvent:parameters:]
++[FBSDKJS logPurchase:currency:]
++[FBSDKJS logPurchase:currency:parameters:]
+l_OBJC_PROTOCOL_$_JSExport
+l_OBJC_LABEL_PROTOCOL_$_JSExport
+l_OBJC_PROTOCOL_$_FBSDKJSExports
+l_OBJC_LABEL_PROTOCOL_$_FBSDKJSExports
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKJS.m
+/Users/joesusnick/Projects/iOS/facebook-ios-sdk/FBSDKTVOSKit/FBSDKTVOSKit/FBSDKTVShareButtonElement.m

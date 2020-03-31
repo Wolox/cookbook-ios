@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE09E6312421762400B35EF6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6302421762400B35EF6 /* Information.swift */; };
-		AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */; };
+		AE09E6332421763E00B35EF6 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* StringConstants.swift */; };
 		AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFC23F327D10065F778 /* CodeScannerController.swift */; };
 		AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFE23F328A10065F778 /* Scanner.swift */; };
 		AE48FE0123F32B150065F778 /* CodeScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE48FE0023F32B150065F778 /* CodeScannerView.xib */; };
@@ -19,7 +19,14 @@
 		AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */; };
 		AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */; };
 		AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE49AB6C23C6DFEF002FF78C /* InformationView.xib */; };
+		AE6EAFE8243285EF00829838 /* WolmoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6EAFE7243285EF00829838 /* WolmoCore.framework */; };
+		AE6EAFE92432889300829838 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEDB72A243281E1005FF6FD /* FacebookCore.framework */; };
+		AE6EAFEC2432890900829838 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEDB72C243281EE005FF6FD /* FacebookLogin.framework */; };
+		AE6EAFEE2432893800829838 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6EAFED2432893700829838 /* FBSDKLoginKit.framework */; };
+		AE6EAFEF2432896900829838 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6EAFEA243288A100829838 /* FBSDKCoreKit.framework */; };
 		AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79BE9123BDBBB2004270F1 /* ViewNames.swift */; };
+		AE84C7092432AA01001D96CF /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE84C7082432AA01001D96CF /* UIButtonExtension.swift */; };
+		AE84C70B2432ADF5001D96CF /* FacebookSigninManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE84C70A2432ADF5001D96CF /* FacebookSigninManager.swift */; };
 		AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */; };
 		AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA24FAD241315E000850AC0 /* FocusedCollectionView.xib */; };
 		AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAF24131C5A00850AC0 /* FocusedCollectionViewCell.swift */; };
@@ -40,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
-		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
+		AE09E6322421763E00B35EF6 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
 		AE48FDFE23F328A10065F778 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		AE48FE0023F32B150065F778 /* CodeScannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeScannerView.xib; sourceTree = "<group>"; };
@@ -51,7 +58,12 @@
 		AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		AE49AB6C23C6DFEF002FF78C /* InformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationView.xib; sourceTree = "<group>"; };
+		AE6EAFE7243285EF00829838 /* WolmoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WolmoCore.framework; path = Carthage/Build/iOS/WolmoCore.framework; sourceTree = "<group>"; };
+		AE6EAFEA243288A100829838 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		AE6EAFED2432893700829838 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		AE79BE9123BDBBB2004270F1 /* ViewNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNames.swift; sourceTree = "<group>"; };
+		AE84C7082432AA01001D96CF /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		AE84C70A2432ADF5001D96CF /* FacebookSigninManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSigninManager.swift; sourceTree = "<group>"; };
 		AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedCollectionController.swift; sourceTree = "<group>"; };
 		AEA24FAD241315E000850AC0 /* FocusedCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusedCollectionView.xib; sourceTree = "<group>"; };
 		AEA24FAF24131C5A00850AC0 /* FocusedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -61,6 +73,8 @@
 		AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
 		AEEDB723243259B9005FF6FD /* SocialSignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignInController.swift; sourceTree = "<group>"; };
 		AEEDB725243259C4005FF6FD /* SocialSignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialSignInView.xib; sourceTree = "<group>"; };
+		AEEDB72A243281E1005FF6FD /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
+		AEEDB72C243281EE005FF6FD /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = Carthage/Build/iOS/FacebookLogin.framework; sourceTree = "<group>"; };
 		AEF866BF23B27899003879D0 /* Cookbook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookbook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF866C223B27899003879D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF866C923B2789B003879D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +91,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6EAFEF2432896900829838 /* FBSDKCoreKit.framework in Frameworks */,
+				AE6EAFEE2432893800829838 /* FBSDKLoginKit.framework in Frameworks */,
+				AE6EAFE8243285EF00829838 /* WolmoCore.framework in Frameworks */,
+				AE6EAFE92432889300829838 /* FacebookCore.framework in Frameworks */,
+				AE6EAFEC2432890900829838 /* FacebookLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +136,7 @@
 				AE49AB6323C6C5B5002FF78C /* UIColorExtension.swift */,
 				AE49AB6523C6CAF3002FF78C /* UIBarButtonItem.swift */,
 				AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */,
+				AE84C7082432AA01001D96CF /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -136,7 +156,7 @@
 				AE79BE9123BDBBB2004270F1 /* ViewNames.swift */,
 				AE49AB5E23C68EA6002FF78C /* Features.swift */,
 				AE09E6302421762400B35EF6 /* Information.swift */,
-				AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */,
+				AE09E6322421763E00B35EF6 /* StringConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -158,8 +178,21 @@
 			children = (
 				AEEDB723243259B9005FF6FD /* SocialSignInController.swift */,
 				AEEDB725243259C4005FF6FD /* SocialSignInView.xib */,
+				AE84C70A2432ADF5001D96CF /* FacebookSigninManager.swift */,
 			);
 			path = SocialSignIn;
+			sourceTree = "<group>";
+		};
+		AEEDB729243281E0005FF6FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EAFED2432893700829838 /* FBSDKLoginKit.framework */,
+				AE6EAFEA243288A100829838 /* FBSDKCoreKit.framework */,
+				AE6EAFE7243285EF00829838 /* WolmoCore.framework */,
+				AEEDB72C243281EE005FF6FD /* FacebookLogin.framework */,
+				AEEDB72A243281E1005FF6FD /* FacebookCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AEF866B623B27899003879D0 = {
@@ -167,6 +200,7 @@
 			children = (
 				AEF866C123B27899003879D0 /* Cookbook-ios */,
 				AEF866C023B27899003879D0 /* Products */,
+				AEEDB729243281E0005FF6FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +252,7 @@
 				AEF866BB23B27899003879D0 /* Sources */,
 				AEF866BC23B27899003879D0 /* Frameworks */,
 				AEF866BD23B27899003879D0 /* Resources */,
+				AE6EAFE62432844700829838 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -280,6 +315,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE6EAFE62432844700829838 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WolmoCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookLogin.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKLoginKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEF866BB23B27899003879D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -296,8 +357,10 @@
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
 				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
+				AE84C70B2432ADF5001D96CF /* FacebookSigninManager.swift in Sources */,
+				AE84C7092432AA01001D96CF /* UIButtonExtension.swift in Sources */,
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
-				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
+				AE09E6332421763E00B35EF6 /* StringConstants.swift in Sources */,
 				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
@@ -444,6 +507,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS75S43G4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Cookbook-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +529,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS75S43G4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Cookbook-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

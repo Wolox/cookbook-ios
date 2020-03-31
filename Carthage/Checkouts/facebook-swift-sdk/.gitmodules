@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/facebook-objc-sdk"]
+	path = Carthage/Checkouts/facebook-objc-sdk
+	url = https://github.com/facebook/facebook-objc-sdk.git
