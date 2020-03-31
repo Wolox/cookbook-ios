@@ -27,6 +27,7 @@
 		AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79BE9123BDBBB2004270F1 /* ViewNames.swift */; };
 		AE84C7092432AA01001D96CF /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE84C7082432AA01001D96CF /* UIButtonExtension.swift */; };
 		AE84C70B2432ADF5001D96CF /* FacebookSigninManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE84C70A2432ADF5001D96CF /* FacebookSigninManager.swift */; };
+		AE84C70D2433CC01001D96CF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE84C70C2433CC01001D96CF /* UIImageViewExtension.swift */; };
 		AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */; };
 		AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA24FAD241315E000850AC0 /* FocusedCollectionView.xib */; };
 		AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAF24131C5A00850AC0 /* FocusedCollectionViewCell.swift */; };
@@ -64,6 +65,7 @@
 		AE79BE9123BDBBB2004270F1 /* ViewNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNames.swift; sourceTree = "<group>"; };
 		AE84C7082432AA01001D96CF /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		AE84C70A2432ADF5001D96CF /* FacebookSigninManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSigninManager.swift; sourceTree = "<group>"; };
+		AE84C70C2433CC01001D96CF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedCollectionController.swift; sourceTree = "<group>"; };
 		AEA24FAD241315E000850AC0 /* FocusedCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusedCollectionView.xib; sourceTree = "<group>"; };
 		AEA24FAF24131C5A00850AC0 /* FocusedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				AE49AB6523C6CAF3002FF78C /* UIBarButtonItem.swift */,
 				AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */,
 				AE84C7082432AA01001D96CF /* UIButtonExtension.swift */,
+				AE84C70C2433CC01001D96CF /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				AE09E6332421763E00B35EF6 /* StringConstants.swift in Sources */,
 				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
+				AE84C70D2433CC01001D96CF /* UIImageViewExtension.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
 				AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */,
