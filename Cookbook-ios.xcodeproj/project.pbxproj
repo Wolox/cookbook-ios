@@ -37,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CF13CCF243B74E9005C8166 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		0CF13CD1243B7517005C8166 /* PlacesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesView.xib; sourceTree = "<group>"; };
 		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
 		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CF13CCE243B7192005C8166 /* googlePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				0CF13CCF243B74E9005C8166 /* PlacesViewController.swift */,
+				0CF13CD1243B7517005C8166 /* PlacesView.xib */,
+			);
+			path = googlePlaces;
+			sourceTree = "<group>";
+		};
 		AE09E62E2421701300B35EF6 /* FocusedCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +179,7 @@
 		AEF866C123B27899003879D0 /* Cookbook-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0CF13CCE243B7192005C8166 /* googlePlaces */,
 				AE49AB6023C6C469002FF78C /* Extensions */,
 				AE79BE9023BDBB93004270F1 /* Utils */,
 				AE49AB6923C6DFCE002FF78C /* Information */,
@@ -257,6 +269,7 @@
 				AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */,
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
 				AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */,
+				0CF13CD2243B7517005C8166 /* PlacesView.xib in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
 				AEA24FB224131C6900850AC0 /* FocusedCollectionViewCell.xib in Resources */,
 				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
@@ -282,6 +295,7 @@
 				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
 				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
+				0CF13CD0243B74E9005C8166 /* PlacesViewController.swift in Sources */,
 				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
