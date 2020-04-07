@@ -24,5 +24,5 @@ struct ViewNames {
     static let focusedCollectionViewCell = "FocusedCollectionViewCell"
     
     //MARK: - Places
-    static let placesView = "PlacesView"
+    static let placesView = "PlacesMenuView"
 }

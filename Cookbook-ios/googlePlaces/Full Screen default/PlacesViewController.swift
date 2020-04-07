@@ -35,6 +35,7 @@ class PlacesViewController: GeneralViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = PlacesExample.fullScreen.rawValue
     }
 
 }

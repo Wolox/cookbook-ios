@@ -44,7 +44,7 @@ enum Features: CaseIterable {
         case .focusedTable:
             return FocusedCollectionController(nibName: ViewNames.focusedCollectionView, bundle: nil)
         case .googlePlaces:
-            return PlacesViewController(nibName: ViewNames.placesView, bundle: nil)
+            return PlacesMenuViewController(nibName: ViewNames.placesView, bundle: nil)
         default:
             return GeneralViewController()
         }
