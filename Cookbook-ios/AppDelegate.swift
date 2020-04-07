@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootViewController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
+        GMSPlacesClient.provideAPIKey("AIzaSyAMaZ8NbGqgl0afSID-vdCn_lZIzyDwDTA")
         return true
     }
 

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CF13CD0243B74E9005C8166 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF13CCF243B74E9005C8166 /* PlacesViewController.swift */; };
-		0CF13CD2243B7517005C8166 /* PlacesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF13CD1243B7517005C8166 /* PlacesView.xib */; };
 		0CF13CD5243B824D005C8166 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CD4243B824D005C8166 /* GooglePlaces.framework */; };
 		0CF13CD9243B82E3005C8166 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CF13CD8243B82E3005C8166 /* GooglePlaces.bundle */; };
 		0CF13CDB243B8391005C8166 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CDA243B8391005C8166 /* GoogleMapsBase.framework */; };
@@ -27,6 +25,8 @@
 		0CF13CF6243B8419005C8166 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CF5243B8419005C8166 /* QuartzCore.framework */; };
 		0CF13CF8243B8423005C8166 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CF7243B8423005C8166 /* SystemConfiguration.framework */; };
 		0CF13CFA243B843D005C8166 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CF9243B843D005C8166 /* UIKit.framework */; };
+		0CF13CFD243BAFF5005C8166 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF13CFB243BAFF5005C8166 /* PlacesViewController.swift */; };
+		0CF13CFE243BAFF5005C8166 /* PlacesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF13CFC243BAFF5005C8166 /* PlacesView.xib */; };
 		AE09E6312421762400B35EF6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6302421762400B35EF6 /* Information.swift */; };
 		AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */; };
 		AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFC23F327D10065F778 /* CodeScannerController.swift */; };
@@ -57,8 +57,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CF13CCF243B74E9005C8166 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
-		0CF13CD1243B7517005C8166 /* PlacesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesView.xib; sourceTree = "<group>"; };
 		0CF13CD4243B824D005C8166 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
 		0CF13CD8243B82E3005C8166 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		0CF13CDA243B8391005C8166 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
@@ -77,6 +75,8 @@
 		0CF13CF5243B8419005C8166 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0CF13CF7243B8423005C8166 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0CF13CF9243B843D005C8166 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0CF13CFB243BAFF5005C8166 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		0CF13CFC243BAFF5005C8166 /* PlacesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesView.xib; sourceTree = "<group>"; };
 		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
 		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
@@ -139,8 +139,8 @@
 		0CF13CCE243B7192005C8166 /* googlePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				0CF13CCF243B74E9005C8166 /* PlacesViewController.swift */,
-				0CF13CD1243B7517005C8166 /* PlacesView.xib */,
+				0CF13CFB243BAFF5005C8166 /* PlacesViewController.swift */,
+				0CF13CFC243BAFF5005C8166 /* PlacesView.xib */,
 			);
 			path = googlePlaces;
 			sourceTree = "<group>";
@@ -355,11 +355,11 @@
 			files = (
 				AE48FE0123F32B150065F778 /* CodeScannerView.xib in Resources */,
 				AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */,
+				0CF13CFE243BAFF5005C8166 /* PlacesView.xib in Resources */,
 				AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */,
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
 				0CF13CD9243B82E3005C8166 /* GooglePlaces.bundle in Resources */,
 				AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */,
-				0CF13CD2243B7517005C8166 /* PlacesView.xib in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
 				AEA24FB224131C6900850AC0 /* FocusedCollectionViewCell.xib in Resources */,
 				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
@@ -385,7 +385,7 @@
 				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
 				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
-				0CF13CD0243B74E9005C8166 /* PlacesViewController.swift in Sources */,
+				0CF13CFD243BAFF5005C8166 /* PlacesViewController.swift in Sources */,
 				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
