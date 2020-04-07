@@ -11,4 +11,5 @@ import UIKit
 extension UIColor {
     static let woloxGreen = UIColor(named: "WoloxGreen")!
     static let cardsBackground = UIColor.woloxGreen.withAlphaComponent(0.3)
+    static let standardBackground = UIColor(named: "StandardBackground")!
 }

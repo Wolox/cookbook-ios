@@ -33,6 +33,7 @@ extension PlacesMenuViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
         cell.setUpForPlacesMenu()
         cell.textLabel?.text = cells[indexPath.row].rawValue
+        cell.imageView?.image = cells[indexPath.row].image()
         return cell
     }
 }
@@ -52,8 +53,18 @@ enum PlacesExample: String, CaseIterable {
     func controller() -> GeneralViewController {
         switch self {
         case .fullScreen: return PlacesViewController(nibName: "PlacesView", bundle: nil)
+            // coming soon
         case .onScreenResult: return PlacesViewController(nibName: "PlacesView", bundle: nil)
+            // coming soon
         case .custom: return PlacesViewController(nibName: "PlacesView", bundle: nil)
+        }
+    }
+    
+    func image() -> UIImage? {
+        switch self {
+        case .fullScreen: return .fullscreenImage
+        case .onScreenResult: return .onScreenResult
+        case .custom: return .customResult
         }
     }
 }

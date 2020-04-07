@@ -23,6 +23,7 @@ class PlacesViewController: GeneralViewController {
         let fields: GMSPlaceField = GMSPlaceField(rawValue: UInt(GMSPlaceField.name.rawValue) |
           UInt(GMSPlaceField.placeID.rawValue))!
         autocompleteController.placeFields = fields
+        autocompleteController.tableCellBackgroundColor = .standardBackground
 
         // Specify a filter.
         let filter = GMSAutocompleteFilter()
