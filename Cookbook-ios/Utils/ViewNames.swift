@@ -22,4 +22,8 @@ struct ViewNames {
     //MARK: - Focused table
     static let focusedCollectionView = "FocusedCollectionView"
     static let focusedCollectionViewCell = "FocusedCollectionViewCell"
+    
+    //MARK: - Text Fields
+    static let textFieldView = "TextFieldsViewController"
+    static let textFieldCell = "TextFieldsCell"
 }

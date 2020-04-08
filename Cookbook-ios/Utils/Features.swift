@@ -12,6 +12,7 @@ enum Features: CaseIterable {
     case carousel
     case codeScanner
     case focusedTable
+    case textFields
     case test2
     
     var featureName: String {
@@ -20,6 +21,7 @@ enum Features: CaseIterable {
         case .codeScanner: return "Code Scanner"
         case .focusedTable: return "Focused table"
         case .test2: return "Test 2"
+        case .textFields: return "Text Fields"
         }
     }
     
@@ -28,6 +30,7 @@ enum Features: CaseIterable {
         case .carousel: return  UIImage()
         case .codeScanner: return UIImage.scannerImage
         case .focusedTable: return UIImage.focusedImage
+        case .textFields: return UIImage() // add an image
         default: return UIImage()
         }
     }
@@ -40,6 +43,8 @@ enum Features: CaseIterable {
             return CodeScannerController(nibName: ViewNames.codeScannerView, bundle: nil)
         case .focusedTable:
             return FocusedCollectionController(nibName: ViewNames.focusedCollectionView, bundle: nil)
+        case .textFields:
+            return TextFieldsViewController(nibName: ViewNames.textFieldView, bundle: nil)
         default:
             return GeneralViewController()
         }
@@ -91,7 +96,8 @@ enum Features: CaseIterable {
             
             Note: it looks like a table but it's not
             """
-
+        case .textFields:
+            return "" // add some decsription
         default:
             return ""
         }
