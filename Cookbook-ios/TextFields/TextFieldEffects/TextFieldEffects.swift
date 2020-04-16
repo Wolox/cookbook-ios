@@ -21,6 +21,9 @@ extension String {
 A TextFieldEffects object is a control that displays editable text and contains the boilerplates to setup unique animations for text entry and display. You typically use this class the same way you use UITextField.
 */
 open class TextFieldEffects : UITextField {
+    
+    public var name: String = ""
+    
     /**
      The type of animation a TextFieldEffect can perform.
      

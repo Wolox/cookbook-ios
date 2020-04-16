@@ -10,24 +10,36 @@ import UIKit
 
 class TextFieldsCell: UITableViewCell {
 
+    var _textField: TextFieldEffects? {
+        didSet {
+            loadTextField()
+            textFieldNameLabel.text = _textField?.name
+        }
+    }
+    
+    @IBOutlet weak var textFieldNameLabel: UILabel!
+    @IBOutlet weak var textFieldContainer: UIView!
+    @IBOutlet weak var confirmButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        let frame = CGRect(x: 20, y: center.y - 15, width: 200, height: 30)
-        let textField = KaedeTextField(frame: frame)
-        textField.placeholderColor = .darkGray
-        textField.foregroundColor = .lightGray
-        textField.backgroundColor = .lighterGray
-        textField.placeholder = "First Name"
-        
-        addSubview(textField)
         backgroundColor = .woloxGreen
     }
-
+    
+    override func prepareForReuse() {
+        _textField = nil
+    }
+    
+    private func loadTextField() {
+        guard let textField = _textField else { return }
+        let frame = CGRect(x: textFieldContainer.frame.origin.x, y: textFieldContainer.frame.origin.y, width: textFieldContainer.frame.width, height: textFieldContainer.frame.height)
+        textField.frame = frame
+//        textField.frame = textFieldContainer.layer.frame
+        textFieldContainer.addSubview(textField)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        super.setSelected(false, animated: animated)
     }
     
 }

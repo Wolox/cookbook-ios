@@ -22,6 +22,7 @@
 		4096D922243E441E003EB215 /* TextFieldsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4096D920243E441E003EB215 /* TextFieldsCell.swift */; };
 		4096D923243E441E003EB215 /* TextFieldsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4096D921243E441E003EB215 /* TextFieldsCell.xib */; };
 		4096D926243E4C0C003EB215 /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4096D925243E4C0C003EB215 /* TextFields.swift */; };
+		409E48092448E09A0071853A /* TextFieldsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E48082448E09A0071853A /* TextFieldsViewModel.swift */; };
 		AE09E6312421762400B35EF6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6302421762400B35EF6 /* Information.swift */; };
 		AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */; };
 		AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFC23F327D10065F778 /* CodeScannerController.swift */; };
@@ -68,6 +69,7 @@
 		4096D920243E441E003EB215 /* TextFieldsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsCell.swift; sourceTree = "<group>"; };
 		4096D921243E441E003EB215 /* TextFieldsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldsCell.xib; sourceTree = "<group>"; };
 		4096D925243E4C0C003EB215 /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		409E48082448E09A0071853A /* TextFieldsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsViewModel.swift; sourceTree = "<group>"; };
 		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
 		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
@@ -132,11 +134,12 @@
 		4096D91A243E3FD8003EB215 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
-				4096D924243E4BF4003EB215 /* Model */,
 				4096D904243E3FD2003EB215 /* TextFieldEffects */,
+				4096D924243E4BF4003EB215 /* Model */,
 				4096D91F243E4405003EB215 /* Cell */,
 				4096D91B243E4041003EB215 /* TextFieldsViewController.swift */,
 				4096D91C243E4041003EB215 /* TextFieldsViewController.xib */,
+				409E48082448E09A0071853A /* TextFieldsViewModel.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
 				4096D912243E3FD2003EB215 /* MinoruTextField.swift in Sources */,
 				4096D911243E3FD2003EB215 /* HoshiTextField.swift in Sources */,
+				409E48092448E09A0071853A /* TextFieldsViewModel.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
 				4096D910243E3FD2003EB215 /* YoshikoTextField.swift in Sources */,
 				4096D915243E3FD2003EB215 /* JiroTextField.swift in Sources */,

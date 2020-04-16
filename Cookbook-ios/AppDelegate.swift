@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         UINavigationBar.appearance().tintColor = UIColor.woloxGreen
         let viewController = CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
-        let rootViewController = UINavigationController(rootViewController: viewController)
+//        let rootViewController = UINavigationController(rootViewController: viewController) // Uncomment this
+        let rootViewController = TextFieldsViewController() // Remove this
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
         return true
