@@ -23,10 +23,7 @@ extension UIImage {
     static let customResult = getSystemImage(string: "hammer")
     
     static func getSystemImage(string: String) -> UIImage? {
-        if #available(iOS 13.0, *) {
-            return UIImage(systemName: string)
-        } else {
-            return nil
-        }
+        guard #available(iOS 13.0, *) else { return nil }
+        return UIImage(systemName: string)
     }
 }

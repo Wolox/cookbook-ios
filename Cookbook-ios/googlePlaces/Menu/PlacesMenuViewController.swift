@@ -16,11 +16,15 @@ class PlacesMenuViewController: GeneralViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTable()
+        title = Features.googlePlaces.featureName
+    }
+    
+    fileprivate func setupTable() {
         tableView.separatorStyle = .none
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        title = Features.googlePlaces.featureName
     }
 }
 
