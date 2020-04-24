@@ -1,0 +1,20 @@
+xcodeproj: ./WolmoCore.xcodeproj
+scheme: WolmoCore
+ignore:
+  - WolmoCoreTests/*
+  - Carthage/*
+  - WolmoCoreDemo/*
+  - AnimationDemo/*
+# UI can't be tested
+  - WolmoCore/Utilities/Alerts/AlertViewPresenter.swift
+  - WolmoCore/Utilities/DeviceType.swift
+  - WolmoCore/Extensions/UIKit/UIButton.swift
+  - WolmoCore/Extensions/UIKit/UIImageView.swift
+  - WolmoCore/Extensions/UIKit/UIView/Collapsable.swift
+  - WolmoCore/Extensions/UIKit/UIView/AddInto.swift
+  - WolmoCore/Extensions/UIKit/UIView/Borders.swift
+  - WolmoCore/Extensions/UIKit/UIView/Gradient.swift
+  - WolmoCore/Extensions/UIKit/UIView/SafeLayout.swift
+  - WolmoCore/Extensions/UIKit/UIView/GestureRecognizers/*
+  - WolmoCore/Extensions/UIKit/UIViewController.swift
+  - WolmoCore/Extensions/Animations/*

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>My Personal String Key</key>
+	<string>My key&apos;s value</string>
+	<key>My Personal Number Key</key>
+	<integer>5</integer>
+	<key>My Personal Boolean Key</key>
+	<true/>
+	<key>My Personal Date Key</key>
+	<date>2017-04-20T18:34:41Z</date>
+	<key>My Personal Data Key</key>
+	<data></data>
+	<key>My Personal Array Key</key>
+	<array>
+		<string>1asg7</string>
+		<string>2153a</string>
+	</array>
+	<key>My Personal Dictionary Key</key>
+	<dict>
+		<key>0</key>
+		<integer>5</integer>
+		<key>1</key>
+		<integer>7</integer>
+	</dict>
+	<key>My Personal String Key With inverted commas</key>
+	<string>This is a string with some &quot;quotation&quot;</string>
+	<key>My Empty string key</key>
+	<string></string>
+	<key>My Just inverted commas key</key>
+	<string>&quot;&quot;</string>
+	<key>My Empty array key</key>
+	<array/>
+	<key>My Empty data key</key>
+	<data></data>
+</dict>
+</plist>

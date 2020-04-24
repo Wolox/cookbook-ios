@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CodeScannerController" customModule="Cookbook_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraView" destination="iTh-gT-3Gq" id="ml5-y5-l4t"/>
+                <outlet property="view" destination="iN0-l3-epB" id="VHI-4j-r6o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTh-gT-3Gq">
+                    <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No camera access" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16E-i2-vli">
+                            <rect key="frame" x="88.5" y="361" width="237.5" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="16E-i2-vli" firstAttribute="centerX" secondItem="iTh-gT-3Gq" secondAttribute="centerX" id="imd-6u-ET4"/>
+                        <constraint firstItem="16E-i2-vli" firstAttribute="centerY" secondItem="iTh-gT-3Gq" secondAttribute="centerY" id="tMY-df-VtK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iTh-gT-3Gq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="L7R-4a-mN1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iTh-gT-3Gq" secondAttribute="bottom" constant="60" id="LAm-P7-Kxa"/>
+                <constraint firstItem="iTh-gT-3Gq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="V6L-fP-lXi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iTh-gT-3Gq" secondAttribute="trailing" id="nL4-qw-N4N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+    </objects>
+</document>
