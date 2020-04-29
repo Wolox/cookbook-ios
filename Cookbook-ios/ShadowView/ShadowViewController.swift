@@ -14,6 +14,8 @@ class ShadowViewController: GeneralViewController {
     
     @IBOutlet weak var prueba2: UIView!
     
+    @IBOutlet weak var prueba3: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
@@ -23,7 +25,11 @@ class ShadowViewController: GeneralViewController {
 
 extension ShadowViewController {
     func setUpUI() {
+        
         prueba1.applyShadow()
-        prueba2.applyShadow(color: UIColor.red.cgColor)
+        
+        prueba2.applyShadow(color: UIColor.red.cgColor, cornerRadius: 1)
+
+        prueba3.applyShadow(color: UIColor.red.cgColor, cornerRadius: prueba3.frame.width / 2)
     }
 }

@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="prueba1" destination="VE8-CH-9gX" id="DHc-Va-1YP"/>
                 <outlet property="prueba2" destination="Yc2-ow-0vd" id="OfI-Wx-ege"/>
+                <outlet property="prueba3" destination="CAx-82-JqC" id="6iG-6b-yAO"/>
                 <outlet property="view" destination="BRG-zy-Y8Z" id="Spd-jD-OJd"/>
             </connections>
         </placeholder>
@@ -21,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VE8-CH-9gX">
-                    <rect key="frame" x="87" y="166" width="240" height="128"/>
+                    <rect key="frame" x="87" y="74" width="240" height="128"/>
                     <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="Wbo-Uu-w7s"/>
@@ -29,20 +30,30 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yc2-ow-0vd">
-                    <rect key="frame" x="87" y="502" width="240" height="128"/>
+                    <rect key="frame" x="87" y="232" width="240" height="128"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="JYP-oW-jvn"/>
                         <constraint firstAttribute="width" constant="240" id="Vpk-6E-tgd"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAx-82-JqC">
+                    <rect key="frame" x="157" y="390" width="100" height="100"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2j3-f9-vXo"/>
+                        <constraint firstAttribute="width" secondItem="CAx-82-JqC" secondAttribute="height" multiplier="1:1" id="QXd-xb-R9b"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="Yc2-ow-0vd" firstAttribute="top" secondItem="VE8-CH-9gX" secondAttribute="bottom" constant="208" id="Eui-Y5-XR3"/>
+                <constraint firstItem="Yc2-ow-0vd" firstAttribute="top" secondItem="VE8-CH-9gX" secondAttribute="bottom" constant="30" id="Eui-Y5-XR3"/>
                 <constraint firstItem="Yc2-ow-0vd" firstAttribute="centerX" secondItem="BRG-zy-Y8Z" secondAttribute="centerX" id="Iwx-cl-7KA"/>
+                <constraint firstItem="CAx-82-JqC" firstAttribute="top" secondItem="Yc2-ow-0vd" secondAttribute="bottom" constant="30" id="SdH-5V-Icg"/>
                 <constraint firstItem="VE8-CH-9gX" firstAttribute="centerX" secondItem="BRG-zy-Y8Z" secondAttribute="centerX" id="jxI-MO-sB8"/>
-                <constraint firstItem="VE8-CH-9gX" firstAttribute="top" secondItem="8vg-pz-Xrk" secondAttribute="top" constant="122" id="zGO-ka-qQs"/>
+                <constraint firstItem="CAx-82-JqC" firstAttribute="centerX" secondItem="BRG-zy-Y8Z" secondAttribute="centerX" id="kQg-Ux-Xp9"/>
+                <constraint firstItem="VE8-CH-9gX" firstAttribute="top" secondItem="8vg-pz-Xrk" secondAttribute="top" constant="30" id="zGO-ka-qQs"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="8vg-pz-Xrk"/>
             <point key="canvasLocation" x="-52.173913043478265" y="-131.25"/>
