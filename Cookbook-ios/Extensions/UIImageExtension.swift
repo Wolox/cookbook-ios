@@ -14,4 +14,5 @@ extension UIImage {
     static let focusedImage = UIImage(imageLiteralResourceName: "focused")
     static let socialNetworksImage = UIImage(imageLiteralResourceName: "socialNetworks")
     static let emptyProfilePicture = UIImage(imageLiteralResourceName: "emptyProfilePicture")
+    static let facebookLogo = UIImage(imageLiteralResourceName: "facebookLogo")
 }

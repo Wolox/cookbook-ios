@@ -25,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plU-I2-NJK" customClass="CookBookButton" customModule="Cookbook_ios" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plU-I2-NJK">
                     <rect key="frame" x="52" y="713" width="310.5" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="PRQ-C0-3aF"/>
@@ -35,7 +35,7 @@
                         <action selector="logout" destination="-1" eventType="touchUpInside" id="0FC-JR-TEu"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-ah-bIh" customClass="CookBookButton" customModule="Cookbook_ios" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-ah-bIh">
                     <rect key="frame" x="59" y="151" width="296" height="45"/>
                     <state key="normal" title="Sign in with Facebook"/>
                     <connections>
@@ -54,11 +54,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foa-L7-AVF" customClass="CookBookButton" customModule="Cookbook_ios" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foa-L7-AVF">
                     <rect key="frame" x="59" y="231" width="296" height="45"/>
                     <state key="normal" title="Sing in with Google"/>
+                    <connections>
+                        <action selector="googleLogin" destination="-1" eventType="touchUpInside" id="Cbp-mX-xia"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhN-Rg-fEF" customClass="CookBookButton" customModule="Cookbook_ios" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhN-Rg-fEF">
                     <rect key="frame" x="59" y="311" width="296" height="45"/>
                     <state key="normal" title="Sing in with Apple ID"/>
                 </button>

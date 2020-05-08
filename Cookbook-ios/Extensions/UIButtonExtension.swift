@@ -8,27 +8,23 @@
 
 import UIKit
 
-class CookBookButton: UIButton {
-    // MARK: - Initializers
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        sharedInit()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        sharedInit()
-    }
-    
-    override func prepareForInterfaceBuilder() {
-        sharedInit()
-    }
-}
+extension UIButton {
+    func setTitle(title: String, image: UIImage) {
+        setTitle(title, for: .normal)
+        setImage(image, for: .normal)
+        imageView!.contentMode = .scaleAspectFit
+        imageView!.clipsToBounds = true
 
-// MARK: - Setup button methods
-private extension CookBookButton {
-    func sharedInit() {
+        //TODO: fix this
+        let imageWidth = frame.width / 4.0
+        self.imageEdgeInsets = UIEdgeInsets(top: 10, left: -imageWidth, bottom: 10, right: -imageWidth);
+        self.titleEdgeInsets = UIEdgeInsets(top: 0, left: -(imageWidth * 3), bottom: 0, right: 0);
+
+        layoutIfNeeded()
+    }
+    
+    func setCookBookStyle(withColor color: UIColor) {
+        backgroundColor = color
         contentHorizontalAlignment = .center
         contentVerticalAlignment = .center
         titleLabel?.textAlignment = .center
