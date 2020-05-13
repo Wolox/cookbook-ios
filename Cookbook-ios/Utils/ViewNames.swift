@@ -9,6 +9,9 @@
 import Foundation
 
 struct ViewNames {
+    // MARK: - Wolox Signin
+    static let woloxSigninView = "WoloxSigninView"
+    
     // MARK:  - Carousel
     static let carouselView = "CarouselView"
     static let carouselCollectionViewCell = "CarouselCollectionViewCell"
