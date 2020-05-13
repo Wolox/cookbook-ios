@@ -22,4 +22,9 @@ struct ViewNames {
     //MARK: - Focused table
     static let focusedCollectionView = "FocusedCollectionView"
     static let focusedCollectionViewCell = "FocusedCollectionViewCell"
+    
+    //MARK: - Chips View
+    static let chipsView = "ChipsView"
+    static let chipsViewCell = "ChipViewCell"
+    static let titleSectionHeader = "TitleSectionHeader"
 }

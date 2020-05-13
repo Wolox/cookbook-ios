@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0090FA27246B911C001A2E9B /* ChipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090FA1E246B911C001A2E9B /* ChipsViewController.swift */; };
+		0090FA28246B911C001A2E9B /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090FA1F246B911C001A2E9B /* Chip.swift */; };
+		0090FA29246B911C001A2E9B /* ChipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090FA21246B911C001A2E9B /* ChipViewCell.swift */; };
+		0090FA2A246B911C001A2E9B /* ChipViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0090FA22246B911C001A2E9B /* ChipViewCell.xib */; };
+		0090FA2B246B911C001A2E9B /* TitleSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090FA23246B911C001A2E9B /* TitleSectionHeader.swift */; };
+		0090FA2C246B911C001A2E9B /* TitleSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0090FA24246B911C001A2E9B /* TitleSectionHeader.xib */; };
+		0090FA2D246B911C001A2E9B /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090FA25246B911C001A2E9B /* LeftAlignedCollectionViewFlowLayout.swift */; };
+		0090FA2E246B911C001A2E9B /* ChipsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0090FA26246B911C001A2E9B /* ChipsView.xib */; };
 		AE09E6312421762400B35EF6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6302421762400B35EF6 /* Information.swift */; };
 		AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */; };
 		AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFC23F327D10065F778 /* CodeScannerController.swift */; };
@@ -37,6 +45,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0090FA1E246B911C001A2E9B /* ChipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipsViewController.swift; sourceTree = "<group>"; };
+		0090FA1F246B911C001A2E9B /* Chip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		0090FA21246B911C001A2E9B /* ChipViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipViewCell.swift; sourceTree = "<group>"; };
+		0090FA22246B911C001A2E9B /* ChipViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChipViewCell.xib; sourceTree = "<group>"; };
+		0090FA23246B911C001A2E9B /* TitleSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSectionHeader.swift; sourceTree = "<group>"; };
+		0090FA24246B911C001A2E9B /* TitleSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleSectionHeader.xib; sourceTree = "<group>"; };
+		0090FA25246B911C001A2E9B /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		0090FA26246B911C001A2E9B /* ChipsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChipsView.xib; sourceTree = "<group>"; };
 		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
 		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
@@ -79,6 +95,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0090FA1D246B911C001A2E9B /* Chips */ = {
+			isa = PBXGroup;
+			children = (
+				0090FA1E246B911C001A2E9B /* ChipsViewController.swift */,
+				0090FA1F246B911C001A2E9B /* Chip.swift */,
+				0090FA20246B911C001A2E9B /* Cell */,
+				0090FA25246B911C001A2E9B /* LeftAlignedCollectionViewFlowLayout.swift */,
+				0090FA26246B911C001A2E9B /* ChipsView.xib */,
+			);
+			path = Chips;
+			sourceTree = "<group>";
+		};
+		0090FA20246B911C001A2E9B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0090FA21246B911C001A2E9B /* ChipViewCell.swift */,
+				0090FA22246B911C001A2E9B /* ChipViewCell.xib */,
+				0090FA23246B911C001A2E9B /* TitleSectionHeader.swift */,
+				0090FA24246B911C001A2E9B /* TitleSectionHeader.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		AE09E62E2421701300B35EF6 /* FocusedCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +213,7 @@
 				AEF866D423B2790E003879D0 /* Carousel */,
 				AE48FDFB23F327C20065F778 /* CodeScanner */,
 				AEA24FAA241315B800850AC0 /* FocusedTable */,
+				0090FA1D246B911C001A2E9B /* Chips */,
 				AEF866C223B27899003879D0 /* AppDelegate.swift */,
 				AEF866C923B2789B003879D0 /* Assets.xcassets */,
 				AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */,
@@ -256,10 +296,13 @@
 				AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */,
 				AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */,
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
+				0090FA2A246B911C001A2E9B /* ChipViewCell.xib in Resources */,
 				AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
+				0090FA2C246B911C001A2E9B /* TitleSectionHeader.xib in Resources */,
 				AEA24FB224131C6900850AC0 /* FocusedCollectionViewCell.xib in Resources */,
 				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
+				0090FA2E246B911C001A2E9B /* ChipsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,19 +315,24 @@
 			files = (
 				AE49AB5F23C68EA6002FF78C /* Features.swift in Sources */,
 				AEA24FB4241320A900850AC0 /* FocusedLayout.swift in Sources */,
+				0090FA29246B911C001A2E9B /* ChipViewCell.swift in Sources */,
 				AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */,
 				AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */,
 				AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */,
 				AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */,
 				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
+				0090FA2D246B911C001A2E9B /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
 				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
+				0090FA27246B911C001A2E9B /* ChipsViewController.swift in Sources */,
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
 				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
+				0090FA28246B911C001A2E9B /* Chip.swift in Sources */,
 				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
+				0090FA2B246B911C001A2E9B /* TitleSectionHeader.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
 				AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */,
 				AEA24FB62413214C00850AC0 /* FocusedData.swift in Sources */,

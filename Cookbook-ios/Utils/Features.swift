@@ -13,6 +13,7 @@ enum Features: CaseIterable {
     case codeScanner
     case focusedTable
     case test2
+    case chips
     
     var featureName: String {
         switch self {
@@ -20,6 +21,7 @@ enum Features: CaseIterable {
         case .codeScanner: return "Code Scanner"
         case .focusedTable: return "Focused table"
         case .test2: return "Test 2"
+        case .chips: return "Chips View"
         }
     }
     
@@ -28,6 +30,7 @@ enum Features: CaseIterable {
         case .carousel: return  UIImage()
         case .codeScanner: return UIImage.scannerImage
         case .focusedTable: return UIImage.focusedImage
+        case .chips: return UIImage()
         default: return UIImage()
         }
     }
@@ -40,6 +43,8 @@ enum Features: CaseIterable {
             return CodeScannerController(nibName: ViewNames.codeScannerView, bundle: nil)
         case .focusedTable:
             return FocusedCollectionController(nibName: ViewNames.focusedCollectionView, bundle: nil)
+        case .chips:
+            return ChipsViewController(nibName: ViewNames.chipsView, bundle: nil)
         default:
             return GeneralViewController()
         }
