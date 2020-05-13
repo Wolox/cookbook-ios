@@ -1,0 +1,2 @@
+github "ReactiveCocoa/ReactiveCocoa" "10.3.0"
+github "ReactiveCocoa/ReactiveSwift" "6.2.1"

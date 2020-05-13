@@ -21,6 +21,9 @@
 		AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE49AB6C23C6DFEF002FF78C /* InformationView.xib */; };
 		AE6F4FF3246C73CE007BF1DF /* WoloxSigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F4FF2246C73CE007BF1DF /* WoloxSigninViewController.swift */; };
 		AE6F4FF7246CA370007BF1DF /* WoloxSigninView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6F4FF6246CA370007BF1DF /* WoloxSigninView.xib */; };
+		AE6F4FF9246CAC0C007BF1DF /* WoloxSigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F4FF8246CAC0B007BF1DF /* WoloxSigninViewModel.swift */; };
+		AE6F4FFC246CACF8007BF1DF /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6F4FFB246CACF8007BF1DF /* ReactiveSwift.framework */; };
+		AE6F4FFE246CB321007BF1DF /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6F4FFD246CB320007BF1DF /* ReactiveCocoa.framework */; };
 		AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79BE9123BDBBB2004270F1 /* ViewNames.swift */; };
 		AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */; };
 		AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA24FAD241315E000850AC0 /* FocusedCollectionView.xib */; };
@@ -53,6 +56,9 @@
 		AE49AB6C23C6DFEF002FF78C /* InformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationView.xib; sourceTree = "<group>"; };
 		AE6F4FF2246C73CE007BF1DF /* WoloxSigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoloxSigninViewController.swift; sourceTree = "<group>"; };
 		AE6F4FF6246CA370007BF1DF /* WoloxSigninView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WoloxSigninView.xib; sourceTree = "<group>"; };
+		AE6F4FF8246CAC0B007BF1DF /* WoloxSigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoloxSigninViewModel.swift; sourceTree = "<group>"; };
+		AE6F4FFB246CACF8007BF1DF /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		AE6F4FFD246CB320007BF1DF /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		AE79BE9123BDBBB2004270F1 /* ViewNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNames.swift; sourceTree = "<group>"; };
 		AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedCollectionController.swift; sourceTree = "<group>"; };
 		AEA24FAD241315E000850AC0 /* FocusedCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusedCollectionView.xib; sourceTree = "<group>"; };
@@ -77,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6F4FFE246CB321007BF1DF /* ReactiveCocoa.framework in Frameworks */,
+				AE6F4FFC246CACF8007BF1DF /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +143,18 @@
 			children = (
 				AE6F4FF2246C73CE007BF1DF /* WoloxSigninViewController.swift */,
 				AE6F4FF6246CA370007BF1DF /* WoloxSigninView.xib */,
+				AE6F4FF8246CAC0B007BF1DF /* WoloxSigninViewModel.swift */,
 			);
 			path = WoloxSignin;
+			sourceTree = "<group>";
+		};
+		AE6F4FFA246CACF8007BF1DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE6F4FFD246CB320007BF1DF /* ReactiveCocoa.framework */,
+				AE6F4FFB246CACF8007BF1DF /* ReactiveSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AE79BE9023BDBB93004270F1 /* Utils */ = {
@@ -167,6 +185,7 @@
 			children = (
 				AEF866C123B27899003879D0 /* Cookbook-ios */,
 				AEF866C023B27899003879D0 /* Products */,
+				AE6F4FFA246CACF8007BF1DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +237,7 @@
 				AEF866BB23B27899003879D0 /* Sources */,
 				AEF866BC23B27899003879D0 /* Frameworks */,
 				AEF866BD23B27899003879D0 /* Resources */,
+				AE6F5001246CB3D6007BF1DF /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -280,6 +300,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE6F5001246CB3D6007BF1DF /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEF866BB23B27899003879D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -294,6 +337,7 @@
 				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
+				AE6F4FF9246CAC0C007BF1DF /* WoloxSigninViewModel.swift in Sources */,
 				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
 				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
@@ -444,6 +488,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS75S43G4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Cookbook-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +510,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS75S43G4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Cookbook-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
