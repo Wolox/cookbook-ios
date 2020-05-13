@@ -41,6 +41,7 @@ class WoloxSigninViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
+        hideErrors()
     }
     
     override func viewDidLayoutSubviews() {
@@ -53,7 +54,6 @@ class WoloxSigninViewController: UIViewController {
         guard let safeAreaInsets = UIApplication.shared.keyWindow?.safeAreaInsets else { return }
         let safeAreaHeight = view.frame.height - safeAreaInsets.top - safeAreaInsets.bottom
         contentHeightConstraint.constant = max(viewContentHeight, safeAreaHeight)
-        hideErrors()
     }
     
     private func hideErrors() {
@@ -65,10 +65,13 @@ class WoloxSigninViewController: UIViewController {
     private func bindViewModel() {
         viewModel.userMutableProperty <~ userTextField.reactive.continuousTextValues
         viewModel.passwordMutableProperty <~ passwordTextField.reactive.continuousTextValues
+        userErrorLabel.reactive.isHidden <~ viewModel.isValidUser.producer
+        passwordErrorLabel.reactive.isHidden <~ viewModel.isValidPassword.producer
         
         signinButton.reactive.pressed = CocoaAction(viewModel.signinAction)
-        viewModel.signinAction.isExecuting.producer.observe(on: UIScheduler()).startWithValues { isExecuting in
+        viewModel.signinAction.isExecuting.producer.observe(on: UIScheduler()).startWithValues { [weak self] isExecuting in
             if isExecuting {
+                self?.hideErrors()
                 //TODO: show loading
             } else {
                 //TODO: hide loading

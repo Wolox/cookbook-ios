@@ -12,16 +12,15 @@ import ReactiveSwift
 class WoloxSigninViewModel {
     let userMutableProperty = MutableProperty<String>("")
     let passwordMutableProperty = MutableProperty<String>("")
+    lazy var isValidUser = Property(initial: false, then: self.userMutableProperty.skipRepeats().map { !$0.isEmpty })
+    lazy var isValidPassword = Property(initial: false, then: self.passwordMutableProperty.skipRepeats().map { !$0.isEmpty })
     public private(set) lazy var signinAction: Action<(), Bool, Error> = Action {
         SignalProducer.empty
     }
     
     init() {
-        let userValid = userMutableProperty.producer.map { !$0.isEmpty }
-        let passwordValid = passwordMutableProperty.producer.map { !$0.isEmpty }
-        
         let canExecuteSignin = SignalProducer
-            .combineLatest(userValid, passwordValid)
+            .combineLatest(isValidUser, isValidPassword)
             .map { $0 && $1 }
         
         let canExecuteSigninProperty = Property(initial: false, then: canExecuteSignin)
