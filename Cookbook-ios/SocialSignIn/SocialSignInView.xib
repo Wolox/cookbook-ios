@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialSignInController" customModule="Cookbook_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="appleLoginButton" destination="MhN-Rg-fEF" id="2vD-tP-mV7"/>
+                <outlet property="emailLabel" destination="fQh-eB-1Bw" id="Lcl-ye-i2Z"/>
+                <outlet property="facebookLoginButton" destination="w3Q-ah-bIh" id="d3G-dA-dmd"/>
+                <outlet property="googleLoginButton" destination="Foa-L7-AVF" id="k8Y-wd-8bB"/>
+                <outlet property="logoutButton" destination="plU-I2-NJK" id="wks-sL-WWz"/>
+                <outlet property="nameLabel" destination="FA1-8Z-NQs" id="UGE-z3-4uL"/>
+                <outlet property="profileImage" destination="A4z-og-iHu" id="pPa-a7-2RO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ZVr-ur-wKN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plU-I2-NJK">
+                    <rect key="frame" x="52" y="713" width="310.5" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="PRQ-C0-3aF"/>
+                    </constraints>
+                    <state key="normal" title="Sign out"/>
+                    <connections>
+                        <action selector="logout" destination="-1" eventType="touchUpInside" id="0FC-JR-TEu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-ah-bIh">
+                    <rect key="frame" x="59" y="151" width="296" height="45"/>
+                    <state key="normal" title="Sign in with Facebook"/>
+                    <connections>
+                        <action selector="facebookLogin" destination="-1" eventType="touchUpInside" id="GXE-lq-QMV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQh-eB-1Bw">
+                    <rect key="frame" x="187" y="573.5" width="207" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA1-8Z-NQs">
+                    <rect key="frame" x="187" y="533" width="207" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foa-L7-AVF">
+                    <rect key="frame" x="59" y="231" width="296" height="45"/>
+                    <state key="normal" title="Sing in with Google"/>
+                    <connections>
+                        <action selector="googleLogin" destination="-1" eventType="touchUpInside" id="Cbp-mX-xia"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhN-Rg-fEF">
+                    <rect key="frame" x="59" y="311" width="296" height="45"/>
+                    <state key="normal" title="Sing in with Apple ID"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-og-iHu">
+                    <rect key="frame" x="52" y="513" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="bgX-h8-5fA"/>
+                        <constraint firstAttribute="height" constant="120" id="gDd-4Y-ucv"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="plU-I2-NJK" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.75" id="17Z-pc-7Jc"/>
+                <constraint firstItem="w3Q-ah-bIh" firstAttribute="height" secondItem="plU-I2-NJK" secondAttribute="height" id="2uo-B7-UPq"/>
+                <constraint firstItem="w3Q-ah-bIh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="107" id="8AW-2G-mB1"/>
+                <constraint firstItem="FA1-8Z-NQs" firstAttribute="leading" secondItem="A4z-og-iHu" secondAttribute="trailing" constant="15" id="Bdn-JT-MIK"/>
+                <constraint firstItem="A4z-og-iHu" firstAttribute="leading" secondItem="plU-I2-NJK" secondAttribute="leading" id="Bg3-lf-huW"/>
+                <constraint firstItem="Foa-L7-AVF" firstAttribute="top" secondItem="w3Q-ah-bIh" secondAttribute="bottom" constant="35" id="Nwf-ad-HHr"/>
+                <constraint firstItem="w3Q-ah-bIh" firstAttribute="centerX" secondItem="plU-I2-NJK" secondAttribute="centerX" id="O83-Z1-8Rs"/>
+                <constraint firstItem="Foa-L7-AVF" firstAttribute="width" secondItem="w3Q-ah-bIh" secondAttribute="width" id="Om1-Ic-lpY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FA1-8Z-NQs" secondAttribute="trailing" constant="20" id="PO4-kM-VFs"/>
+                <constraint firstItem="MhN-Rg-fEF" firstAttribute="height" secondItem="Foa-L7-AVF" secondAttribute="height" id="QA5-Kj-5uL"/>
+                <constraint firstItem="plU-I2-NJK" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Vel-Le-T7u"/>
+                <constraint firstItem="fQh-eB-1Bw" firstAttribute="leading" secondItem="FA1-8Z-NQs" secondAttribute="leading" id="Y2p-DP-QT5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="plU-I2-NJK" secondAttribute="bottom" constant="104" id="bZd-yw-oZw"/>
+                <constraint firstItem="MhN-Rg-fEF" firstAttribute="centerX" secondItem="Foa-L7-AVF" secondAttribute="centerX" id="fp9-9u-NtQ"/>
+                <constraint firstItem="plU-I2-NJK" firstAttribute="top" secondItem="A4z-og-iHu" secondAttribute="bottom" constant="80" id="k6a-BH-L6j"/>
+                <constraint firstItem="FA1-8Z-NQs" firstAttribute="top" secondItem="A4z-og-iHu" secondAttribute="top" constant="20" id="l5v-3j-fmh"/>
+                <constraint firstItem="Foa-L7-AVF" firstAttribute="height" secondItem="w3Q-ah-bIh" secondAttribute="height" id="ngP-WU-QUy"/>
+                <constraint firstItem="MhN-Rg-fEF" firstAttribute="width" secondItem="Foa-L7-AVF" secondAttribute="width" id="oYI-YO-fqe"/>
+                <constraint firstItem="fQh-eB-1Bw" firstAttribute="trailing" secondItem="FA1-8Z-NQs" secondAttribute="trailing" id="pIr-EU-SgU"/>
+                <constraint firstItem="fQh-eB-1Bw" firstAttribute="top" secondItem="FA1-8Z-NQs" secondAttribute="bottom" constant="20" id="r5V-iz-xBV"/>
+                <constraint firstItem="Foa-L7-AVF" firstAttribute="centerX" secondItem="w3Q-ah-bIh" secondAttribute="centerX" id="sRH-rT-1oQ"/>
+                <constraint firstItem="w3Q-ah-bIh" firstAttribute="width" secondItem="plU-I2-NJK" secondAttribute="width" multiplier="0.953301" id="t4C-ym-mAT"/>
+                <constraint firstItem="MhN-Rg-fEF" firstAttribute="top" secondItem="Foa-L7-AVF" secondAttribute="bottom" constant="35" id="zpN-N1-01e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>

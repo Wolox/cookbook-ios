@@ -16,3 +16,11 @@ struct ScannerStringConstants {
     static let scannedCode = "Scanned code"
     static let scanAgain = "Scan again"
 }
+
+struct SigninStringConstants {
+    static let noValidName = "No valid name"
+    static let noValidEmail = "No valid email"
+    static let facebookSignedin = "You have already signed in in Facebook"
+    static let googleSignedin = "You have already signed in in Google"
+    static let appleIdSignedin = "You have already signed in with Apple ID"
+}

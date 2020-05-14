@@ -1,0 +1,2 @@
+github "facebook/facebook-objc-sdk" "v5.15.1"
+github "facebook/facebook-swift-sdk" "v0.9.0"

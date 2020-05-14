@@ -12,4 +12,6 @@ extension UIColor {
     static let woloxGreen = UIColor(red: 149/255, green: 198/255, blue: 44/255, alpha: 1)
     static let tintColor = UIColor(red: 93/255, green: 173/255, blue: 226/255, alpha: 1)
     static let cardsBackground = UIColor.woloxGreen.withAlphaComponent(0.3)
+    static let facebookColor = UIColor(red: 66/255, green: 103/255, blue: 178/255, alpha: 1)
+    static let googleColor = UIColor(red: 76/255, green: 139/255, blue: 245/255, alpha: 1)
 }
