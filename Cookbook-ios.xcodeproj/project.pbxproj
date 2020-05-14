@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CF13CD5243B824D005C8166 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CD4243B824D005C8166 /* GooglePlaces.framework */; };
+		0CF13CD9243B82E3005C8166 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CF13CD8243B82E3005C8166 /* GooglePlaces.bundle */; };
+		0CF13CDB243B8391005C8166 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CDA243B8391005C8166 /* GoogleMapsBase.framework */; };
+		0CF13CDE243B83AA005C8166 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CDD243B83AA005C8166 /* Accelerate.framework */; };
+		0CF13CE0243B83B3005C8166 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CDF243B83B3005C8166 /* CoreData.framework */; };
+		0CF13CE2243B83BB005C8166 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CE1243B83BB005C8166 /* CoreGraphics.framework */; };
+		0CF13CE4243B83C3005C8166 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CE3243B83C3005C8166 /* CoreImage.framework */; };
+		0CF13CE6243B83CD005C8166 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CE5243B83CD005C8166 /* CoreLocation.framework */; };
+		0CF13CE8243B83D8005C8166 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CE7243B83D8005C8166 /* CoreTelephony.framework */; };
+		0CF13CEA243B83E0005C8166 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CE9243B83E0005C8166 /* CoreText.framework */; };
+		0CF13CEC243B83E8005C8166 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CEB243B83E8005C8166 /* GLKit.framework */; };
+		0CF13CEE243B83EF005C8166 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CED243B83EF005C8166 /* ImageIO.framework */; };
+		0CF13CF0243B83FB005C8166 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CEF243B83FB005C8166 /* libc++.tbd */; };
+		0CF13CF2243B8406005C8166 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CF1243B8406005C8166 /* libz.tbd */; };
+		0CF13CF4243B8411005C8166 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CF3243B8411005C8166 /* OpenGLES.framework */; };
+		0CF13CF6243B8419005C8166 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CF5243B8419005C8166 /* QuartzCore.framework */; };
+		0CF13CF8243B8423005C8166 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CF7243B8423005C8166 /* SystemConfiguration.framework */; };
+		0CF13CFA243B843D005C8166 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF13CF9243B843D005C8166 /* UIKit.framework */; };
+		0CF13CFD243BAFF5005C8166 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF13CFB243BAFF5005C8166 /* PlacesViewController.swift */; };
+		0CF13CFE243BAFF5005C8166 /* PlacesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF13CFC243BAFF5005C8166 /* PlacesView.xib */; };
+		0CF13D03243CC68A005C8166 /* PlacesMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF13D01243CC68A005C8166 /* PlacesMenuViewController.swift */; };
+		0CF13D04243CC68A005C8166 /* PlacesMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF13D02243CC68A005C8166 /* PlacesMenuView.xib */; };
 		AE09E6312421762400B35EF6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6302421762400B35EF6 /* Information.swift */; };
 		AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */; };
 		AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFC23F327D10065F778 /* CodeScannerController.swift */; };
@@ -37,6 +59,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CF13CD4243B824D005C8166 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
+		0CF13CD8243B82E3005C8166 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		0CF13CDA243B8391005C8166 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		0CF13CDD243B83AA005C8166 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0CF13CDF243B83B3005C8166 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0CF13CE1243B83BB005C8166 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0CF13CE3243B83C3005C8166 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0CF13CE5243B83CD005C8166 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0CF13CE7243B83D8005C8166 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0CF13CE9243B83E0005C8166 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0CF13CEB243B83E8005C8166 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0CF13CED243B83EF005C8166 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0CF13CEF243B83FB005C8166 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0CF13CF1243B8406005C8166 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0CF13CF3243B8411005C8166 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0CF13CF5243B8419005C8166 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0CF13CF7243B8423005C8166 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0CF13CF9243B843D005C8166 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0CF13CFB243BAFF5005C8166 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		0CF13CFC243BAFF5005C8166 /* PlacesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesView.xib; sourceTree = "<group>"; };
+		0CF13D01243CC68A005C8166 /* PlacesMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesMenuViewController.swift; sourceTree = "<group>"; };
+		0CF13D02243CC68A005C8166 /* PlacesMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesMenuView.xib; sourceTree = "<group>"; };
 		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
 		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
@@ -73,12 +117,88 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF13CFA243B843D005C8166 /* UIKit.framework in Frameworks */,
+				0CF13CF8243B8423005C8166 /* SystemConfiguration.framework in Frameworks */,
+				0CF13CF6243B8419005C8166 /* QuartzCore.framework in Frameworks */,
+				0CF13CF4243B8411005C8166 /* OpenGLES.framework in Frameworks */,
+				0CF13CF2243B8406005C8166 /* libz.tbd in Frameworks */,
+				0CF13CF0243B83FB005C8166 /* libc++.tbd in Frameworks */,
+				0CF13CEE243B83EF005C8166 /* ImageIO.framework in Frameworks */,
+				0CF13CEC243B83E8005C8166 /* GLKit.framework in Frameworks */,
+				0CF13CEA243B83E0005C8166 /* CoreText.framework in Frameworks */,
+				0CF13CE8243B83D8005C8166 /* CoreTelephony.framework in Frameworks */,
+				0CF13CE6243B83CD005C8166 /* CoreLocation.framework in Frameworks */,
+				0CF13CE4243B83C3005C8166 /* CoreImage.framework in Frameworks */,
+				0CF13CE2243B83BB005C8166 /* CoreGraphics.framework in Frameworks */,
+				0CF13CE0243B83B3005C8166 /* CoreData.framework in Frameworks */,
+				0CF13CDE243B83AA005C8166 /* Accelerate.framework in Frameworks */,
+				0CF13CD5243B824D005C8166 /* GooglePlaces.framework in Frameworks */,
+				0CF13CDB243B8391005C8166 /* GoogleMapsBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CF13CCE243B7192005C8166 /* googlePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				0CF13D00243CC5FB005C8166 /* Full Screen default */,
+				0CF13CFF243CC5ED005C8166 /* Menu */,
+			);
+			path = googlePlaces;
+			sourceTree = "<group>";
+		};
+		0CF13CD3243B820E005C8166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CF13CDA243B8391005C8166 /* GoogleMapsBase.framework */,
+				0CF13CD8243B82E3005C8166 /* GooglePlaces.bundle */,
+				0CF13CD4243B824D005C8166 /* GooglePlaces.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CF13CDC243B83AA005C8166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CF13CF9243B843D005C8166 /* UIKit.framework */,
+				0CF13CF7243B8423005C8166 /* SystemConfiguration.framework */,
+				0CF13CF5243B8419005C8166 /* QuartzCore.framework */,
+				0CF13CF3243B8411005C8166 /* OpenGLES.framework */,
+				0CF13CF1243B8406005C8166 /* libz.tbd */,
+				0CF13CEF243B83FB005C8166 /* libc++.tbd */,
+				0CF13CED243B83EF005C8166 /* ImageIO.framework */,
+				0CF13CEB243B83E8005C8166 /* GLKit.framework */,
+				0CF13CE9243B83E0005C8166 /* CoreText.framework */,
+				0CF13CE7243B83D8005C8166 /* CoreTelephony.framework */,
+				0CF13CE5243B83CD005C8166 /* CoreLocation.framework */,
+				0CF13CE3243B83C3005C8166 /* CoreImage.framework */,
+				0CF13CE1243B83BB005C8166 /* CoreGraphics.framework */,
+				0CF13CDF243B83B3005C8166 /* CoreData.framework */,
+				0CF13CDD243B83AA005C8166 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CF13CFF243CC5ED005C8166 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0CF13D01243CC68A005C8166 /* PlacesMenuViewController.swift */,
+				0CF13D02243CC68A005C8166 /* PlacesMenuView.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0CF13D00243CC5FB005C8166 /* Full Screen default */ = {
+			isa = PBXGroup;
+			children = (
+				0CF13CFC243BAFF5005C8166 /* PlacesView.xib */,
+				0CF13CFB243BAFF5005C8166 /* PlacesViewController.swift */,
+			);
+			path = "Full Screen default";
+			sourceTree = "<group>";
+		};
 		AE09E62E2421701300B35EF6 /* FocusedCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +274,7 @@
 			children = (
 				AEF866C123B27899003879D0 /* Cookbook-ios */,
 				AEF866C023B27899003879D0 /* Products */,
+				0CF13CDC243B83AA005C8166 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +289,8 @@
 		AEF866C123B27899003879D0 /* Cookbook-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0CF13CD3243B820E005C8166 /* Frameworks */,
+				0CF13CCE243B7192005C8166 /* googlePlaces */,
 				AE49AB6023C6C469002FF78C /* Extensions */,
 				AE79BE9023BDBB93004270F1 /* Utils */,
 				AE49AB6923C6DFCE002FF78C /* Information */,
@@ -254,9 +377,12 @@
 			files = (
 				AE48FE0123F32B150065F778 /* CodeScannerView.xib in Resources */,
 				AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */,
+				0CF13CFE243BAFF5005C8166 /* PlacesView.xib in Resources */,
 				AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */,
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
+				0CF13CD9243B82E3005C8166 /* GooglePlaces.bundle in Resources */,
 				AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */,
+				0CF13D04243CC68A005C8166 /* PlacesMenuView.xib in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
 				AEA24FB224131C6900850AC0 /* FocusedCollectionViewCell.xib in Resources */,
 				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
@@ -282,10 +408,12 @@
 				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
 				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
+				0CF13CFD243BAFF5005C8166 /* PlacesViewController.swift in Sources */,
 				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
+				0CF13D03243CC68A005C8166 /* PlacesMenuViewController.swift in Sources */,
 				AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */,
 				AEA24FB62413214C00850AC0 /* FocusedData.swift in Sources */,
 				AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */,
@@ -361,6 +489,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -415,6 +544,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -428,6 +558,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS75S43G4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cookbook-ios/Frameworks",
+				);
 				INFOPLIST_FILE = "Cookbook-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,6 +580,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS75S43G4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cookbook-ios/Frameworks",
+				);
 				INFOPLIST_FILE = "Cookbook-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

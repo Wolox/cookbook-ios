@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootViewController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
+        // this api key was generated with a personal account and might be unavailable if we reach the requests limit. If you want to implement this in your own project you will need to ask the client for an api key. you could also generate your own key for development. Also this api key should be on the configuration files for security reasons, don't just paste it here.
+        GMSPlacesClient.provideAPIKey("AIzaSyAMaZ8NbGqgl0afSID-vdCn_lZIzyDwDTA")
         return true
     }
 
