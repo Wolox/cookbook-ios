@@ -42,6 +42,7 @@ class WoloxSigninViewController: UIViewController {
         super.viewDidLoad()
         bindViewModel()
         hideErrors()
+        hideKeyboardOnTap()
     }
     
     override func viewDidLayoutSubviews() {
