@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         UINavigationBar.appearance().tintColor = UIColor.woloxGreen
         let viewController = WoloxSigninViewController(nibName: ViewNames.woloxSigninView, bundle: nil)
-        viewController.viewModel = WoloxSigninViewModel()
+        viewController.viewModel = WoloxSigninViewModel(repository: RepositoryBuilder.DefaultSessionRepository)
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         return true

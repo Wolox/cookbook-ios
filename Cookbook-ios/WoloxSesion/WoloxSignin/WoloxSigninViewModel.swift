@@ -8,17 +8,20 @@
 
 import Foundation
 import ReactiveSwift
+import Networking
 
 class WoloxSigninViewModel {
+    private let _sesionRepository: SesionRepositoryType
     let userMutableProperty = MutableProperty<String>("")
     let passwordMutableProperty = MutableProperty<String>("")
     lazy var isValidUser = Property(initial: false, then: self.userMutableProperty.skipRepeats().map { !$0.isEmpty })
     lazy var isValidPassword = Property(initial: false, then: self.passwordMutableProperty.skipRepeats().map { !$0.isEmpty })
-    public private(set) lazy var signinAction: Action<(), Bool, Error> = Action {
+    public private(set) lazy var signinAction: Action<(), User, RepositoryError> = Action {
         SignalProducer.empty
     }
     
-    init() {
+    init(repository: SesionRepositoryType) {
+        _sesionRepository = repository
         let canExecuteSignin = SignalProducer
             .combineLatest(isValidUser, isValidPassword)
             .map { $0 && $1 }
@@ -29,7 +32,7 @@ class WoloxSigninViewModel {
         }
     }
     
-    func sigin() -> SignalProducer<Bool, Error> {
-        return SignalProducer.init(value: true)
+    func sigin() -> SignalProducer<User, RepositoryError> {
+        return _sesionRepository.login(userMutableProperty.value, password: passwordMutableProperty.value)
     }
 }

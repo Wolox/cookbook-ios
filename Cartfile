@@ -1,2 +1,8 @@
+# Reactive swift
 github "ReactiveCocoa/ReactiveSwift" ~> 6.1
 github "ReactiveCocoa/ReactiveCocoa" ~> 10.1
+
+# Networking
+github "Wolox/wolmo-networking-ios" ~> 3.0.0
+
+github "pmusolino/Wormholy" ~> 1.1.3

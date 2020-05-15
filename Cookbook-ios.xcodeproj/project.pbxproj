@@ -19,6 +19,15 @@
 		AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */; };
 		AE49AB6B23C6DFDC002FF78C /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */; };
 		AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE49AB6C23C6DFEF002FF78C /* InformationView.xib */; };
+		AE53D2A8246EFDCC009CB6CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53D2A7246EFDCC009CB6CA /* User.swift */; };
+		AE53D2AA246F04FC009CB6CA /* RepositoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53D2A9246F04FC009CB6CA /* RepositoryBuilder.swift */; };
+		AE53D2AF246F163C009CB6CA /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE53D2AE246F163C009CB6CA /* Networking.framework */; };
+		AE53D2B5246F168D009CB6CA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE53D2B0246F168D009CB6CA /* Alamofire.framework */; };
+		AE53D2B6246F168D009CB6CA /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE53D2B1246F168D009CB6CA /* Curry.framework */; };
+		AE53D2B7246F168D009CB6CA /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE53D2B2246F168D009CB6CA /* Argo.framework */; };
+		AE53D2B8246F168D009CB6CA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE53D2B3246F168D009CB6CA /* Result.framework */; };
+		AE53D2B9246F168D009CB6CA /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE53D2B4246F168D009CB6CA /* Runes.framework */; };
+		AE53D2BB246F1DAD009CB6CA /* Wormholy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE53D2BA246F1DAD009CB6CA /* Wormholy.framework */; };
 		AE6F4FF3246C73CE007BF1DF /* WoloxSigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F4FF2246C73CE007BF1DF /* WoloxSigninViewController.swift */; };
 		AE6F4FF7246CA370007BF1DF /* WoloxSigninView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE6F4FF6246CA370007BF1DF /* WoloxSigninView.xib */; };
 		AE6F4FF9246CAC0C007BF1DF /* WoloxSigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F4FF8246CAC0B007BF1DF /* WoloxSigninViewModel.swift */; };
@@ -33,6 +42,7 @@
 		AEA24FB4241320A900850AC0 /* FocusedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FB3241320A900850AC0 /* FocusedLayout.swift */; };
 		AEA24FB62413214C00850AC0 /* FocusedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FB52413214C00850AC0 /* FocusedData.swift */; };
 		AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */; };
+		AEE3E3AB246EF82400E2C24F /* SesionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE3E3AA246EF82400E2C24F /* SesionRepository.swift */; };
 		AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866C223B27899003879D0 /* AppDelegate.swift */; };
 		AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF866C923B2789B003879D0 /* Assets.xcassets */; };
 		AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF866CB23B2789B003879D0 /* LaunchScreen.storyboard */; };
@@ -55,6 +65,15 @@
 		AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		AE49AB6A23C6DFDC002FF78C /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		AE49AB6C23C6DFEF002FF78C /* InformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationView.xib; sourceTree = "<group>"; };
+		AE53D2A7246EFDCC009CB6CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AE53D2A9246F04FC009CB6CA /* RepositoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryBuilder.swift; sourceTree = "<group>"; };
+		AE53D2AE246F163C009CB6CA /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = Carthage/Build/iOS/Networking.framework; sourceTree = "<group>"; };
+		AE53D2B0246F168D009CB6CA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		AE53D2B1246F168D009CB6CA /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
+		AE53D2B2246F168D009CB6CA /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
+		AE53D2B3246F168D009CB6CA /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		AE53D2B4246F168D009CB6CA /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
+		AE53D2BA246F1DAD009CB6CA /* Wormholy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wormholy.framework; path = Carthage/Build/iOS/Wormholy.framework; sourceTree = "<group>"; };
 		AE6F4FF2246C73CE007BF1DF /* WoloxSigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoloxSigninViewController.swift; sourceTree = "<group>"; };
 		AE6F4FF6246CA370007BF1DF /* WoloxSigninView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WoloxSigninView.xib; sourceTree = "<group>"; };
 		AE6F4FF8246CAC0B007BF1DF /* WoloxSigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoloxSigninViewModel.swift; sourceTree = "<group>"; };
@@ -69,6 +88,7 @@
 		AEA24FB3241320A900850AC0 /* FocusedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedLayout.swift; sourceTree = "<group>"; };
 		AEA24FB52413214C00850AC0 /* FocusedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedData.swift; sourceTree = "<group>"; };
 		AEE31E3D23D7E8E900BAF611 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
+		AEE3E3AA246EF82400E2C24F /* SesionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionRepository.swift; sourceTree = "<group>"; };
 		AEF866BF23B27899003879D0 /* Cookbook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookbook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF866C223B27899003879D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF866C923B2789B003879D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +105,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE53D2BB246F1DAD009CB6CA /* Wormholy.framework in Frameworks */,
+				AE53D2B5246F168D009CB6CA /* Alamofire.framework in Frameworks */,
+				AE53D2B6246F168D009CB6CA /* Curry.framework in Frameworks */,
+				AE53D2B7246F168D009CB6CA /* Argo.framework in Frameworks */,
+				AE53D2B8246F168D009CB6CA /* Result.framework in Frameworks */,
+				AE53D2B9246F168D009CB6CA /* Runes.framework in Frameworks */,
+				AE53D2AF246F163C009CB6CA /* Networking.framework in Frameworks */,
 				AE6F4FFE246CB321007BF1DF /* ReactiveCocoa.framework in Frameworks */,
 				AE6F4FFC246CACF8007BF1DF /* ReactiveSwift.framework in Frameworks */,
 			);
@@ -141,7 +168,7 @@
 			path = Information;
 			sourceTree = "<group>";
 		};
-		AE6F4FF1246C737E007BF1DF /* WoloxSignin */ = {
+		AE53D2AB246F0E06009CB6CA /* WoloxSignin */ = {
 			isa = PBXGroup;
 			children = (
 				AE6F4FF2246C73CE007BF1DF /* WoloxSigninViewController.swift */,
@@ -151,9 +178,43 @@
 			path = WoloxSignin;
 			sourceTree = "<group>";
 		};
+		AE53D2AC246F0E18009CB6CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE53D2A7246EFDCC009CB6CA /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE53D2AD246F0E21009CB6CA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AE53D2A9246F04FC009CB6CA /* RepositoryBuilder.swift */,
+				AEE3E3AA246EF82400E2C24F /* SesionRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AE6F4FF1246C737E007BF1DF /* WoloxSesion */ = {
+			isa = PBXGroup;
+			children = (
+				AE53D2AD246F0E21009CB6CA /* Repositories */,
+				AE53D2AC246F0E18009CB6CA /* Models */,
+				AE53D2AB246F0E06009CB6CA /* WoloxSignin */,
+			);
+			path = WoloxSesion;
+			sourceTree = "<group>";
+		};
 		AE6F4FFA246CACF8007BF1DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE53D2BA246F1DAD009CB6CA /* Wormholy.framework */,
+				AE53D2B0246F168D009CB6CA /* Alamofire.framework */,
+				AE53D2B2246F168D009CB6CA /* Argo.framework */,
+				AE53D2B1246F168D009CB6CA /* Curry.framework */,
+				AE53D2B3246F168D009CB6CA /* Result.framework */,
+				AE53D2B4246F168D009CB6CA /* Runes.framework */,
+				AE53D2AE246F163C009CB6CA /* Networking.framework */,
 				AE6F4FFD246CB320007BF1DF /* ReactiveCocoa.framework */,
 				AE6F4FFB246CACF8007BF1DF /* ReactiveSwift.framework */,
 			);
@@ -205,7 +266,7 @@
 			children = (
 				AE49AB6023C6C469002FF78C /* Extensions */,
 				AE79BE9023BDBB93004270F1 /* Utils */,
-				AE6F4FF1246C737E007BF1DF /* WoloxSignin */,
+				AE6F4FF1246C737E007BF1DF /* WoloxSesion */,
 				AE49AB6923C6DFCE002FF78C /* Information */,
 				AEF866D423B2790E003879D0 /* Carousel */,
 				AE48FDFB23F327C20065F778 /* CodeScanner */,
@@ -314,6 +375,13 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Networking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Wormholy.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -336,8 +404,10 @@
 				AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */,
 				AE49AB6423C6C5B5002FF78C /* UIColorExtension.swift in Sources */,
 				AEE31E3E23D7E8E900BAF611 /* CarouselFlowLayout.swift in Sources */,
+				AE53D2AA246F04FC009CB6CA /* RepositoryBuilder.swift in Sources */,
 				AE49AB6823C6CDA4002FF78C /* GeneralViewController.swift in Sources */,
 				AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */,
+				AEE3E3AB246EF82400E2C24F /* SesionRepository.swift in Sources */,
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
 				AE6F4FF9246CAC0C007BF1DF /* WoloxSigninViewModel.swift in Sources */,
@@ -348,6 +418,7 @@
 				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AE6F4FF3246C73CE007BF1DF /* WoloxSigninViewController.swift in Sources */,
+				AE53D2A8246EFDCC009CB6CA /* User.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
 				AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */,
