@@ -9,11 +9,13 @@
 import Foundation
 import Networking
 
+// https://github.com/IgnOliveto/jwtReference
 class RepositoryBuilder {
     static var DefaultNetworkingConfiguration: NetworkingConfiguration {
         var config = NetworkingConfiguration()
         config.domainURL = "pacific-wave-13746.herokuapp.com"
         config.useSecureConnection = true
+        config.interceptor = TokenGetter.shared
         return config
     }
     
@@ -22,8 +24,20 @@ class RepositoryBuilder {
 
 enum WoloxSigninError: CustomRepositoryErrorType {
     var name: String {
-        return "WoloxSigningError"
+        return "SigningError"
     }
     
     case loginError(String)
+}
+
+class TokenGetter: NetworkingInterceptor {
+    static let shared: TokenGetter = TokenGetter()
+    private var _token: String?
+    
+    public func intercept(request: URLRequest, response: HTTPURLResponse, data: Data) {
+        if let headerToken = response.allHeaderFields["Token"] as? String {
+            _token = headerToken
+            UserDefaultsService.shared.saveToken(headerToken)
+        }
+    }
 }

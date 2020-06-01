@@ -37,7 +37,7 @@ class WoloxSigninViewController: UIViewController {
     }
     @IBOutlet weak var contentHeightConstraint: NSLayoutConstraint!
     
-    //MARK: Lifecylcle methods
+    //MARK: - Lifecylcle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
@@ -50,7 +50,7 @@ class WoloxSigninViewController: UIViewController {
         setupView()
     }
     
-    // MARK: Configuration methods
+    // MARK: - Configuration methods
     private func setupView() {
         guard let safeAreaInsets = UIApplication.shared.keyWindow?.safeAreaInsets else { return }
         let safeAreaHeight = view.frame.height - safeAreaInsets.top - safeAreaInsets.bottom
@@ -84,12 +84,19 @@ class WoloxSigninViewController: UIViewController {
             self?.signinButton.backgroundColor = self?.signinButton.backgroundColor?.withAlphaComponent(alpha)
         }
         
-        viewModel.signinAction.values.take(during: reactive.lifetime).observeValues { value in
-            print(value)
+        viewModel.signinAction.values.take(during: reactive.lifetime).observeValues { [weak self] _ in
+            self?.showCarousel()
         }
         
         viewModel.signinAction.errors.take(during: reactive.lifetime).observeValues { error in
-            print(error)
+            print("LOGIN ERROR")
         }
+    }
+    
+    // MARK: - Helper methods
+    private func showCarousel() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
+        window.rootViewController = viewController
     }
 }

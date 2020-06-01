@@ -16,7 +16,7 @@ class WoloxSigninViewModel {
     let passwordMutableProperty = MutableProperty<String>("")
     lazy var isValidUser = Property(initial: false, then: self.userMutableProperty.skipRepeats().map { !$0.isEmpty })
     lazy var isValidPassword = Property(initial: false, then: self.passwordMutableProperty.skipRepeats().map { !$0.isEmpty })
-    public private(set) lazy var signinAction: Action<(), User, RepositoryError> = Action {
+    public private(set) lazy var signinAction: Action<(), Void, RepositoryError> = Action {
         SignalProducer.empty
     }
     
@@ -32,7 +32,7 @@ class WoloxSigninViewModel {
         }
     }
     
-    func sigin() -> SignalProducer<User, RepositoryError> {
+    func sigin() -> SignalProducer<Void, RepositoryError> {
         return _sesionRepository.login(userMutableProperty.value, password: passwordMutableProperty.value)
     }
 }

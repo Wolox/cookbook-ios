@@ -11,9 +11,11 @@ import Result
 import ReactiveSwift
 import Networking
 import ReactiveSwift
+import Runes
+import Curry
 
 protocol SesionRepositoryType {
-    func login(_ username: String, password: String) -> SignalProducer<User, RepositoryError>
+    func login(_ username: String, password: String) -> SignalProducer<Void, RepositoryError>
 }
 
 class SesionRepository: AbstractRepository, SesionRepositoryType {
@@ -22,13 +24,13 @@ class SesionRepository: AbstractRepository, SesionRepositoryType {
 
     private let woloxSigninErrorName = "Error"
 
-    func login(_ username: String, password: String) -> SignalProducer<User, RepositoryError> {
+    func login(_ username: String, password: String) -> SignalProducer<Void, RepositoryError> {
         let path = loginPath
         let parameters: [String: Any] = ["username": username,
                                          "password": password]
         return performRequest(method: .post, path: path, parameters: parameters) { JSON in
-            return decode(JSON).toResult()
-            }.mapError { error in //TODO: validate this
+            return Result.success(())
+            }.mapError { error in //TODO: validate this - this does not have error messages, need to handle by code
                 switch error {
                 case .unauthenticatedSession(let reqerror), .requestError(let reqerror):
                     let myerror = WoloxSigninError.loginError((reqerror.body?["code"] as? String) ?? "")

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE09E6312421762400B35EF6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6302421762400B35EF6 /* Information.swift */; };
 		AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */; };
+		AE1E09ED247EDFA1007D3CE9 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E09EC247EDFA1007D3CE9 /* UserDefaultsService.swift */; };
 		AE48FDFD23F327D10065F778 /* CodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFC23F327D10065F778 /* CodeScannerController.swift */; };
 		AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48FDFE23F328A10065F778 /* Scanner.swift */; };
 		AE48FE0123F32B150065F778 /* CodeScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE48FE0023F32B150065F778 /* CodeScannerView.xib */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		AE09E6302421762400B35EF6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerStringConstants.swift; sourceTree = "<group>"; };
+		AE1E09EC247EDFA1007D3CE9 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		AE48FDFC23F327D10065F778 /* CodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerController.swift; sourceTree = "<group>"; };
 		AE48FDFE23F328A10065F778 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		AE48FE0023F32B150065F778 /* CodeScannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeScannerView.xib; sourceTree = "<group>"; };
@@ -137,6 +139,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AE1E09EB247EDF90007D3CE9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE1E09EC247EDFA1007D3CE9 /* UserDefaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		AE48FDFB23F327C20065F778 /* CodeScanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		AE6F4FF1246C737E007BF1DF /* WoloxSesion */ = {
 			isa = PBXGroup;
 			children = (
+				AE1E09EB247EDF90007D3CE9 /* Services */,
 				AE53D2AD246F0E21009CB6CA /* Repositories */,
 				AE53D2AC246F0E18009CB6CA /* Models */,
 				AE53D2AB246F0E06009CB6CA /* WoloxSignin */,
@@ -411,6 +422,7 @@
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
 				AE6F4FF9246CAC0C007BF1DF /* WoloxSigninViewModel.swift in Sources */,
+				AE1E09ED247EDFA1007D3CE9 /* UserDefaultsService.swift in Sources */,
 				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
 				AE9C41C9246DE18200B9086C /* UIViewController+Extension.swift in Sources */,
