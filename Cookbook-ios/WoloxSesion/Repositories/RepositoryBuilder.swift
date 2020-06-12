@@ -13,7 +13,7 @@ import Networking
 class RepositoryBuilder {
     static var DefaultNetworkingConfiguration: NetworkingConfiguration {
         var config = NetworkingConfiguration()
-        config.domainURL = "pacific-wave-13746.herokuapp.com"
+        config.domainURL = "login-node-wolox.herokuapp.com"
         config.useSecureConnection = true
         config.interceptor = TokenGetter.shared
         return config
