@@ -12,4 +12,6 @@ extension UIImage {
     static let informationImage = UIImage(imageLiteralResourceName: "information")
     static let scannerImage = UIImage(imageLiteralResourceName: "scan")
     static let focusedImage = UIImage(imageLiteralResourceName: "focused")
+    static let eyeOn = UIImage(imageLiteralResourceName: "eyeOn")
+    static let eyeOff = UIImage(imageLiteralResourceName: "eyeOff")
 }

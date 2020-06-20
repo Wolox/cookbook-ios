@@ -19,30 +19,39 @@ class WoloxSigninViewController: UIViewController {
     
     // MARK: - IBOUtlets
     @IBOutlet weak var userTextField: UITextField!
-    @IBOutlet weak var userErrorLabel: UILabel!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var passwordErrorLabel: UILabel!
-    @IBOutlet weak var generalErrorView: UIView!
-    @IBOutlet weak var generalErrorLabel: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField! {
+        didSet {
+            passwordTextField.isSecureTextEntry = true
+            passwordTextField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 35, height: passwordTextField.frame.height))
+            passwordTextField.rightViewMode = .always
+        }
+    }
     @IBOutlet weak var signinButton: UIButton! {
         didSet {
-            signinButton.backgroundColor = .woloxGreen
+            signinButton.backgroundColor = .woloxBlue
             signinButton.layer.cornerRadius = 5
         }
     }
     @IBOutlet weak var registerButton: UIButton! {
         didSet {
-            registerButton.setTitleColor(.woloxGreen, for: .normal)
+            registerButton.setTitleColor(.woloxBlue, for: .normal)
         }
     }
     @IBOutlet weak var contentHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var showPasswordButton: UIButton! {
+        didSet {
+            showPasswordButton.imageView?.tintColor = UIColor.woloxBlue
+            let image = (UIImage.eyeOn).withRenderingMode(.alwaysTemplate)
+            showPasswordButton.setImage(image, for: .normal)
+        }
+    }
     
     //MARK: - Lifecylcle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
-        hideErrors()
         hideKeyboardOnTap()
+        configureTextFields()
     }
     
     override func viewDidLayoutSubviews() {
@@ -57,22 +66,20 @@ class WoloxSigninViewController: UIViewController {
         contentHeightConstraint.constant = max(viewContentHeight, safeAreaHeight)
     }
     
-    private func hideErrors() {
-        userErrorLabel.isHidden = true
-        passwordErrorLabel.isHidden = true
-        generalErrorView.isHidden = true
+    private func configureTextFields() {
+        userTextField.delegate = self
+        passwordTextField.delegate = self
+        configureBasicTextField(userTextField)
+        configureBasicTextField(passwordTextField)
     }
     
     private func bindViewModel() {
         viewModel.userMutableProperty <~ userTextField.reactive.continuousTextValues
         viewModel.passwordMutableProperty <~ passwordTextField.reactive.continuousTextValues
-        userErrorLabel.reactive.isHidden <~ viewModel.isValidUser.producer
-        passwordErrorLabel.reactive.isHidden <~ viewModel.isValidPassword.producer
         
         signinButton.reactive.pressed = CocoaAction(viewModel.signinAction)
         viewModel.signinAction.isExecuting.producer.observe(on: UIScheduler()).startWithValues { [weak self] isExecuting in
             if isExecuting {
-                self?.hideErrors()
                 //TODO: show loading
             } else {
                 //TODO: hide loading
@@ -93,10 +100,36 @@ class WoloxSigninViewController: UIViewController {
         }
     }
     
+    private func configureBasicTextField(_ textField: UITextField) {
+        textField.layer.borderWidth = 1
+        textField.layer.cornerRadius = 4
+        textField.layer.borderColor = UIColor.woloxGrayBorder.cgColor
+    }
+    
     // MARK: - Helper methods
     private func showCarousel() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = CarouselViewController(nibName: ViewNames.carouselView, bundle: nil)
         window.rootViewController = viewController
+    }
+    
+    //MARK: - Action methods
+    @IBAction func showPasswordPressed(_ sender: Any) {
+        passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
+        var image: UIImage = passwordTextField.isSecureTextEntry ? .eyeOn : .eyeOff
+        image = image.withRenderingMode(.alwaysTemplate)
+        showPasswordButton.setImage(image, for: .normal)
+    }
+}
+
+extension WoloxSigninViewController: UITextFieldDelegate {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        textField.layer.borderWidth = 4
+        textField.layer.borderColor = UIColor.woloxBlueBorder.cgColor
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        configureBasicTextField(textField)
     }
 }
