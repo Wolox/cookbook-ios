@@ -16,3 +16,7 @@ struct ScannerStringConstants {
     static let scannedCode = "Scanned code"
     static let scanAgain = "Scan again"
 }
+
+struct SigninStringConstants {
+    static let recoverAccount = "Recuperar"
+}

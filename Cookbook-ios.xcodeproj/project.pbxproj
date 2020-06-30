@@ -35,6 +35,8 @@
 		AE6F4FFC246CACF8007BF1DF /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6F4FFB246CACF8007BF1DF /* ReactiveSwift.framework */; };
 		AE6F4FFE246CB321007BF1DF /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6F4FFD246CB320007BF1DF /* ReactiveCocoa.framework */; };
 		AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79BE9123BDBBB2004270F1 /* ViewNames.swift */; };
+		AE8EE845249DBEDD008CEFF3 /* RecoverAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8EE844249DBEDD008CEFF3 /* RecoverAccountViewController.swift */; };
+		AE8EE847249DBF40008CEFF3 /* RecoverAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8EE846249DBF40008CEFF3 /* RecoverAccountView.xib */; };
 		AE9C41C9246DE18200B9086C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C41C8246DE18200B9086C /* UIViewController+Extension.swift */; };
 		AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */; };
 		AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA24FAD241315E000850AC0 /* FocusedCollectionView.xib */; };
@@ -82,6 +84,8 @@
 		AE6F4FFB246CACF8007BF1DF /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		AE6F4FFD246CB320007BF1DF /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		AE79BE9123BDBBB2004270F1 /* ViewNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNames.swift; sourceTree = "<group>"; };
+		AE8EE844249DBEDD008CEFF3 /* RecoverAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverAccountViewController.swift; sourceTree = "<group>"; };
+		AE8EE846249DBF40008CEFF3 /* RecoverAccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecoverAccountView.xib; sourceTree = "<group>"; };
 		AE9C41C8246DE18200B9086C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AEA24FAB241315CD00850AC0 /* FocusedCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedCollectionController.swift; sourceTree = "<group>"; };
 		AEA24FAD241315E000850AC0 /* FocusedCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusedCollectionView.xib; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				AE53D2AD246F0E21009CB6CA /* Repositories */,
 				AE53D2AC246F0E18009CB6CA /* Models */,
 				AE53D2AB246F0E06009CB6CA /* WoloxSignin */,
+				AE8EE843249DBECD008CEFF3 /* RecoverAccount */,
 			);
 			path = WoloxSesion;
 			sourceTree = "<group>";
@@ -241,6 +246,15 @@
 				AE09E6322421763E00B35EF6 /* ScannerStringConstants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		AE8EE843249DBECD008CEFF3 /* RecoverAccount */ = {
+			isa = PBXGroup;
+			children = (
+				AE8EE844249DBEDD008CEFF3 /* RecoverAccountViewController.swift */,
+				AE8EE846249DBF40008CEFF3 /* RecoverAccountView.xib */,
+			);
+			path = RecoverAccount;
 			sourceTree = "<group>";
 		};
 		AEA24FAA241315B800850AC0 /* FocusedTable */ = {
@@ -368,6 +382,7 @@
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
 				AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
+				AE8EE847249DBF40008CEFF3 /* RecoverAccountView.xib in Resources */,
 				AEA24FB224131C6900850AC0 /* FocusedCollectionViewCell.xib in Resources */,
 				AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */,
 			);
@@ -422,6 +437,7 @@
 				AE48FDFF23F328A10065F778 /* Scanner.swift in Sources */,
 				AEF866D823B2796B003879D0 /* CarouselViewController.swift in Sources */,
 				AE6F4FF9246CAC0C007BF1DF /* WoloxSigninViewModel.swift in Sources */,
+				AE8EE845249DBEDD008CEFF3 /* RecoverAccountViewController.swift in Sources */,
 				AE1E09ED247EDFA1007D3CE9 /* UserDefaultsService.swift in Sources */,
 				AEA24FB024131C5A00850AC0 /* FocusedCollectionViewCell.swift in Sources */,
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,

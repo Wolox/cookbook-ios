@@ -128,6 +128,9 @@
                                     <state key="normal" title="No recuerdo mi contraseña">
                                         <color key="titleColor" red="0.0" green="0.2627450980392157" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="recoverAccount:" destination="-1" eventType="touchUpInside" id="iZP-7P-5zs"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

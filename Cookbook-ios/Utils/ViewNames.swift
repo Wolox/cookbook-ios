@@ -12,6 +12,9 @@ struct ViewNames {
     // MARK: - Wolox Signin
     static let woloxSigninView = "WoloxSigninView"
     
+    // MARK: - Wolox recover account
+    static let recoverAccountView = "RecoverAccountView"
+    
     // MARK:  - Carousel
     static let carouselView = "CarouselView"
     static let carouselCollectionViewCell = "CarouselCollectionViewCell"

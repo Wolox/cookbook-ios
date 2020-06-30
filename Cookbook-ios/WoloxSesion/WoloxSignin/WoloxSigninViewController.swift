@@ -120,6 +120,12 @@ class WoloxSigninViewController: UIViewController {
         image = image.withRenderingMode(.alwaysTemplate)
         showPasswordButton.setImage(image, for: .normal)
     }
+    
+    @IBAction func recoverAccount(_ sender: Any) {
+        let recoverAccountviewController = RecoverAccountViewController(nibName: ViewNames.recoverAccountView, bundle: nil)
+        let navigationController = UINavigationController(rootViewController: recoverAccountviewController)
+        present(navigationController, animated: true)
+    }
 }
 
 extension WoloxSigninViewController: UITextFieldDelegate {

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecoverAccountViewController" customModule="Cookbook_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="SeI-5S-DuI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa a CookBook iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAz-P7-kqR">
+                    <rect key="frame" x="16" y="198" width="343.5" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="0.031372549020000001" green="0.031372549020000001" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa a la plataforma con tus datos de registro" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR1-p2-etA">
+                    <rect key="frame" x="16" y="239" width="343.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <color key="textColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b9K-uD-bpN">
+                    <rect key="frame" x="16" y="282.5" width="382" height="66.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKe-Cy-AGs">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIB-ZF-9gZ">
+                            <rect key="frame" x="0.0" y="28.5" width="382" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="qzm-Sa-Dxk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b9K-uD-bpN" secondAttribute="trailing" constant="16" id="275-RZ-3Uf"/>
+                <constraint firstItem="b9K-uD-bpN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="4dI-9j-OTC"/>
+                <constraint firstItem="PR1-p2-etA" firstAttribute="trailing" secondItem="KAz-P7-kqR" secondAttribute="trailing" id="9TG-DC-PSX"/>
+                <constraint firstItem="PR1-p2-etA" firstAttribute="top" secondItem="KAz-P7-kqR" secondAttribute="bottom" constant="12" id="LnE-5E-knJ"/>
+                <constraint firstItem="PR1-p2-etA" firstAttribute="leading" secondItem="KAz-P7-kqR" secondAttribute="leading" id="Ojw-4Q-rxt"/>
+                <constraint firstItem="KAz-P7-kqR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="154" id="UqV-dQ-9hj"/>
+                <constraint firstItem="b9K-uD-bpN" firstAttribute="top" secondItem="PR1-p2-etA" secondAttribute="bottom" constant="24" id="ZmG-OD-5te"/>
+                <constraint firstItem="KAz-P7-kqR" firstAttribute="leading" secondItem="b9K-uD-bpN" secondAttribute="leading" id="q4l-tA-6wE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="142"/>
+        </view>
+    </objects>
+</document>
