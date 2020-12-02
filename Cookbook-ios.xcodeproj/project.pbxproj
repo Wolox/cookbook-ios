@@ -34,6 +34,9 @@
 		AEF866D923B2796B003879D0 /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEF866D723B2796B003879D0 /* CarouselView.xib */; };
 		AEF866DC23B2842D003879D0 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF866DA23B2842D003879D0 /* CarouselCollectionViewCell.swift */; };
 		AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEF866DB23B2842D003879D0 /* CarouselCollectionViewCell.xib */; };
+		B7B8F9BD24103C7E00790C3F /* ShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8F9BC24103C7E00790C3F /* ShadowViewController.swift */; };
+		B7B8F9BF24103D0A00790C3F /* ShadowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B8F9BE24103D0900790C3F /* ShadowView.xib */; };
+		B7B8F9C124104E3C00790C3F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8F9C024104E3C00790C3F /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		AEF866D723B2796B003879D0 /* CarouselView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
 		AEF866DA23B2842D003879D0 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		AEF866DB23B2842D003879D0 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		B7B8F9BC24103C7E00790C3F /* ShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewController.swift; sourceTree = "<group>"; };
+		B7B8F9BE24103D0900790C3F /* ShadowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShadowView.xib; sourceTree = "<group>"; };
+		B7B8F9C024104E3C00790C3F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 				AE49AB6323C6C5B5002FF78C /* UIColorExtension.swift */,
 				AE49AB6523C6CAF3002FF78C /* UIBarButtonItem.swift */,
 				AE49AB6723C6CDA4002FF78C /* GeneralViewController.swift */,
+				B7B8F9C024104E3C00790C3F /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 		AEF866C123B27899003879D0 /* Cookbook-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B769D8592410217200097C88 /* ShadowView */,
 				AE49AB6023C6C469002FF78C /* Extensions */,
 				AE79BE9023BDBB93004270F1 /* Utils */,
 				AE49AB6923C6DFCE002FF78C /* Information */,
@@ -192,6 +200,15 @@
 				AEF866DB23B2842D003879D0 /* CarouselCollectionViewCell.xib */,
 			);
 			path = Carousel;
+			sourceTree = "<group>";
+		};
+		B769D8592410217200097C88 /* ShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				B7B8F9BC24103C7E00790C3F /* ShadowViewController.swift */,
+				B7B8F9BE24103D0900790C3F /* ShadowView.xib */,
+			);
+			path = ShadowView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +272,7 @@
 				AE48FE0123F32B150065F778 /* CodeScannerView.xib in Resources */,
 				AE49AB6D23C6DFEF002FF78C /* InformationView.xib in Resources */,
 				AEF866CD23B2789B003879D0 /* LaunchScreen.storyboard in Resources */,
+				B7B8F9BF24103D0A00790C3F /* ShadowView.xib in Resources */,
 				AEF866CA23B2789B003879D0 /* Assets.xcassets in Resources */,
 				AEA24FAE241315E000850AC0 /* FocusedCollectionView.xib in Resources */,
 				AEF866DD23B2842D003879D0 /* CarouselCollectionViewCell.xib in Resources */,
@@ -283,8 +301,10 @@
 				AEA24FAC241315CD00850AC0 /* FocusedCollectionController.swift in Sources */,
 				AE09E6332421763E00B35EF6 /* ScannerStringConstants.swift in Sources */,
 				AE09E6312421762400B35EF6 /* Information.swift in Sources */,
+				B7B8F9BD24103C7E00790C3F /* ShadowViewController.swift in Sources */,
 				AE49AB6623C6CAF3002FF78C /* UIBarButtonItem.swift in Sources */,
 				AEF866C323B27899003879D0 /* AppDelegate.swift in Sources */,
+				B7B8F9C124104E3C00790C3F /* UIViewExtension.swift in Sources */,
 				AE79BE9223BDBBB2004270F1 /* ViewNames.swift in Sources */,
 				AE49AB6223C6C477002FF78C /* UIImageExtension.swift in Sources */,
 				AEA24FB62413214C00850AC0 /* FocusedData.swift in Sources */,

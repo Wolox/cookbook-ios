@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShadowViewController" customModule="Cookbook_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="colorFirst" destination="DWe-wr-eEq" id="Sss-fg-wgc"/>
+                <outlet property="colorSecond" destination="noM-s3-Tgs" id="G17-5J-gRj"/>
+                <outlet property="colorThird" destination="mN8-Dp-mIF" id="00B-5H-zmL"/>
+                <outlet property="slideCornerRadius" destination="xv5-1O-Tsy" id="SyA-u8-gJz"/>
+                <outlet property="slideOpacity" destination="qXo-kQ-r4q" id="D61-qj-iAj"/>
+                <outlet property="slideRadius" destination="5er-BZ-v4C" id="N9E-Ux-Gl6"/>
+                <outlet property="slideSize" destination="QAO-9v-LZ9" id="RQg-et-Xs7"/>
+                <outlet property="testCircleView" destination="CAx-82-JqC" id="9Em-Ff-rgP"/>
+                <outlet property="testRectangelView" destination="VE8-CH-9gX" id="zaq-Uk-Bgu"/>
+                <outlet property="view" destination="BRG-zy-Y8Z" id="Spd-jD-OJd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BRG-zy-Y8Z">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VE8-CH-9gX">
+                    <rect key="frame" x="87" y="10" width="240" height="128"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="Wbo-Uu-w7s"/>
+                        <constraint firstAttribute="width" constant="240" id="poD-Lj-sey"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5er-BZ-v4C">
+                    <rect key="frame" x="18" y="208" width="378" height="31"/>
+                    <connections>
+                        <action selector="sliderRadiusChanged:" destination="-1" eventType="valueChanged" id="zC5-T8-fEl"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QAO-9v-LZ9">
+                    <rect key="frame" x="18" y="255" width="378" height="31"/>
+                    <connections>
+                        <action selector="sliderSizeChanged:" destination="-1" eventType="valueChanged" id="Rw5-wA-IKg"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qXo-kQ-r4q">
+                    <rect key="frame" x="18" y="302" width="378" height="31"/>
+                    <connections>
+                        <action selector="sliderOpacityChanged:" destination="-1" eventType="valueChanged" id="h3V-qh-9Li"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xv5-1O-Tsy">
+                    <rect key="frame" x="18" y="349" width="378" height="31"/>
+                    <connections>
+                        <action selector="sliderCornerRadiusChanged:" destination="-1" eventType="valueChanged" id="jFe-TD-Bxa"/>
+                    </connections>
+                </slider>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAx-82-JqC">
+                    <rect key="frame" x="157" y="395" width="100" height="100"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2j3-f9-vXo"/>
+                        <constraint firstAttribute="width" secondItem="CAx-82-JqC" secondAttribute="height" multiplier="1:1" id="QXd-xb-R9b"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Z4f-5K-ZDO">
+                    <rect key="frame" x="90" y="153" width="234" height="47"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWe-wr-eEq">
+                            <rect key="frame" x="0.0" y="0.0" width="78" height="47"/>
+                            <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="pressFirstButtonChangedColor:" destination="-1" eventType="touchUpInside" id="f1r-lA-ciU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noM-s3-Tgs">
+                            <rect key="frame" x="78" y="0.0" width="78" height="47"/>
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="pressSecondButtonChangeColor:" destination="-1" eventType="touchUpInside" id="LI6-cb-bRw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mN8-Dp-mIF">
+                            <rect key="frame" x="156" y="0.0" width="78" height="47"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <connections>
+                                <action selector="pressThirdButtonChangeColor:" destination="-1" eventType="touchUpInside" id="AJq-Bh-YPU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8vg-pz-Xrk"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8vg-pz-Xrk" firstAttribute="trailing" secondItem="Z4f-5K-ZDO" secondAttribute="trailing" constant="90" id="41M-ju-a5P"/>
+                <constraint firstItem="CAx-82-JqC" firstAttribute="top" secondItem="xv5-1O-Tsy" secondAttribute="bottom" constant="16" id="4EC-Co-pQc"/>
+                <constraint firstItem="8vg-pz-Xrk" firstAttribute="trailing" secondItem="QAO-9v-LZ9" secondAttribute="trailing" constant="20" id="4WS-Vo-i65"/>
+                <constraint firstItem="Z4f-5K-ZDO" firstAttribute="top" secondItem="VE8-CH-9gX" secondAttribute="bottom" constant="15" id="H2O-11-9Gk"/>
+                <constraint firstItem="QAO-9v-LZ9" firstAttribute="leading" secondItem="8vg-pz-Xrk" secondAttribute="leading" constant="20" id="LnJ-mt-DWG"/>
+                <constraint firstItem="5er-BZ-v4C" firstAttribute="leading" secondItem="8vg-pz-Xrk" secondAttribute="leading" constant="20" id="Lyo-NI-mGP"/>
+                <constraint firstItem="8vg-pz-Xrk" firstAttribute="trailing" secondItem="qXo-kQ-r4q" secondAttribute="trailing" constant="20" id="MmN-R5-ENv"/>
+                <constraint firstItem="8vg-pz-Xrk" firstAttribute="trailing" secondItem="5er-BZ-v4C" secondAttribute="trailing" constant="20" id="Nyu-Sy-NqP"/>
+                <constraint firstItem="qXo-kQ-r4q" firstAttribute="top" secondItem="QAO-9v-LZ9" secondAttribute="bottom" constant="17" id="QTY-tV-p7p"/>
+                <constraint firstItem="xv5-1O-Tsy" firstAttribute="top" secondItem="qXo-kQ-r4q" secondAttribute="bottom" constant="17" id="Sjx-Ri-ICs"/>
+                <constraint firstItem="Z4f-5K-ZDO" firstAttribute="leading" secondItem="8vg-pz-Xrk" secondAttribute="leading" constant="90" id="U1c-4a-hF3"/>
+                <constraint firstItem="qXo-kQ-r4q" firstAttribute="leading" secondItem="8vg-pz-Xrk" secondAttribute="leading" constant="20" id="aht-u5-xv1"/>
+                <constraint firstItem="QAO-9v-LZ9" firstAttribute="top" secondItem="5er-BZ-v4C" secondAttribute="bottom" constant="17" id="dS8-08-i1H"/>
+                <constraint firstItem="xv5-1O-Tsy" firstAttribute="leading" secondItem="8vg-pz-Xrk" secondAttribute="leading" constant="20" id="gcE-FQ-MKr"/>
+                <constraint firstItem="VE8-CH-9gX" firstAttribute="centerX" secondItem="BRG-zy-Y8Z" secondAttribute="centerX" id="jxI-MO-sB8"/>
+                <constraint firstItem="CAx-82-JqC" firstAttribute="centerX" secondItem="BRG-zy-Y8Z" secondAttribute="centerX" id="kQg-Ux-Xp9"/>
+                <constraint firstItem="5er-BZ-v4C" firstAttribute="top" secondItem="Z4f-5K-ZDO" secondAttribute="bottom" constant="8" id="lRN-fh-EAR"/>
+                <constraint firstItem="8vg-pz-Xrk" firstAttribute="trailing" secondItem="xv5-1O-Tsy" secondAttribute="trailing" constant="20" id="riS-lE-7nW"/>
+                <constraint firstItem="5er-BZ-v4C" firstAttribute="top" secondItem="VE8-CH-9gX" secondAttribute="bottom" constant="70" id="wh7-Fb-m9n"/>
+                <constraint firstItem="VE8-CH-9gX" firstAttribute="top" secondItem="8vg-pz-Xrk" secondAttribute="top" constant="10" id="zGO-ka-qQs"/>
+            </constraints>
+            <point key="canvasLocation" x="-52.173913043478265" y="-131.25"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705878" green="0.44313725490196082" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
