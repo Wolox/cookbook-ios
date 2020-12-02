@@ -96,6 +96,8 @@ class ShadowViewController: GeneralViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        feature = .shadow
+        configureNavigationBar()
         setUpUI()
     }
 }

@@ -97,7 +97,19 @@ enum Features: CaseIterable {
             
             Note: it looks like a table but it's not
             """
+        case .shadow:
+            return """
+            - You can move the sliders to modify the shadow attributes
 
+            Attributes that can be modified:
+            - Shadow radius
+            - Shadow size
+            - Shadow opacity
+            - Corner radius
+            - Shadow colors (one at a time)
+
+            - At the end a circle with an example shadow
+            """
         default:
             return ""
         }
